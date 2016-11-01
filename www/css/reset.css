@@ -1,0 +1,23 @@
+@charset "utf-8";
+body,h1,h2,h3,ul,li,dl,dd,dt,img,a,p,span,div{color: #515151; margin:0; padding:0; font:14px "Microsoft YaHei","微软雅黑",tahoma,"黑体";list-style-type:none;font-weight:normal;}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a{ text-decoration:none; outline:none;}
+em,i,b{ font-style:normal;}
+.fl{ float:left;}
+.fr{ float:right;}
+.clear { zoom:1; }
+.clear:after { content:''; display:block; clear:both; }
+input{border: none;outline:none;}
+textarea{border:none;outline:none;resize:none;}}
+
+
+
+
+
+
+
+
+
