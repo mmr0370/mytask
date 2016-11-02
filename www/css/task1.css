@@ -1,27 +1,27 @@
 @charset "utf-8";
 .container{
-    margin:auto;
+    margin:20% auto;
     background:#fff;
-    padding:10% 5%;
 }
 .container .Lattice{
-    width:100%;
+    width:96%;
     height:30%;
-    display:webkit-flex;
-    display:flex;
-    margin:2% 0;
+   /* display:webkit-flex;
+    display:flex;*/
+    margin:auto;
 }
 .container .Lattice li{
-    margin:0 1%;
+    float:left;
+    margin:1%;
     width:30%;
     height:100%;
     background:#e8830d;
     border-radius:4px;
 }
-@media (min-width:500px){
+@media (max-width:374px){
     .container{
-        width:500px;
-        height:500px;
+        width:300px;
+        height:300px;
     }
 }
 @media (min-width:375px) {
@@ -30,9 +30,11 @@
         height: 360px;
     }
 }
-@media (max-width:374px){
-        .container{
-            width:300px;
-            height:300px;
-        }
+@media (min-width:500px){
+    .container{
+        width:500px;
+        height:500px;
+    }
 }
+
+

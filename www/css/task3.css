@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+.container{
+    margin:auto;
+    background:#68cdd5;
+    max-width:768px;
+    min-height:736px;
+}
+
+.header{
+    background:#22292c;
+    margin:0 auto;
+    height:60px;
+    line-height:60px;
+    padding:0 2%;
+}
+.header .headerLeft{
+    float:left;
+    width:30%;
+    height:60px;
+    line-height:60px;
+    font-size:4em;
+    color:#f8f6f5;
+}
+.header .headerLeft span{
+    display:inline-block;
+    width:20%;
+    height:28px;
+    background:url(../images/task3/Arrow.png) no-repeat center 46%;
+    background-size:contain;
+    color:#fff;
+    font-size:1.2em;
+    vertical-align: middle;
+}
+.header .headerRight{
+    float:right;
+    width:30%;
+    height:60px;
+    color:#f8f6f5;
+    background:url(../images/task3/more.png) no-repeat right center;
+   /* background-size:cover;*/
+    text-align: right;
+}
+.header h1{
+    float:left;
+    width:40%;
+    height:60px;
+    line-height:60px;
+    font-size:4em;
+    color:#f8f6f5;
+    text-align:center;
+}
+
+.content{
+    margin:0 auto;
+}
+.content .back{
+    margin-top:1%;
+    margin-left:2%;
+    width:10%;
+    height:52px;
+    background:url(../images/task3/back.png) no-repeat center center;
+    background-size: contain;
+}
+.content .logo{
+    margin:10% 0;
+    width:100%;
+    height:82px;
+    background:url(../images/task3/bigLogo.png) no-repeat center center;
+    background-size: contain;
+}
+.content .text{
+    width:80%;
+    margin:auto;
+    margin-top:10%;
+    color:#fff;
+    font-size:4.6em;
+    line-height:2.2em;
+}
+.content .img{
+    width:80%;
+    margin:auto;
+    margin-top:15%;
+    padding-bottom:20%;
+}
+.content .img .left{
+    width:30%;
+    float:left;
+}
+.content .img .left .icon{
+    width:100%;
+    height:80px;
+    background:url(../images/task3/bottomBlue.png) no-repeat center center;
+    background-size: contain;
+}
+.content .img .right{
+    width:30%;
+    float:right;
+}
+.content .img .right .icon{
+    width:100%;
+    height:80px;
+    background:url(../images/task3/bottomLogo.png) no-repeat center center;
+    background-size: contain;
+}
+.content .img p {
+    color: #fff;
+    font-size: 10em;
+    font-weight: 600;
+    line-height: 3em;
+    width: 100%;
+    text-align: center;
+}
+/*
+@media (min-width:641px){
+    container{
+        width:640px;
+    }
+    .header{
+        width:640px;
+    }
+    .header .headerLeft span{
+        margin-right:10px;
+    }
+    .content{
+        width:640px;
+    }
+}
+@media (max-width:640px){
+    container{
+        width:100%;
+    }
+    .header{
+        width:100%;
+    }
+    .header .headerLeft span{
+        margin-right:3%;
+    }
+    .content{
+        width:100%;
+    }
+}*/
