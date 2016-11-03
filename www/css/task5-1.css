@@ -1,0 +1,119 @@
+@charset "utf-8";
+body{
+    background:#fff;
+    min-width:320px;
+}
+.container{
+    margin:auto;
+    width:100%;
+    height:100%;
+}
+.header{
+    background:#5fc0cd;
+    margin:0 auto;
+    height:6em;
+    line-height:6em;
+    padding:0 1em;
+}
+.header .headerLeft{
+    float:left;
+    width:30%;
+    height:8em;
+    line-height:8em;
+    font-size:1.6em;
+    color:#f8f6f5;
+}
+.header .headerLeft img{
+    width:2.2em;
+    height:2.2em;
+    margin-top:0.8em;
+}
+.header h1{
+    float:left;
+    width:40%;
+    height:8em;
+    font-size:3.2em;
+    color:#f8f6f5;
+    text-align:center;
+}
+.banner{
+    width:100%;
+    height:22em;
+    background:url(../images/task5/banner1.png) no-repeat top center;
+    background-size:cover;
+    text-align:center;
+    padding:0 5%;
+}
+.banner .info{
+    width:100%;
+}
+.banner .info .imgBox{
+    float:left;
+    width:10em;
+    height:10em;
+    border-radius:50%;
+    background:#fff;
+    overflow: hidden;
+}
+.banner .info .imgBox span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/task5/headPic.png) no-repeat center 2.6em;
+    background-size: contain;
+}
+.banner .introduce{
+    width:12em;
+    text-align: left;
+    margin-left:2em;
+    float:left;
+    margin-top:3em;
+}
+
+.banner .introduce h2{
+    font-size:2.8em;
+    color:#fff;
+    line-height:2em;
+}
+.banner .introduce h2 span{
+    color:#fff;
+    margin-left:0.6em;
+    vertical-align: top;
+}
+.banner .introduce p{
+    font-size:2.2em;
+    color:#fff;
+    line-height:1.4em;
+}
+.banner .introduce p span{
+    display: inline-block;
+    width:1.2em;
+    height:1.2em;
+    background: url(../images/task5/Shape.png) no-repeat top center;
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 0.4em;
+}
+@media (max-width: 768px){
+    html,body{
+        font-size:75%;
+    }
+
+
+}
+@media (min-width: 769px){
+    html,body{
+        font-size:75%;
+    }
+
+
+}
+
+@media (max-width: 420px){
+    html,body{
+        font-size:62.5%;
+    }
+
+
+
+}
