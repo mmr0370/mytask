@@ -6,7 +6,8 @@ body{
 .container{
     margin:auto;
     width:100%;
-    height:100%;
+    min-height:100%;
+    padding-bottom: 15em;
 }
 .header{
     background:#5fc0cd;
@@ -18,27 +19,26 @@ body{
 .header .headerLeft{
     float:left;
     width:30%;
-    height:8em;
-    line-height:8em;
+    height:6em;
     font-size:1.6em;
     color:#f8f6f5;
 }
 .header .headerLeft img{
-    width:2.2em;
-    height:2.2em;
-    margin-top:0.8em;
+    width:1.8em;
+    height:1.8em;
+    vertical-align: middle;
 }
 .header h1{
     float:left;
     width:40%;
-    height:8em;
+    height:6em;
     font-size:3.2em;
     color:#f8f6f5;
     text-align:center;
 }
 .banner{
     width:100%;
-    height:22em;
+    height:18em;
     background:url(../images/task5/banner1.png) no-repeat top center;
     background-size:cover;
     text-align:center;
@@ -46,9 +46,13 @@ body{
 }
 .banner .info{
     width:100%;
+    position:relative;
+    height:18em;
 }
 .banner .info .imgBox{
-    float:left;
+    position:absolute;
+    left:0;
+    top:4em;
     width:10em;
     height:10em;
     border-radius:50%;
@@ -59,21 +63,21 @@ body{
     display: block;
     width: 100%;
     height: 100%;
-    background: url(../images/task5/headPic.png) no-repeat center 2.6em;
+    background: url(../images/task5/headPic.png) no-repeat center 2em;
     background-size: contain;
 }
 .banner .introduce{
-    width:12em;
+    position:absolute;
+    left:12em;
+    top:5.5em;
+    width:20em;
     text-align: left;
-    margin-left:2em;
-    float:left;
-    margin-top:3em;
 }
 
 .banner .introduce h2{
-    font-size:2.8em;
+    font-size:2.4em;
     color:#fff;
-    line-height:2em;
+    line-height:1.6em;
 }
 .banner .introduce h2 span{
     color:#fff;
@@ -81,7 +85,7 @@ body{
     vertical-align: top;
 }
 .banner .introduce p{
-    font-size:2.2em;
+    font-size:2em;
     color:#fff;
     line-height:1.4em;
 }
@@ -94,18 +98,117 @@ body{
     vertical-align: middle;
     margin-right: 0.4em;
 }
+.content{
+    width:100%;
+}
+.content .title{
+    height:4em;
+    line-height:4em;
+}
+.content .title h2{
+    margin-top:2em;
+    margin-left:5%;
+    font-size:2.2em;
+    color:#333;
+    font-weight:bold;
+    text-indent:1em;
+    border-left:2px solid #5fc0cd;
+    line-height:1em;
+
+}
+.con{
+    width:100%;
+    border-top:1px solid #e1e5e7;
+    border-bottom:1px solid #e1e5e7;
+}
+.conTitle{
+    height:6em;
+    line-height:6em;
+    margin-left:5%;
+    border-bottom:1px solid #e1e5e7;
+}
+.conTitle span{
+    display:inline-block;
+    width:25%;
+    font-size:2.2em;
+    color:#333;
+    line-height:1em;
+    margin-top:0.8em;
+}
+.conTitle span img{
+    width:1em;
+    height:1em;
+    margin:0 1em;
+}
+.border-right{
+    border-right:1px solid #e1e5e7;
+}
+.conList{
+    height:6em;
+    line-height:6em;
+    margin-left:5%;
+    border-bottom:1px solid #e1e5e7;
+}
+.conList span{
+    display:inline-block;
+    width:24%;
+    font-size:2.2em;
+    color:#999;
+    line-height:1em;
+    /*margin-top:0.8em;*/
+    text-indent:1em;
+    border-right:1px solid #e1e5e7;
+    vertical-align: middle;
+}
+.conList em{
+    display:inline-block;
+    width:68%;
+    font-size:2.2em;
+    color:#333;
+    line-height:1.2em;
+    /*margin-top:0.8em;*/
+    margin-left:1em;
+    vertical-align: middle;
+}
+.conList em b{
+    font-size:1em;
+    color:#e26163;
+    font-weight:600;
+
+}
+.conList.borderNone{
+ border:none;
+
+}
+.bottom{
+    width:100%;
+    position:fixed;
+    bottom:3.2em;
+    padding:0 5%;
+}
+.bottom .btn{
+    width:40%;
+    height:3em;
+    line-height:3em;
+    text-align:center;
+    border:2px solid #5fc0cd;
+    border-radius:0.4em;
+    color:#5fc0cd;
+    font-size:2.6em;
+}
+.bottom .btn.active{
+    background:#5fc0cd;
+    color:#fff;
+}
 @media (max-width: 768px){
     html,body{
         font-size:75%;
     }
-
-
 }
 @media (min-width: 769px){
     html,body{
-        font-size:75%;
+        font-size:90%;
     }
-
 
 }
 
@@ -113,7 +216,9 @@ body{
     html,body{
         font-size:62.5%;
     }
-
-
-
+}
+@media (max-width: 350px){
+    html,body{
+        font-size:55%;
+    }
 }

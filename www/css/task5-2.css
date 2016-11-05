@@ -1,0 +1,197 @@
+@charset "utf-8";
+body{
+    background:#fff;
+    min-width:320px;
+}
+.container{
+    margin:auto;
+    width:100%;
+    min-height:100%;
+    padding-bottom:10em;
+}
+.header {
+    background: #5fc0cd;
+    margin: 0 auto;
+    padding: 1.5em 1em;
+}
+.header .headerRight{
+    width:10%;
+    height: 2.8em;
+    line-height: 2.8em;
+    font-size:1.6em;
+    color:#f8f6f5;
+}
+.header .headerRight img{
+    width:1.8em;
+    height:1.8em;
+    vertical-align: middle;
+}
+.headerTab {
+    width:50%;
+    margin-right:15%;
+    text-align:center;
+}
+.headerTab a{
+    display:inline-block;
+    width:40%;
+    height:2.8em;
+    line-height:2.8em;
+    background:#55a8b3;
+    border-radius:0.4em;
+    color:#fff;
+    font-size:2.2em;
+    vertical-align: middle;
+}
+.headerTab a.active{
+    background:#fff;
+    color:#5fc0cd;
+    margin-left:-0.4em;
+}
+.content{
+    margin:auto;
+    width:100%;
+}
+.choice{
+    width:100%;
+    border-bottom: 1px solid #e1e5e7;
+    padding:1em 5%;
+}
+.choice span{
+    display:inline-block;
+    width:30%;
+    border-right: 1px solid #e1e5e7;
+    font-size:1.6em;
+    height:2em;
+    line-height:2em;
+    text-align:center;
+}
+.choice span em{
+    float:right;
+    margin-right:1em;
+    display:inline-block;
+    width:0.8em;
+    height:2em;
+    background:url(../images/task5/trigon.png) no-repeat center center;
+    background-size:contain;
+}
+.choice span.active em{
+    background:url(../images/task5/trigonBlue.png) no-repeat center center;
+    background-size:contain;
+}
+.conForm{
+    width:100%;
+}
+.conList{
+    border-bottom: 1px solid #e1e5e7;
+    padding:2em 5%;
+
+}
+.conList .top{
+    font-size:1.6em;
+    line-height:1.8em;
+}
+.conList .top span {
+    display: inline-block;
+    width: 1.8em;
+    height: 1.8em;
+    line-height: 1.8em;
+    margin-right:1em;
+    background: url(../images/task5/calendar.png) no-repeat center center;
+    vertical-align: top;
+}
+.conList .middle{
+    margin-left:2.8em;
+}
+.conList .middle .dateRange{
+    width:55%;
+    font-size:1.6em;
+    height:2em;
+    line-height:2em;
+    color:#333;
+}
+.conList .middle .charge{
+    width:40%;
+    font-size:1.6em;
+    height:2em;
+    line-height:2em;
+    color:#e63b0e;
+    text-align:right;
+}
+.conList .middle span {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    margin-left:1em;
+    background: url(../images/task5/next.png) no-repeat center center;
+    background-size: 40%;
+    vertical-align: top;
+}
+.conList .bottom{
+    font-size:1.6em;
+    line-height:1.8em;
+}
+.conList .bottom span {
+    display: inline-block;
+    width: 1.8em;
+    height: 1.8em;
+    line-height: 1.8em;
+    margin-right:1em;
+    background: url(../images/task5/ShapeGray.png) no-repeat center center;
+    vertical-align: top;
+}
+.footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    padding:1em 10%;
+    background:#f8fafb;
+}
+.footer a{
+    display: inline-block;
+    width:30%;
+    vertical-align: middle;
+}
+.footer a div{
+    width:8em;
+    height:7em;
+    margin:auto;
+
+}
+.footer .navList1{
+    background: url(../images/task5/homeGray.png) no-repeat center center;
+    background-size:contain;
+}
+.footer .navList2{
+    background: url(../images/task5/Write.png) no-repeat center center;
+    background-size:contain;
+}
+.footer .navList3{
+    background: url(../images/task5/userGray.png) no-repeat center center;
+    background-size:contain;
+}
+
+@media (max-width: 768px){
+    html,body{
+        font-size:75%;
+    }
+
+
+}
+@media (min-width: 769px){
+    html,body{
+        font-size:90%;
+    }
+}
+
+@media (max-width: 420px){
+    html,body{
+        font-size:62.5%;
+    }
+}
+@media (max-width: 350px){
+    html,body{
+        font-size:55%;
+    }
+}
