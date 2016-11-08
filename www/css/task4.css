@@ -10,27 +10,25 @@ body{
 .header{
     background:#22292c;
     margin:0 auto;
-    height:80px;
-    line-height:80px;
-    padding:0 4%;
+    padding:1.6em 4%;
 }
 .header .headerLeft{
     float:left;
     width:30%;
-    height:80px;
-    line-height:80px;
+    height:2em;
+    line-height: 2.6em;
     font-size:2.6em;
     color:#f8f6f5;
 }
 .header .headerLeft img{
-    margin-top:10px;
+    margin-top:1em;
 
 }
 .header .headerRight{
     float:right;
     width:30%;
-    height:80px;
-    line-height:80px;
+    height:2em;
+    line-height:2em;
     font-size:2.6em;
     color:#f8f6f5;
     text-align: right;
@@ -38,8 +36,8 @@ body{
 .header h1{
     float:left;
     width:40%;
-    height:80px;
-    line-height:80px;
+    height:2em;
+    line-height:2em;
     font-size:2.6em;
     color:#f8f6f5;
     text-align:center;
@@ -50,42 +48,41 @@ body{
 .importBox{
     margin-top:16px;
     width:100%;
-    padding:0 8%;
-    height:90px;
-    line-height:90px;
+    padding:1.2em 8%;
+/*    height:90px;
+    line-height:90px;*/
     background:#ffffff;
 }
 .importBox .mobileIcon,.importBox .lockedIcon{
     display:inline-block;
     width:16%;
-    height:50px;
-    line-height:50px;
+/*    height:50px;
+    line-height:50px;*/
     border-right:1px solid #ccc;
     vertical-align: middle;
 }
 .importBox .mobileIcon span,.importBox .lockedIcon span{
     display:inline-block;
-    width:30px;
-    height:43px;
+    width:2.6em;
+    height:3.6em;
 }
 .importBox .mobileIcon span{background:url(../images/task4/iphone.png) no-repeat left center;}
 .importBox .lockedIcon span{background:url(../images/task4/locked.png) no-repeat left center;}
 .importBox .text {
     width: 64%;
-    height: 88px;
-    line-height: 88px;
+    height: 2em;
+    line-height: 2em;
     border: none;
-    text-indent:10px;
-    vertical-align: top;
+    text-indent: 10px;
+    /* vertical-align: top; */
     font-size: 2.25em;
     color: #e1e5e7;
 }
 .login{
     display:block;
-    margin-top:50px;
+    margin-top:3em;
     width:100%;
-    height:60px;
-    line-height:60px;
+    padding:1em 0;
     background:#5fc0cd;
     color:#f3f4f6;
     font-size:2.6em;
@@ -95,10 +92,32 @@ body{
     display: block;
     margin-top: 10px;
     padding-right:4%;
-    color: #5fc0cd;
-    font-size: 2.2em;
++    font-size: 2.2em;
     width: 100%;
-    height: 30px;
-    line-height: 30px;
+    height: 2.6em;
+    line-height: 2.6em;
     text-align: right;
+}
+@media (max-width: 768px){
+    html,body{
+        font-size:75%;
+    }
+
+
+}
+@media (min-width: 769px){
+    html,body{
+        font-size:90%;
+    }
+}
+
+@media (max-width: 420px){
+    html,body{
+        font-size:62.5%;
+    }
+}
+@media (max-width: 350px){
+    html,body{
+        font-size:55%;
+    }
 }

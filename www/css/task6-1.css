@@ -1,0 +1,136 @@
+body{
+    background:#f0f0f0;
+    min-width:320px;
+}
+.container{
+    margin:auto;
+    width:100%;
+    min-height:100%;
+    padding-bottom:10em;
+}
+.header {
+    background: #5fc0cd;
+    margin: 0 auto;
+    padding: 1.2em 3%;
+}
+.header .headerLeft{
+    float:left;
+    width:30%;
+    height:2em;
+}
+.header .headerLeft span{
+    display:block;
+    width:3em;
+    height:2em;
+    background-image: url(../images/task6/headerMore1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.content{
+    padding:0 5%;
+}
+.lastResults {
+    padding:1.8em 0;
+    margin-top: 2.0em;
+    border: 1px solid #e1e5e7;
+    background: #fff;
+
+}
+.lastResults h2{
+    color: #9a9a9a;
+    font-size: 6em;
+    height: 1em;
+    line-height: 1em;
+    text-align: center;
+}
+.lastResults h2 span {
+    float: right;
+    display: block;
+    width: 0.8em;
+    height: 1em;
+    background-image: url(../images/task6/iconNext1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.game{
+    margin-top: 2.0em;
+    border: 1px solid #e1e5e7;
+    background: #fff;
+}
+.game h2{
+    color:#fbb435;
+    font-size:5em;
+    padding:0.6em 0;
+    border-bottom: 1px solid #fbb435;
+    text-align:center;
+}
+.game .blueBox{
+    width:80%;
+    margin:0 auto;
+    margin-top:1em;
+    font-size:4.6em;
+    color:#FFF;
+    text-align: center;
+    background:#69d1e9;
+    padding:1.8em 0;
+}
+.game p{
+    margin-top:1em;
+    color:#787878;
+    font-size:4em;
+    text-align:center;
+}
+.game .tabBtn{
+    width:10em;
+   /* height:1.5em;*/
+    margin:auto;
+    padding:1.2em 0;
+}
+.game .tabBtn li{
+    float:left;
+    margin:0 0.4em;
+    width:1.6em;
+    height:1.6em;
+    border-radius:0.8em;
+    background-color: #9a9a9a;
+}
+.game .tabBtn li.active{
+    background-color: #5fc0cd;
+}
+.guess{
+    position:relative;
+}
+.guess .triangle {
+    position: absolute;
+    right: -1.5em;
+    top: 1.6em;
+    width: 0;
+    height: 0;
+    border-left: 1em solid #fbb435;
+    border-bottom: 1em solid transparent;
+    border-top: 1em solid transparent;
+}
+@media (max-width: 768px){
+    html,body{
+        font-size:62.5%;
+    }
+
+
+}
+@media (min-width: 769px){
+    html,body{
+        font-size:80%;
+    }
+}
+
+@media (max-width: 480px){
+    html,body{
+        font-size:56%;
+    }
+}
+@media (max-width: 380px){
+    html,body{
+        font-size:48%;
+    }
+}
+
