@@ -1,12 +1,17 @@
+/** sprite: mysprite; sprite-image: url('../images\task6/mysprite.png'); sprite-layout: vertical */
 body{
-    background:#29bde0;
     min-width:320px;
 }
 .container{
     margin:auto;
     width:100%;
     min-height:100%;
-    padding-bottom:10em;
+    padding-bottom:7.8em;
+}
+.conWrap{
+    margin:auto;
+    width:100%;
+    background:#29bde0;
 }
 .header {
     margin: 0 auto;
@@ -15,6 +20,7 @@ body{
     font-size:3.4em;
     color:#fff;
     border-bottom:1px solid #e1e5e7;
+
 }
 .header .headerLeft{
     float:left;
@@ -27,7 +33,7 @@ body{
     display:block;
     width:2.6em;
     height:1.2em;
-    background-image: url(../images/task6/headerHome.png);
+    background-image: url(../images/task6/headerHome.png);/** sprite-ref: mysprite; */
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -42,9 +48,13 @@ body{
     display:block;
     width:2.6em;
     height:1.2em;
-    background-image: url(../images/task6/headerShape.png);
+    background-image: url(../images/task6/headerShape.png);/** sprite-ref: mysprite; */
     background-repeat: no-repeat;
     background-size: contain;
+}
+.victoryBox{
+    width:80%;
+    margin:0 auto;
 }
 .victory{
     width:17em;
@@ -56,12 +66,76 @@ body{
     height:9em;
     margin:auto;
 }
+.victoryBox p{
+    font-size: 5em;
+    line-height:1.4em;
+    color:#fbb435;
+    font-weight: bold;
+}
+.detail{
+    width:80%;
+    margin:0 auto;
+    margin-top:3em;
+    padding-bottom:3em;
+}
+.detail p{
+    font-size:4.2em;
+    color:#fff;
+    line-height:1.8em;
+}
+.detail p span{
+    display:inline-block;
+    width:33%;
+}
+.results{
+    width:100%;
+    padding:1em 10%;
+    margin:0 auto;
+    background-color:#fff;
+    border-bottom: 1px solid #dddddd;
+}
+.results h2{
+    font-size:5.2em;
+    color:#515151;
+    line-height:2em;
+    height:2em;
+}
+.results h2 span{
+    color:#c7c7c7;
+    font-size:0.6em;
+    font-weight:lighter;
+}
+.results p{
+    font-size:4em;
+    color:#9a9a9a;
+    line-height:2em;
+}
+.footer{
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color:#99dff0;
+    padding:1.5em 5%;
+    opacity:0.8;
+    filter:alpha(opacity=80); /* 针对 IE8 以及更早的版本 */
+}
+.footer a{
+    display:block;
+    padding:0.8em 1.4em;
+    color:#fff;
+    font-size:5em;
+}
+.footer .again{
+    background-color:#f66f6f;
+}
+.footer .share{
+    background-color:#fbb435;
+}
 @media (max-width: 768px){
     html,body{
         font-size:62.5%;
     }
-
-
 }
 @media (min-width: 769px){
     html,body{
