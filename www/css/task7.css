@@ -1,0 +1,141 @@
+/*-------------------------header-------------------*/
+
+.container{
+    width:100%;
+    margin:auto;
+}
+.headerTop{
+    width:100%;
+    background:#fff;
+    margin:auto;
+    padding:12px 0;
+}
+.wrap{
+    width:1200px;
+    margin:auto;
+}
+.headerTop .tel{
+    height:25px;
+    line-height:25px;
+    font-size:14px;
+    color:#29b078;
+}
+.headerTop .contactUS{
+
+    height:25px;
+    line-height:25px;
+}
+.headerTop .contactUS li {
+    height: 30px;
+    line-height: 30px;
+    width:25px;
+    /* overflow: hidden; */
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/task7/icon.png) no-repeat center center;
+    margin-left:8px;
+}
+.headerTop .contactUS li.list1 {
+    background-position: -10px -14px;
+}
+.headerTop .contactUS li.list2 {
+    background-position: -10px -66px;
+}
+.headerTop .contactUS li.list3 {
+    background-position: -10px -114px;
+}
+.header{
+    width:100%;
+    background:#29b078;
+    margin:auto;
+    height:100px;
+}
+.header .logo{
+    margin-top:20px;
+}
+.header .navTab{
+    margin-top:40px;
+}
+.header .navTab ul{
+
+}
+.header .navTab li{
+    float:left;
+
+}
+.header .navTab li a{
+    display:block;
+    font-size: 16px;
+    color:#fff;
+    height:60px;
+    padding:0 35px;
+}
+.header .navTab li a.active{
+    border-bottom: 4px solid #fff;
+}
+.header .navTab li a:hover{
+ border-bottom: 4px solid #fff;
+}
+/*---------------------footer------------------------*/
+.footer{
+    width:100%;
+    margin:0 auto;
+    background: #29b078;
+    padding-top:35px;
+}
+.footer .footerL{
+    width:220px;
+    text-align:left;
+    margin-right:150px;
+}
+.footer .footerL h2{
+    font-size:16px;
+    color:#fff;
+    line-height:28px;
+}
+.footer .footerL p{
+    margin-top:60px;
+    font-size:14px;
+    color:#fff;
+}
+.footer .footerL p span{
+    padding:0 8px;
+}
+.footer .footerR{
+    width:100px;
+    text-align:center;
+    margin-right:30px;
+}
+.footer a{color:#fff;}
+.footer .footerR h2{
+    font-size:16px;
+    color:#fff;
+    line-height:28px;
+}
+.footer .footerM{
+    width:220px;
+    text-align:left;
+    margin-right:150px;
+}
+.footer .footerM h2{
+    font-size:16px;
+    color:#fff;
+    line-height:28px;
+}
+.footer .footerM p{
+    margin-top:22px;
+    font-size:14px;
+    color:#fff;
+}
+.footer .footerM p span{
+  margin-left:34px;
+}
+.footerBottom{
+    margin-top:20px;
+    text-align:center;
+    font-size:14px;
+    color:#fff;
+    height:28px;
+    line-height:28px;
+    border-top: 1px solid #f0f0f0;
+}

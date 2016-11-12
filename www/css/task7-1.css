@@ -1,0 +1,122 @@
+.banner{
+    width:100%;
+    background:#f1a750;
+    margin:0 auto;
+    height:250px;
+    position:relative;
+}
+.bannerPic img{
+    margin-top:2px;
+}
+.banner .info {
+    position: absolute;
+    width: 656px;
+    top: 80px;
+    right: 0;
+}
+.banner .info h3{
+    font-size:40px;
+    color:#ffffff;
+    font-weight: bold;
+    margin-bottom:12px;
+}
+.banner .info p {
+    font-size: 16px;
+    color: #ffffff;
+    text-align: right;
+}
+.banner .info h2 {
+    margin-top: 34px;
+    margin-left: 30px;
+    font-size: 54px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.content{
+    width:100%;
+    background:#fafafa;
+    margin:auto;
+    padding:8px 0 100px;
+}
+.tabBtn{
+    background:#fff;
+    border:1px solid #dddddd;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.tabNav{
+    line-height:60px;
+}
+.tabNav a{
+    font-size:16px;
+    color:#333;
+}
+.tabNav a.on{
+    color:#29b078;
+}
+.tabTitle{
+    width:306px;
+    height:60px;
+    line-height:60px;
+    text-align: center;
+    font-size: 16px;
+    color:#333;
+    font-weight: bold;
+    border-bottom: 1px solid #999999;
+}
+.tabBtn ul{
+    padding:20px 0;
+}
+.tabBtn li{
+    height:50px;
+    line-height:50px;
+    width:306px;
+
+}
+.tabBtn li span {
+    display: block;
+    margin-left: 110px;
+    background: url(../images/task7/circle.png) no-repeat left center;
+    font-size: 14px;
+    color:#29b078;
+    text-align: left;
+    text-indent: 20px;
+    height: 50px;
+    line-height: 50px;
+}
+.tabBtn li.active span {
+    background: url(../images/task7/circleRed.png) no-repeat left center;
+    color:#ff650e;
+}
+.content .tabCon{
+    width:872px;
+    background:#fff;
+    border: 1px solid #ddd;
+    border-radius:4px;
+}
+.tabConTitle{
+    border-bottom: 1px solid #ddd;
+    padding:20px 0;
+}
+.tabConTitle .pir{
+    width:160px;
+    margin-left:84px;
+    margin-top:15px;
+}
+.tabConTitle .info{
+    width:560px;
+    color:#999;
+    line-height:28px;
+}
+.tabConTInfo{
+    width:740px;
+    margin:0 auto;
+    margin-top:15px;
+    margin-bottom:160px;
+}
+.tabConTInfo p{
+    margin-top:30px;
+    text-indent: 2em;
+    color:#999999;
+    font-size:14px;
+}

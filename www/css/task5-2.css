@@ -12,7 +12,7 @@ body{
 .header {
     background: #5fc0cd;
     margin: 0 auto;
-    padding: 1.5em 1em;
+    padding: 1.3em 1em;
 }
 .header .headerRight{
     width:10%;
@@ -54,7 +54,7 @@ body{
 .choice{
     width:100%;
     border-bottom: 1px solid #e1e5e7;
-    padding:1em 5%;
+    padding:0.6em 5%;
 }
 .choice span{
     display:inline-block;
@@ -83,18 +83,18 @@ body{
 }
 .conList{
     border-bottom: 1px solid #e1e5e7;
-    padding:2em 5%;
+    padding:1em 5%;
 
 }
 .conList .top{
     font-size:1.6em;
-    line-height:1.8em;
+    line-height:1.6em;
 }
 .conList .top span {
     display: inline-block;
     width: 1.8em;
-    height: 1.8em;
-    line-height: 1.8em;
+    height: 1.6em;
+    line-height: 1.6em;
     margin-right:1em;
     background: url(../images/task5/calendar.png) no-repeat center center;
     vertical-align: top;
@@ -105,15 +105,15 @@ body{
 .conList .middle .dateRange{
     width:55%;
     font-size:1.6em;
-    height:2em;
-    line-height:2em;
+    height:1.8em;
+    line-height:1.8em;
     color:#333;
 }
 .conList .middle .charge{
     width:40%;
     font-size:1.6em;
-    height:2em;
-    line-height:2em;
+    height:1.8em;
+    line-height:1.8em;
     color:#e63b0e;
     text-align:right;
 }
@@ -147,6 +147,7 @@ body{
     width:100%;
     padding:1em 10%;
     background:#f8fafb;
+    border-top:1px solid #e1e5e7;
 }
 .footer a{
     display: inline-block;
@@ -155,7 +156,7 @@ body{
 }
 .footer a div{
     width:8em;
-    height:7em;
+    height:5em;
     margin:auto;
 
 }
@@ -171,27 +172,24 @@ body{
     background: url(../images/task5/userGray.png) no-repeat center center;
     background-size:contain;
 }
-
 @media (max-width: 768px){
-    html,body{
-        font-size:75%;
-    }
-
-
-}
-@media (min-width: 769px){
-    html,body{
-        font-size:90%;
-    }
-}
-
-@media (max-width: 420px){
     html,body{
         font-size:62.5%;
     }
 }
-@media (max-width: 350px){
+@media (min-width: 769px){
     html,body{
-        font-size:55%;
+        font-size:80%;
+    }
+}
+
+@media (max-width: 480px){
+    html,body{
+        font-size:56%;
+    }
+}
+@media (max-width: 380px){
+    html,body{
+        font-size:48%;
     }
 }

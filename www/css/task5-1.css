@@ -102,11 +102,9 @@ body{
     width:100%;
 }
 .content .title{
-    height:4em;
-    line-height:4em;
+    padding:1.6em 0;
 }
 .content .title h2{
-    margin-top:2em;
     margin-left:5%;
     font-size:2.2em;
     color:#333;
@@ -122,8 +120,7 @@ body{
     border-bottom:1px solid #e1e5e7;
 }
 .conTitle{
-    height:6em;
-    line-height:6em;
+    padding:1.2em 0;
     margin-left:5%;
     border-bottom:1px solid #e1e5e7;
 }
@@ -144,8 +141,7 @@ body{
     border-right:1px solid #e1e5e7;
 }
 .conList{
-    height:6em;
-    line-height:6em;
+    padding:1.2em 0;
     margin-left:5%;
     border-bottom:1px solid #e1e5e7;
 }
@@ -180,12 +176,16 @@ body{
  border:none;
 
 }
-.bottom{
-    width:100%;
-    position:fixed;
-    bottom:3.2em;
-    padding:0 5%;
+.bottom {
+    width: 100%;
+    position: fixed;
+    bottom: 0em;
+    padding: 1.6em 5%;
+    border-top: 1px solid #e1e5e7;
 }
+
+
+
 .bottom .btn{
     width:40%;
     height:3em;
@@ -202,23 +202,22 @@ body{
 }
 @media (max-width: 768px){
     html,body{
-        font-size:75%;
+        font-size:62.5%;
     }
 }
 @media (min-width: 769px){
     html,body{
-        font-size:90%;
-    }
-
-}
-
-@media (max-width: 420px){
-    html,body{
-        font-size:62.5%;
+        font-size:80%;
     }
 }
-@media (max-width: 350px){
+
+@media (max-width: 480px){
     html,body{
-        font-size:55%;
+        font-size:56%;
+    }
+}
+@media (max-width: 380px){
+    html,body{
+        font-size:48%;
     }
 }

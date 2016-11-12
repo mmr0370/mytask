@@ -29,6 +29,9 @@ textarea{border:none;outline:none;resize:none;}
 .borderNone{
     border:none!important;
 }
+.marginNone{
+    margin:0!important;
+}
 
 
 

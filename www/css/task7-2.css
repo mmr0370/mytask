@@ -1,0 +1,318 @@
+.banner{
+    width:100%;
+    background:#f1a750;
+    margin:0 auto;
+    height:600px;
+    background: url(../images/task7/banner1.png) no-repeat left center;
+}
+.banner .wrap{
+    padding-top:258px;
+}
+.banner .bannerL{
+    margin-left:-40px;
+}
+.banner .bannerR{
+    margin-right:-40px;
+}
+.banner .bannerM{
+    width:1000px;
+    margin-left:100px;
+}
+.banner .bannerM p{
+    font-size:40px;
+    color:#fff;
+    text-align: center;
+    line-height:1.4em;
+}
+.banner .bannerM h2{
+    font-size:60px;
+    color:#fff;
+    text-align:center;
+    font-weight: bold;
+    line-height:1.4em;
+}
+.banner .bannerM h2 span{
+    font-size:64px;
+}
+.bannerBtn{
+    margin-top:160px;
+}
+.bannerBtn ul{
+   width:80px;
+    margin:0 auto;
+}
+.bannerBtn li{
+    float:left;
+    width:14px;
+    height:14px;
+    border:1px solid #ddd;
+    border-radius:7px;
+    margin:0 5px;
+}
+.bannerBtn li.active{
+    background:#fff;
+}
+
+.content{
+    padding-top: 160px;
+    background: #f0f0f0;
+}
+.featureBox .featureR{
+    width:262px;
+    height:264px;
+    border-left:1px dashed #dedede;
+    margin-top:30px;
+}
+.featureBox .featureR .item{
+    padding-left: 50px;
+    margin-top:30px;
+}
+.featureBox .featureR .item h2{
+     font-size: 18px;
+     color:#26a26f;
+}
+.featureBox .featureR .item p{
+    margin-top:14px;
+    font-size: 18px;
+    color:#999;
+}
+.featureBox .featureR .item h2 img{
+     vertical-align: middle;
+     margin-right:10px;
+ }
+.featureBox .featureL{
+    width:938px;
+    height:264px;
+}
+.featureBox .featureL .item{
+    display:inline-block;
+    vertical-align: top;
+}
+.featureBox .featureL .item h2{
+    margin-top:30px;
+    font-size: 18px;
+    color:#333;
+    text-align: center;
+}
+.featureBox .featureL .item p{
+    margin-top:26px;
+    font-size: 16px;
+    color:#999;
+    text-align: left;
+    line-height:26px;
+}
+.featureBox .featureL .item .itemImg{
+    margin:auto;
+}
+.featureBox .featureL .efficient{
+    width:224px;
+    margin-right:100px;
+}
+.featureBox .featureL .standard{
+    width:230px;
+    margin-right:74px;
+}
+.featureBox .featureL .Contacts{
+    width:250px;
+    margin-right:30px;
+}
+.featureBox .featureL .efficient .itemImg{
+    width:54px;
+}
+.featureBox .featureL .standard .itemImg{
+    width:74px;
+}
+.featureBox .featureL .Contacts .itemImg{
+    width:66px;
+}
+.learningStyle{
+    margin-top:90px;
+}
+.learningStyle h2{
+    text-align: center;
+    font-size: 18px;
+    color:#333;
+    margin-bottom:42px;
+}
+.learningStyle .info{
+    margin-bottom: 96px;
+}
+.learningStyle .item{
+    display:inline-block;
+}
+.learningStyle .step{
+    width:240px;
+}
+.learningStyle .step .circleStep {
+    width: 74px;
+    height: 74px;
+    line-height: 74px;
+    background: url(../images/task7/circleBig.png) no-repeat left center;
+    text-align: center;
+    font-size: 18px;
+    color:#29b078;
+    font-weight: bold;
+}
+.learningStyle .step .conStep {
+    width:160px;
+    text-align: left;
+    font-size: 14px;
+    color:#999;
+    line-height:26px;
+    margin-top:16px;
+}
+.learningStyle .shape{
+    width:70px;
+    height:74px;
+    background: url(../images/task7/greenShape.png) no-repeat center center;
+}
+.StudentsShow{
+
+}
+.StudentsShow h2{
+    text-align: center;
+    font-size: 18px;
+    color:#333;
+    margin-bottom:42px;
+}
+.StudentsShow .tabBox{
+    width:1200px;
+    height:370px;
+    overflow: hidden;
+}
+.StudentsShow .tabBox ul{}
+.StudentsShow .tabBox li{
+    float:left;
+    padding-top:20px;
+    width:270px;
+    height:370px;
+    background:#fff;
+    border-radius:4px;
+    margin-right:30px;
+}
+.StudentsShow .tabBox li .pir{
+    width:110px;
+    height:110px;
+    border:1px solid #dddddd;
+    border-radius:55px;
+    overflow: hidden;
+    margin:0 auto;
+    margin-top:20px;
+    background: url(../images/task7/1.png) no-repeat center 10px;
+    background-size: 100%;
+}
+.StudentsShow .tabBox li h2{
+    width:210px;
+    margin:0 auto;
+    margin-top:30px;
+    text-align: center;
+    font-size: 18px;
+    color:#333;
+    font-weight: bold;
+}
+.StudentsShow .tabBox li p{
+    width:210px;
+    margin:26px auto 0;
+    text-align:left;
+    font-size: 16px;
+    color:#999;
+    line-height:26px;
+}
+.StudentsShow .tabBtn{
+    margin:26px auto 130px;
+}
+.StudentsShow .tabBtn ul{
+    width:96px;
+    margin:0 auto;
+}
+.StudentsShow .tabBtn ul li{
+    float:left;
+    width:14px;
+    height:14px;
+    background:#fff;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;;
+    margin:0 5px;
+}
+.StudentsShow .tabBtn ul li.active{
+    background:#29b078;
+    border: 1px solid #29b078;
+}
+.Cooperation{
+    padding-bottom:90px;
+}
+.Cooperation h2{
+    text-align: center;
+    font-size: 18px;
+    color:#333;
+    margin-bottom:42px;
+}
+.partnerShow{}
+.partnerShow ul{}
+.partnerShow ul li{
+    float:left;
+    background:#fff;
+    box-shadow:0 0 5px 5px #ddd;
+    width:240px;
+    height:178px;
+}
+.partnerShow ul li a{
+    width:100%;
+    height:56px;
+    display:inline-block;
+    margin:auto;
+    margin-top:62px;
+}
+.partnerShow ul li.list1 a{
+    background: url(../images/task7/p1.png) no-repeat center center;
+}
+.partnerShow ul li.list2 a{
+    background: url(../images/task7/p2.png) no-repeat center center;
+}
+.partnerShow ul li.list3 a{
+    background: url(../images/task7/p3.png) no-repeat center center;
+}
+.partnerShow ul li.list4 a{
+    background: url(../images/task7/p4.png) no-repeat center center;
+}
+.partnerShow ul li.list5 a{
+    background: url(../images/task7/p5.png) no-repeat center center;
+}
+.friendsLink{
+     width:100%;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    background:#fff;
+}
+.friendsLink h2{
+    text-align: center;
+    font-size: 18px;
+    color:#333;
+    margin-bottom:30px;
+}
+.friendsLink ul{}
+.friendsLink li{
+    float:left;
+    width:120px;
+}
+.friendsLink li a{
+    display:block;
+    width:80px;
+    height:28px;
+    line-height:28px;
+    color:#999;
+    font-size: 14px;
+}
+
+.friendsLink li a:hover{
+  border-bottom: 1px solid #29b078;
+}
+.friendsLink li a span{
+    display:inline-block;
+    margin-right:10px;
+    width:6px;
+    height:6px;
+    background: url(../images/task7/circleSmall.png) no-repeat center center;
+}
