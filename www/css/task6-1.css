@@ -66,6 +66,7 @@ body{
     text-align:center;
 }
 .game .blueBox{
+    display: block;
     width:80%;
     margin:0 auto;
     margin-top:1em;

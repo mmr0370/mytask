@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>任务六——参数设置</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/task6-4.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/task2.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <div class="conWrap">
+        <div class="header clear">
+            <div class="headerLeft"><span></span></div>参数设置<div class="headerRight"><span></span></div>
+        </div>
+        <div class="content">
+            <div class="playerAllocation clear">
+                <div class="playL fl"><p>玩家配比</p></div>
+                <div class="playR fr">
+                    <ul class="List clear"></ul>
+                    <div class="set">
+                        <a class="setBtn" href="#">点击设置</a>
+                    </div>
+                </div>
+            </div>
+            <div class="phrase">
+                <input type="text" class="phraseList water" placeholder="水民词组">
+                <input type="text" class="phraseList ghost" placeholder="幽灵词组">
+            </div>
+            <div class="num">
+                <form>
+                    <lable class="player">玩家人数<input type="number" id="playerNum" value="6" max="20" min="6">人</lable>
+                    <lable for="slider" class="range"><i class="reduce"></i><input id="sliderBlock" type="range" step="1" max="20" min="6"><i class="add"></i></lable>
+                </form>
+            </div>
+        </div>
+        <div class="footer"><a href="#">去发牌</a></div>
+    </div>
+</div>
+</body>
+</html>

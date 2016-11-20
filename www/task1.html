@@ -7,6 +7,9 @@
     <title>任务一</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/task1.css" rel="stylesheet" type="text/css">
+   <!-- <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/task1.js"></script>-->
+
     <!--[if lt IE 9]>
         <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -14,21 +17,76 @@
 </head>
 <body>
   <div class="container">
-      <ul class="Lattice clear">
+      <div class="btn"><a href="#" id="resetBtn">恢复</a><a href="#" id="changeBtn">变化</a></div>
+      <ul id="colorBox" class="Lattice clear">
           <li></li>
           <li></li>
           <li></li>
-      </ul>
-      <ul class="Lattice clear">
           <li></li>
           <li></li>
           <li></li>
-      </ul>
-      <ul class="Lattice clear">
           <li></li>
           <li></li>
           <li></li>
       </ul>
   </div>
+<script type="text/javascript">
+   var changeBtn=document.getElementById("changeBtn");
+   var resetBtn=document.getElementById("resetBtn");
+   var oUl=document.getElementById("colorBox");
+   var oLi=oUl.getElementsByTagName("li");
+   var colorArray=["#1854ec","#22ec18","#ff0000"];
+   var NumArray=[];
+
+
+   function colorChange(){
+       var max=oLi.length-1;
+       fetch(3,max);
+       var i=0;
+       var children = oUl.children;
+       for(i = 0; i < children.length; i++){
+           children[i].style.background="#e8830d";
+       }
+       for(i=0;i<NumArray.length;i++){
+           oLi[NumArray[i]].style.backgroundColor=colorArray[i];
+       }
+    
+    
+   }
+/*----------------随机产生m个（0-n）之间不同的数字----------------*/
+    function fetch(m,n)  {  
+        if(m>n) {  
+            document.write("你输入的不合理");  
+        }else {   
+            for(var i=0;i<m;i++) {  
+                NumArray[i]=Math.round(n*Math.random());  
+                for(var j=0;j<i;j++){  
+                    if(NumArray[j]==NumArray[i]){  
+                        while (1){  
+                            NumArray[i]=parseInt(Math.random()*n);  
+                            if(NumArray[i]!=NumArray[j]){  
+                                j=-1;  
+                                break;  
+                            }  
+  
+                        }  
+  
+                    }  
+                }  
+            }  
+        }  
+    }  
+
+
+   changeBtn.onclick=function changeBtn(){
+       this.style.background="#2570bc";
+       colorChange();
+   };
+   resetBtn.onclick=function changeBtn(){
+      this.style.background="#2570bc";
+       window.location.reload();
+   };
+      </script>
+
 </body>
 </html>

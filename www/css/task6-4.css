@@ -1,0 +1,305 @@
+/** sprite: mysprite; sprite-image: url('../images\task6/mysprite.png'); sprite-layout: vertical */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+input[type="number"]{-moz-appearance:textfield;}
+html{height:100%;}
+body{height:100%;overflow:hidden;}
+body{overflow:scroll;}
+
+body{
+    min-width:320px;
+    background:#eceded;
+}
+.container{
+    margin:auto;
+    width:100%;
+    min-height:100%;
+    padding-bottom:7.8em;
+}
+.conWrap{
+    margin:auto;
+    width:100%;
+}
+.header {
+    margin: 0 auto;
+    padding: 1em 0;
+    text-align: center;
+    font-size:3.4em;
+    color:#fff;
+    border-bottom:1px solid #e1e5e7;
+    background:#29bde0;
+}
+.header .headerLeft{
+    float:left;
+    width:10%;
+    height:0.5em;
+    text-align: left;
+    margin-left: 3%;
+}
+.header .headerLeft span{
+    display:block;
+    width:2.6em;
+    height:1.2em;
+    background-image: url(../images/task6/backIcon.png);/** sprite-ref: mysprite; */
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.header .headerRight {
+    float: right;
+    width: 10%;
+    height: 0.5em;
+    text-align: right;
+    margin-right: 3%;
+}
+.header .headerRight span{
+    display:block;
+    width:2.6em;
+    height:1.2em;
+    background-image: url(../images/task6/circledHelp.png);/** sprite-ref: mysprite; */
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.content{
+    width:90%;
+    margin:0 auto;
+}
+.playerAllocation{
+  /*  padding:0 5%;*/
+}
+.playerAllocation .playL{
+    width:20%;
+    background:#ffffff;
+    height:25em;
+}
+.playerAllocation .playL p{
+    font-size: 3em;
+    width:1em;
+    color:#444444;
+    margin:0 auto;
+    margin-top:4em;
+}
+.playerAllocation .playR{
+    width:80%;
+    background:#fbfbfb;
+    height:25em;
+    border-left:1px solid #d9d9d9;
+    overflow: hidden;
+}
+.playerAllocation .playR .List{
+    padding-top:2em;
+    height:20em;
+    border-bottom:1px solid #d9d9d9;
+    overflow-y: scroll;
+}
+.playerAllocation .playR .List li{
+    float:left;
+    margin-left: 5%;
+    width:45%;
+    font-size:3em;
+    line-height:2.6em;
+    color:#a1a1a1;
+    padding-left: 4em;
+}
+.killer{background: url("../images/task6/squareBlue.png") no-repeat center left;}
+.doctor{background: url("../images/task6/squareGreen.png") no-repeat center left;}
+.police{background: url("../images/task6/squareYellow.png") no-repeat center left;}
+.civilian{background: url("../images/task6/squareRed.png") no-repeat center left;}
+.playerAllocation .playR .set{
+    padding:1.3em 0 ;
+}
+.playerAllocation .playR .setBtn{
+    display: block;
+    width:5em;
+    margin:auto;
+    font-size:3em;
+    color:#29bde0;
+    background:url("../images/task6/pencil.png") no-repeat center right;
+    cursor: pointer;
+}
+
+.phrase{
+    margin-top:1em;
+    background: #fff;
+    padding-bottom:2em;
+
+}
+.phrase .phraseList{
+    display: block;
+    width:80%;
+    margin:0 auto;
+    height:5em;
+    font-size: 3.2em;
+    color:#d7d7d7;
+    border-bottom: 2px solid #f0f0f0;
+    padding-left: 1em;
+}
+.num{
+    margin-top:1em;
+    background:#fff;
+}
+.num form .player{
+    display:block;
+    font-size:3em;
+    color:#444444;
+    line-height:3em;
+    height:3em;
+    padding-left:3%;
+}
+#playerNum {
+    font-size: 1.6em;
+    width: 2em;
+    background: #d9d9d9;
+    text-align: center;
+    line-height: 1.2em;
+    height: 1.2em;
+    vertical-align: middle;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    color: #fab344;
+    outline: none;
+}
+.num form .range{
+    padding-left:3%;
+}
+.num form .range i{
+    display:inline-block;
+    width:2em;
+    height:2em;
+    vertical-align: middle;
+    background-size: contain;
+}
+.reduce{
+    background:url("../images/task6/reduce.png") no-repeat center center;
+}
+.add{
+    background:url("../images/task6/add.png") no-repeat center center;
+}
+#sliderBlock{
+    display:inline-block;
+    vertical-align: middle;
+    width:58%;
+}
+
+input[type=range] {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari 和 Chrome */
+    margin: 1.4em;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    /*滚动条样式*/
+    width:100%;
+    height:0.3em;
+    cursor: pointer;
+    background: #fcc671;
+}
+/*input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ff0000;
+}*/
+
+input[type=range]::-webkit-slider-thumb {
+    /*滑块样式*/
+    -webkit-appearance: none;
+    width: 2.4em;
+    height: 2em;
+    margin-top: -0.8em;
+    background: url(../images/task6/slider.png) no-repeat center right;
+    background-size: contain;
+}
+
+input[type=range]::-moz-range-track {
+    /*火狐滚动条样式*/
+    width:100%;
+    height:0.3em;
+    cursor: pointer;
+    background: #fcc671;
+}
+input[type=range]::-moz-range-thumb {
+    /*火狐滑块样式*/
+    -moz-appearance: none;
+    width: 4em;
+    height: 2em;
+    margin-top: -0.8em;
+    background: url(../images/task6/slider.png) no-repeat;
+    background-size: contain;
+    border:none;
+}
+input[type=range]::-ms-track {
+    /*IE滚动条样式*/
+    width: 100%;
+    height:0.3em;
+    cursor: pointer;
+    background: transparent;
+    border-color:transparent;
+    border-width:5em 0;
+    color: transparent;
+    margin-top:2em;
+}
+input[type=range]::-ms-fill-lower {
+    /*滑块已划过*/
+    background: #f5c97b;
+}
+
+input[type=range]::-ms-fill-upper {
+    /*滑块未划过*/
+    background: #ffe6be;
+}
+
+input[type=range]::-ms-thumb {
+    /*IE滑块样式*/
+    width: 6em;
+    height: 5em;
+    margin-top:1.6em;
+    background: url(../images/task6/slider.png) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    border:none;
+}
+input[type=range]:focus::-ms-fill-lower {
+    /*滑块已划过*/
+    background: #f5c97b;
+}
+input[type=range]:focus::-ms-fill-upper {
+    /*滑块未划过*/
+    background: #ffe6be;
+}
+.footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background: #fab344;
+    padding:2em 0;
+}
+.footer a{
+    display:block;
+    width:100%;
+    color:#fff;
+    font-size:3.6em;
+    text-align:center;
+}
+@media (max-width: 768px){
+    html,body{
+        font-size:62.5%;
+    }
+}
+@media (min-width: 769px){
+    html,body{
+        font-size:70%;
+    }
+}
+
+@media (max-width: 480px){
+    html,body{
+        font-size:58%;
+    }
+}
+@media (max-width: 380px){
+    html,body{
+        font-size:54%;
+    }
+}
