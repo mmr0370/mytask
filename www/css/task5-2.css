@@ -9,7 +9,13 @@ body{
     min-height:100%;
     padding-bottom:10em;
 }
-.header {
+.header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+}
+.headerWrap {
     background: #5fc0cd;
     margin: 0 auto;
     padding: 1.3em 1em;
@@ -49,6 +55,7 @@ body{
 }
 .content{
     margin:auto;
+    margin-top:5.4em;
     width:100%;
 }
 .choice{

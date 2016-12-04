@@ -10,6 +10,12 @@ body{
     padding-bottom: 15em;
 }
 .header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+}
+.headerWrap{
     background:#5fc0cd;
     margin:0 auto;
     height:6em;
@@ -37,6 +43,7 @@ body{
     text-align:center;
 }
 .banner{
+    margin-top:5.9em;
     width:100%;
     height:18em;
     background:url(../images/task5/banner1.png) no-repeat top center;
@@ -44,33 +51,39 @@ body{
     text-align:center;
     padding:0 5%;
 }
-.banner .info{
-    width:100%;
-    position:relative;
-    height:18em;
+.banner .info {
+    width: 80%;
+    position: relative;
+    height: 18em;
+    margin: 0 auto;
+    padding: 4em 0;
 }
 .banner .info .imgBox{
-    position:absolute;
-    left:0;
-    top:4em;
-    width:10em;
-    height:10em;
-    border-radius:50%;
-    background:#fff;
-    overflow: hidden;
+    float:left;
+    width:45%;
+
 }
-.banner .info .imgBox span {
+.banner .info .imgBox .leftImg {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 8em;
+    height: 8em;
+    border-radius:4em;
+    background: #fff;
+    overflow: hidden;
+
+}
+.banner .info .imgBox .leftImg span{
+    display: block;
+    width:100%;
+    height:100%;
     background: url(../images/task5/headPic.png) no-repeat center 2em;
     background-size: contain;
 }
 .banner .introduce{
-    position:absolute;
-    left:12em;
-    top:5.5em;
-    width:20em;
+    float:left;
+    padding-top:2em;
+    width:55%;
+    height:8em;
     text-align: left;
 }
 
@@ -182,6 +195,7 @@ body{
     bottom: 0em;
     padding: 1.6em 5%;
     border-top: 1px solid #e1e5e7;
+    background: #fff;
 }
 
 
@@ -195,6 +209,7 @@ body{
     border-radius:0.4em;
     color:#5fc0cd;
     font-size:2.6em;
+    background: #fff;
 }
 .bottom .btn.active{
     background:#5fc0cd;
@@ -204,12 +219,19 @@ body{
     html,body{
         font-size:62.5%;
     }
+
 }
-@media (min-width: 769px){
-    html,body{
-        font-size:80%;
+@media (min-width:1000px){
+    .banner{
+        height:28em;
     }
 }
+@media (min-width:1600px){
+    .banner{
+        height:34em;
+    }
+}
+
 
 @media (max-width: 480px){
     html,body{

@@ -1,6 +1,7 @@
 @charset "utf-8";
 body{
     background:#eff0f4;
+    width:100%;
 }
 .container{
     margin:auto;
@@ -10,20 +11,20 @@ body{
 .header{
     background:#22292c;
     margin:0 auto;
-    padding:1.6em 4%;
+    padding:1.2em 4%;
 }
 .header .headerLeft{
     float:left;
     width:30%;
     height:2em;
-    line-height: 2.6em;
+    line-height: 2em;
     font-size:2.6em;
     color:#f8f6f5;
 }
-.header .headerLeft img{
+/*.header .headerLeft img{
     margin-top:1em;
 
-}
+}*/
 .header .headerRight{
     float:right;
     width:30%;
@@ -49,32 +50,27 @@ body{
     margin-top:16px;
     width:100%;
     padding:1.2em 8%;
-/*    height:90px;
-    line-height:90px;*/
     background:#ffffff;
 }
 .importBox .mobileIcon,.importBox .lockedIcon{
     display:inline-block;
     width:16%;
-/*    height:50px;
-    line-height:50px;*/
     border-right:1px solid #ccc;
     vertical-align: middle;
 }
 .importBox .mobileIcon span,.importBox .lockedIcon span{
     display:inline-block;
     width:2.6em;
-    height:3.6em;
+    height:3.2em;
 }
-.importBox .mobileIcon span{background:url(../images/task4/iphone.png) no-repeat left center;}
-.importBox .lockedIcon span{background:url(../images/task4/locked.png) no-repeat left center;}
+.importBox .mobileIcon span{background:url(../images/task4/iphone.png) no-repeat left center;background-size: contain;}
+.importBox .lockedIcon span{background:url(../images/task4/locked.png) no-repeat left center;background-size: contain;}
 .importBox .text {
     width: 64%;
     height: 2em;
     line-height: 2em;
     border: none;
     text-indent: 10px;
-    /* vertical-align: top; */
     font-size: 2.25em;
     color: #e1e5e7;
 }
@@ -102,7 +98,6 @@ body{
     html,body{
         font-size:75%;
     }
-
 
 }
 @media (min-width: 769px){
