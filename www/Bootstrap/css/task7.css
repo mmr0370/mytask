@@ -1,0 +1,332 @@
+/*reset*/
+@charset "utf-8";
+html,body,h1,h2,h3,ul,li,dl,dd,dt,img,a,p,span,div{
+    margin:0; padding:0;
+    list-style-type:none;
+    font-weight:normal;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+    color: #515151;
+    font:62.5% "Microsoft YaHei","微软雅黑",tahoma,"黑体";
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a{ text-decoration:none; outline:none;}
+em,i,b{ font-style:normal;}
+.fl{ float:left;}
+.fr{ float:right;}
+.clear { zoom:1; }
+.clear:after { content:''; display:block; clear:both; }
+input{border: none;outline:none;}
+textarea{border:none;outline:none;resize:none;}
+.borderNone{
+    border:none!important;
+}
+.marginNone{
+    margin:0!important;
+}
+
+/*style*/
+
+.indexPage{
+    background: #f0f0f0;
+}
+.bluePage{
+    background:#29bde0;
+}
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:2;
+    width:100%;
+    padding:0.8em 0;
+    background:#29bde0;
+    text-align: center;
+    font-size:2.6em;
+    color:#fff;
+    border-bottom: 1px solid #f1f1f1;
+}
+.header .headerL img{
+    width:1.2em;
+    height:1em;
+    vertical-align: top;
+}
+.header .headerR img{
+    width:1.2em;
+    height:1em;
+    vertical-align: top;
+}
+
+
+
+.content{
+    margin-top: 7em;
+    margin-bottom: 5em;
+}
+.recommendBox{
+
+}
+.recommendBox a{
+    position:relative;
+    padding:1em 0;
+    display:block;
+    font-size:3em;
+    color:#9a9a9a;
+    text-decoration: none;
+    border:1px solid #c9c9c9;
+    background:#ffffff;
+}
+.recommendBox a img{
+    position:absolute;
+    top:0.8em;
+    right:2%;
+    width:1em;
+    height:1.6em;
+}
+.versionBox{
+    margin-top:2em;
+}
+.versionWrap{
+    background:#fff;
+    border:1px solid #c9c9c9;
+}
+.versionWrap h2{
+    padding:0.6em 0;
+    border-bottom: 1px solid #fde1ae;
+    color:#fbb435;
+}
+.version{
+    position:relative;
+}
+.version .iconNext2{
+    position:absolute;
+    right:3%;
+    top:50%;
+    margin-top:-4em;
+    width:1.6em;
+    height:3.2em;
+}
+.versionDetail{
+    width:76%;
+    margin:0 auto;
+}
+.versionDetail a{
+    display:block;
+    margin-top:1em;
+    font-size:3em;
+    padding:1.4em 0;
+    color:#fff;
+    text-decoration: none;
+    background: #69d1e9;
+}
+.versionDetail p{
+    font-size:2.2em;
+    margin-top:1.2em;
+}
+.versionBtn{
+    width:7.2em;
+    margin:1.2em auto;
+}
+.versionBtn li{
+    float:left;
+    width:1em;
+    height:1em;
+    border-radius: 0.5em;
+    margin:0 0.4em;
+    background:#f0f0f0;
+}
+.versionBtn li.active{
+    background:#69d1e9;
+}
+/*task7-2------style----------*/
+.tips{
+    width:100%;
+    background: #b9e9f5;
+    font-size:2em;
+    line-height:1.4em;
+    color:#464646;
+    padding:0.6em 0;
+    position:relative;
+    margin-bottom:4.6em;
+}
+.tipsR{
+    line-height:2.4em;
+}
+.tipsR img{
+    width:2em;
+    height:2em;
+    vertical-align: middle;
+}
+.tipsB{
+    position:absolute;
+    left:8%;
+    bottom:-2.8em;
+}
+.tipsB p{
+    color:#fff;
+    margin-top:0.8em;
+}
+.blueTrilateral{
+    width:0;
+    height:0;
+    border-left: 0.4em solid transparent;
+    border-right: 0.4em solid transparent;
+    border-top: 0.8em solid #b9e9f5;
+}
+.playerList .row{
+    margin-top:1em;
+}
+.playerList .character{
+    width:6.4em;
+    height:6.4em;
+    border:2px solid #fff;
+    margin:auto;
+}
+.playerList .character h2{
+    width:100%;
+    height:3em;
+    font-size:2.8em;
+    text-align: center;
+    background:#f5c97b;
+    line-height: 3em;
+}
+.playerList .character h2.mark{
+   background:#f4a00b;
+}
+.playerList .character p{
+    width:100%;
+    height:1.7em;
+    text-align: center;
+    background:#83b09a;
+    line-height: 1.7em;
+    color:#fff;
+}
+.resultBox{
+    width:80%;
+    margin:0 auto;
+}
+.resultBox .victoryPic{
+    display:block;
+    width:60%;
+    height:auto;
+    margin:0 auto;
+}
+.resultBox p{
+    margin-top:1.4em;
+    font-size:4em;
+    color:#ffc865;
+}
+.resultBox .info{
+    margin-top:2.6em;
+    color:#fff;
+}
+.resultBox .resultTitle,.resultBox .resultList,.resultBox .resultWord{
+    font-size:3em;
+    line-height:1.4em;
+}
+.gameDetail{
+    width:100%;
+    background:#fff;
+    border-bottom: 1px solid #f1f1f1;
+}
+.resultDetail{
+    width:80%;
+    margin:0 auto;
+}
+.dayDetail{
+    font-size:3em;
+    line-height:1.8em;
+    color:#a6a6a6;
+    padding:0.8em 0;
+}
+.dayDetail .date{
+    font-size:1.2em;
+    color:#333;
+}
+.dayDetail .time{
+    font-size:0.8em;
+}
+.footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    z-index:2;
+    width:100%;
+    background:#29bde0;
+    text-align: center;
+    padding:0.6em 0;
+    border-top: 1px solid #e2eaec;
+}
+.footer .footerL img,.footer .footerR img{
+    width:2.4em;
+    height:4em;
+    vertical-align: middle;
+}
+
+.footer .footerM img{
+    width:5em;
+    height:4em;
+    vertical-align: middle;
+}
+.footerYellowBtn{
+    display:block;
+    width:80%;
+    background: #fbb435;
+    text-align:center;
+    font-size:2.6em;
+    margin:0 auto;
+    padding:0.6em;
+    color:#fff;
+}
+.footerBtn{
+    display:block;
+    width:100%;
+    color:#fff;
+    padding:1em 0;
+    border-radius:6px;
+}
+.footerRedBtn{
+    background:#f66f6f;
+}
+.footerYeBtn{
+    background:#fbb435;
+}
+.footerLight{
+    background:#99dff0;
+    filter:alpha(opacity=80);
+    -moz-opacity:0.8;
+    opacity:0.8;
+}
+@media (max-width: 768px){
+    html,body{
+        font-size:62.5%;
+    }
+}
+@media (min-width: 769px){
+    html,body{
+        font-size:70%;
+    }
+    .content{
+        margin-top:8em;
+    }
+}
+
+@media (max-width: 480px){
+    html,body{
+        font-size:58%;
+    }
+}
+@media (max-width: 380px){
+    html,body{
+        font-size:54%;
+    }
+}
