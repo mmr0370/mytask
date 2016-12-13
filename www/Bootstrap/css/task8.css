@@ -1,0 +1,1283 @@
+/*reset*/
+@charset "utf-8";
+html,body,h1,h2,h3,ul,li,dl,dd,dt,img,a,p,span,div{
+    margin:0; padding:0;
+    list-style-type:none;
+    font-weight:normal;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+    color: #515151;
+    font:62.5% "Microsoft YaHei","微软雅黑",tahoma,"黑体";
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a{ text-decoration:none; outline:none;}
+em,i,b{ font-style:normal;}
+.fl{ float:left;}
+.fr{ float:right;}
+.clear { zoom:1; }
+.clear:after { content:''; display:block; clear:both; }
+input{border: none;outline:none;}
+textarea{border:none;outline:none;resize:none;}
+.borderNone{
+    border:none!important;
+}
+.marginNone{
+    margin:0!important;
+}
+/*style*/
+.index{
+    background:#fafafa;
+}
+.header{
+    background: #fff;
+    padding:10px 0;
+}
+.header-left p{
+    height:25px;
+    line-height:25px;
+    font-size:14px;
+    color:#29b078;
+}
+.header-right ul{
+
+}
+.header-right li{
+    float:right;
+    width:25px;
+    height:25px;
+    margin:0 6px;
+}
+.header-right li img{
+    vertical-align: top;
+}
+nav{
+    background:#29b078!important;
+    border-radius:0!important;
+}
+.navbar {
+    margin:0 auto;
+    border-bottom: none;
+}
+.logoPic{
+    display:block;
+    padding:10px 0;
+}
+.logoPic img{
+    width:92px;
+    height:48px;
+}
+.navBarList{
+    height:48px;
+    line-height: 48px;
+    padding: 10px 0;
+}
+.navbar .navBarList li a{
+    line-height:26px;
+    color:#ffffff;
+}
+.navbar .navBarList li a:hover{
+    color:#ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+.navBarList li.on a{
+    display:block;
+    border-bottom: 2px solid #ffffff;
+}
+.navbar-default .navbar-toggle{
+    background:none;
+    border: none;
+    color:#fff;
+}
+.iconbar{
+    background: #fff!important;
+}
+.navbar-toggle{
+    margin-top:10px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.index .banner{
+    background: url(../../images/task7/banner1.png);
+    width:100%;
+    height:600px;
+}
+
+.index .banner .container ul li.active{
+    background: #fff;
+}
+.module{
+    margin-top:40px;
+    margin-bottom:60px;
+}
+.module h2{
+    text-align: center;
+    margin-bottom:60px;
+}
+.StudentShow{
+    margin-bottom:60px;
+}
+.companyList div{
+    padding: 25px 0;
+    -moz-box-shadow:4px 7px 12px #ccc;
+    -webkit-box-shadow:4px 7px 12px #ccc;
+    box-shadow:4px 7px 12px #ccc;
+
+}
+.companyList img{
+    display:block;
+    margin:0 auto;
+}
+.companyList{
+    background: #fff;
+    margin-bottom: 60px;
+}
+.blogRoll{
+    padding:30px 0;
+    background: #fff;
+}
+.blogRoll h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.blogRoll .list{
+    line-height: 20px;
+}
+.blogRoll .list a{
+    text-indent:10px;
+    display: block;
+    font-size: 14px;
+    color:#999999;
+    text-decoration:none;
+    background:url("../../images/task7/circleSmall.png") no-repeat left center;
+    line-height: 20px;
+}
+.blogRoll .list a:hover{
+    border-bottom: 1px solid #26a26f;
+    line-height: 19px;
+}
+.footer{
+    background: #26a26f;
+    padding-top: 30px;
+}
+.footer h3{
+    font-size: 16px;
+    line-height:18px;
+    color:#fff;
+}
+.footer p{
+    font-size: 14px;
+    color:#fff;
+}
+.footer p span{
+    margin:0 4px;
+}
+.footer p a{
+    display: inline-block;
+    font-size: 14px;
+    color:#fff;
+}
+.footer p a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+.footerL p{
+    margin-top:60px;
+}
+.footerM p{
+    margin-top:20px;
+}
+.footer .exp{
+    border-top:1px solid #32c086;
+    font-size: 12px;
+    color:#fff;
+    text-align: center;
+    height:20px;
+    line-height: 20px;
+}
+/*cooperation*/
+.Cooperation{
+    background:#fafafa;
+}
+.main{
+    margin-bottom:100px;
+}
+.navPath{
+    height:80px;
+    line-height:80px;
+    border-bottom: 1px solid #d0d6d9;
+}
+.navPath a{
+    color:#333333;
+}
+.navPath a.on{
+    color:#29b078;
+}
+.Cooperation .tabDirection{
+    padding:20px;
+    font-size: 14px;
+    border-bottom: 1px solid #edf1f2;
+}
+.Cooperation .tabDirection p{
+    display: inline-block;
+    color: #999999;
+    vertical-align: top;
+}
+.Cooperation .tabDirection ul{
+    display: inline-block;
+    color: #333333;
+    vertical-align: top;
+}
+.Cooperation .tabDirection li{
+    float:left;
+    width:70px;
+}
+.Cooperation .tabDirection li a{
+    color:#333;
+    padding:0 4px;
+}
+.Cooperation .tabDirection li a.on{
+    background:#29b078;
+    color:#fff;
+}
+.Cooperation .tabContentItem{
+margin-top:50px;
+}
+.Cooperation .tabContentItem .wrap{
+    background:#fff;
+    border: 1px solid #eeeded;
+}
+.Cooperation .tabContentTitle{
+    font-size: 16px;
+    color:#333;
+    padding:30px 0;
+    border-bottom: 1px solid #edf1f2;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.Cooperation .tabTop{
+    margin-top:50px;
+}
+.Cooperation .tabTop .pic{
+    width:34%;
+    margin-right:2%;
+    overflow: hidden;
+}
+.Cooperation .tabTop .pic img{
+    width:140px;
+    height:140px;
+}
+.Cooperation .tabTop .info{
+    width:63%;
+}
+.Cooperation .tabTop .info h3{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+    margin-top:16px;
+}
+.Cooperation .tabTop .info p{
+    color: #333333;
+    font-size: 14px;
+    margin-top:16px;
+}
+.Cooperation .tabBottom .level{
+    width:100%;
+    border-top: 1px solid #edf1f2;
+    font-size: 12px;
+    color:#999;
+}
+.Cooperation .tabBottom .level span{
+    margin:0 2px;
+    vertical-align: top;
+}
+.Cooperation .tabBottom .levelL{
+    width:50%;
+    padding:16px 8px;
+    border-right: 1px solid #edf1f2;
+}
+.Cooperation .tabBottom .level .text{
+    font-size: 12px;
+    color:#333;
+    margin:0;
+    margin-left:8px;
+}
+.Cooperation .tabBottom .level .text .red{
+    display: inline;
+    margin:0;
+    color:#f01400;
+}
+.Cooperation .tabBottom .levelR{
+    width:50%;
+    padding:16px 8px;
+}
+.Cooperation .tabBottom .Salary{
+    width:100%;
+    border-top: 1px solid #edf1f2;
+    font-size: 12px;
+    color:#999;
+}
+.Cooperation .tabBottom .SalaryL{
+    width:40%;
+    text-align: center;
+    border-right: 1px solid #edf1f2;
+    height:96px;
+    line-height:96px;
+}
+.Cooperation .tabBottom .SalaryR{
+    padding-left: 20px;
+    padding-right:14px;
+    margin:0;
+    width:60%;
+}
+.Cooperation .tabBottom .SalaryR p{
+    height:32px;
+    line-height:32px;
+    color:#333;
+}
+.Cooperation .tabBottom .peopleNum{
+    border-top: 1px solid #edf1f2;
+    font-size:14px;
+    color:#333;
+    padding:16px 12px;
+}
+.Cooperation .tabBottom .peopleNum span{
+    color:#f01400;
+}
+.Cooperation .tabBottom .tips{
+    border-top: 1px solid #edf1f2;
+    font-size: 12px;
+    color:#999;
+    padding:16px 12px;
+}
+/*aboutUs*/
+.aboutUs{
+    background: #fafafa;
+}
+.navPath {
+    border-bottom: none;
+}
+
+.aboutUs .banner .container{
+    height:100%;
+}
+.aboutUs .banner .bannerImg{
+    width:100%;
+    height:100%;
+    background: url("../../images/task7/bannerIndex.png") no-repeat center top;
+    background-size: contain;
+}
+.aboutUs .tabBox{
+
+}
+.aboutUs .tabBox .tabNav{
+
+}
+.aboutUs .tabBox .tabNav .wrap{
+    background:#fff;
+    border: 1px solid #ededed;
+}
+.aboutUs .tabBox .tabNav h2{
+    text-align: center;
+    font-size: 16px;
+    font-weight:bold;
+    color:#333;
+    height:60px;
+    line-height:60px;
+    border-bottom: 1px solid #ededed;
+}
+.aboutUs .tabBox .tabNav ul{
+    width:100px;
+    margin:auto;
+    margin-top:20px;
+}
+.aboutUs .tabBox .tabNav ul li{}
+.aboutUs .tabBox .tabNav ul li a{
+    display:block;
+    color:#29b078;
+    line-height:50px;
+}
+.aboutUs .tabBox .tabNav ul li a span.circle{
+    display:inline-block ;
+    width:10px;
+    height:10px;
+    border-radius:5px;
+    border: 1px solid #f9a372;
+    margin-right:10px;
+    background:#fff;
+}
+.aboutUs .tabBox .tabNav ul li a.on{
+    color:#f9a372;
+}
+.aboutUs .tabBox .tabNav ul li a.on span.circle{
+    display:inline-block ;
+    width:10px;
+    height:10px;
+    border-radius:5px;
+    border: 1px solid #f9a372;
+    margin-right:10px;
+    background:#f9a372;
+}
+.aboutUs .tabBox .tabContent{
+
+}
+.aboutUs .tabBox .tabContent .wrap{
+    background:#fff;
+    border: 1px solid #ededed;
+    padding:0 5% 100px;
+}
+.aboutUs .tabBox .tabContent .wrap p{
+    color:#999;
+    font-size:14px;
+    margin-top:20px;
+    text-indent:28px;
+    line-height:30px;
+}
+.aboutUs .tabBox .tabContent .titleL{
+    padding:45px 0;
+    width:30%;
+}
+.aboutUs .tabBox .tabContent .titleL img{
+    display:block;
+    width:138px;
+    margin:auto;
+
+}
+.aboutUs .tabBox .tabContent .titleR{
+    width:70%;
+}
+.aboutUs .tabBox .tabContent .titleR p{
+text-indent: 0;
+}
+@media (max-width:767px) {
+    .col-xs-hide{
+        display: none;
+    }
+    .logoPic{
+        margin-left: 15px;
+    }
+    .index .banner{
+        height:160px;
+    }
+    .index .banner .container{
+        padding-top:50px;
+    }
+    .index .banner .container p{
+        font-size:14px;
+        color:#fff;
+        text-align: center;
+        line-height:24px;
+    }
+    .index .banner .container h2{
+        font-size:16px;
+        font-weight:bold;
+        color:#fff;
+        text-align: center;
+        line-height:30px;
+    }
+    .index .banner .container h2 span{
+        font-size:18px;
+    }
+    .index .banner .container ul{
+        width:42px;
+        margin:0 auto;
+        margin-top:30px;
+    }
+    .index .banner .container ul li{
+        float:left;
+        width:8px;
+        height:8px;
+        margin:0 2px;
+        border-radius:4px;
+
+        border:1px solid #fff;
+    }
+    .advantage{
+        margin-top:40px;
+        margin-bottom:20px;
+    }
+    .listWrapL{
+        width:100%;
+    }
+    .listWrapR{
+        width:100%;
+
+    }
+    .listWrapL .item{
+        float:left;
+        width:100%;
+    }
+    .listWrapL .itemWrap{
+        width:90%;
+        margin:auto;
+    }
+    .listWrapL .item .pic{
+        width:100%;
+        height:68px;
+    }
+    .listWrapL .efficient .pic{
+        background: url(../../images/task7/rocket.png) no-repeat center bottom;
+    }
+    .listWrapL .standard .pic{
+        background: url(../../images/task7/archive.png) no-repeat center bottom;
+    }
+    .listWrapL .connection .pic{
+        background: url(../../images/task7/Shape.png) no-repeat center bottom;
+    }
+    .listWrapL .item h2{
+        margin-top: 20px;
+        text-align: center;
+        font-size:16px;
+        color:#333333;
+        font-weight:bold;
+    }
+    .listWrapL .item p{
+        text-align: center;
+        margin-top: 20px;
+        font-size:14px;
+        color:#999999;
+        line-height:20px;
+    }
+    .listWrapR .info{
+        width:150px;
+        margin:0 auto;
+        margin-top:36px;
+        margin-bottom:66px;
+    }
+    .listWrapR .info dl{
+        margin-top:32px;
+    }
+    .listWrapR .info dt{
+        font-size:16px;
+        color:#26a26f;
+        text-indent: 18px;
+        background: url("../../images/task7/userGreen.png") no-repeat left center;
+        line-height:26px;
+    }
+    .listWrapR .info dd{
+        font-size: 14px;
+        color: #999999;
+        line-height:26px;
+    }
+    .module{
+        margin-top:20px;
+    }
+    .module h2{
+        text-align: center;
+        margin-bottom:20px;
+    }
+    .module .step{
+        margin-bottom:0;
+    }
+
+    .module .step img{
+        margin-top:15px;
+        display: inline-block;
+    }
+    .module .labelCircle{
+        display: inline-block;
+        width:20px;
+        height:20px;
+        margin:10px auto;
+        margin-right:10px;
+        border-radius: 10px;
+        line-height:20px;
+        text-align: center;
+        font-size:14px;
+        color:#29b078;
+        background:#fff;
+        border: 1px solid #ecebeb;
+        vertical-align: middle;
+    }
+    .module .moreHeight{
+        margin-top:20px;
+    }
+    .module .labelText{
+        display: inline-block;
+        width:190px;
+        font-size:14px;
+        line-height:20px;
+        color:#999;
+        vertical-align: middle;
+    }
+    .module .labelTextR{
+        width:190px;
+    }
+    .StudentShow{
+
+    }
+    .StudentShow .item{
+        float: left;
+        width:90%;
+        background: #fff;
+        border-radius: 4px;
+        margin-left: 5%!important;
+        margin-right: 5%!important;
+        margin-top: 30px!important;
+    }
+    .StudentShow .item h3{
+        font-size:16px;
+        color:#333;
+        font-weight: 600;
+        text-align: center;
+    }
+    .StudentShow .item P{
+        width:90%;
+        margin:0 auto;
+        margin-top:20px;
+        font-size: 14px;
+        color:#999999;
+        line-height:20px;
+    }
+    .StudentShow .item .pic{
+        margin:20px auto 20px;
+        width:110px;
+        height:110px;
+        border-radius: 55px;
+        overflow: hidden;
+        background: url("../../images/task7/1.png") no-repeat center top;
+        background-size: cover;
+    }
+    .footer{
+        background: #26a26f;
+        padding-top: 30px;
+    }
+    .footer h3{
+        font-size: 16px;
+        line-height:18px;
+        color:#fff;
+        text-align: center;
+    }
+    .footer p{
+        font-size: 14px;
+        color:#fff;
+        text-align: center;
+    }
+    .footer p span{
+        margin:0 4px;
+    }
+    .footer p a{
+        display: inline-block;
+        font-size: 14px;
+        color:#fff;
+        text-align: left;
+    }
+    .footer p a:hover{
+        border-bottom: 1px solid #fff;
+    }
+
+    .footerL p{
+        margin-top:10px;
+    }
+    .footerM,.footerR{
+       margin-top:30px;
+    }
+    .footerM p{
+        width:232px;
+        margin:0 auto;
+        margin-top:10px;
+        text-align: left;
+    }
+    .footerM p a{
+        margin:0 16px;
+    }
+    .footerR img{
+        display: block;
+        width: 100px;
+        margin:0 auto;
+    }
+    .footer .exp{
+        border-top:1px solid #32c086;
+        font-size: 10px;
+        color:#fff;
+        text-align: center;
+        height:20px;
+        line-height: 20px;
+    }
+    .Cooperation .navPath{
+        height:50px;
+        line-height:50px;
+    }
+    .Cooperation .tabDirection{
+        padding:10px;
+    }
+    .Cooperation .tabContentTitle {
+        padding: 20px 0;
+    }
+    .Cooperation .tabContentItem {
+        margin-top: 30px;
+    }
+    .Cooperation .tabTop {
+        margin-top: 30px;
+    }
+    .aboutUs .banner{
+        height:60px;
+        background:#f1a750;
+    }
+    .aboutUs .tabBox .tabContent .titleL{
+        padding:20px 0 0;
+        width:100%;
+    }
+    .aboutUs .tabBox .tabContent .titleR{
+        width:100%;
+    }
+
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .index .banner{
+        height:300px;
+    }
+    .index .banner .container{
+        padding-top:100px;
+    }
+    .index .banner .container p{
+        font-size:18px;
+        color:#fff;
+        text-align: center;
+        line-height:30px;
+    }
+    .index .banner .container h2{
+        font-size:22px;
+        font-weight:bold;
+        color:#fff;
+        text-align: center;
+        line-height:36px;
+    }
+    .index .banner .container h2 span{
+        font-size:18px;
+    }
+    .index .banner .container ul{
+        width:42px;
+        margin:0 auto;
+        margin-top:50px;
+    }
+    .index .banner .container ul li{
+        float:left;
+        width:10px;
+        height:10px;
+        margin:0 2px;
+        border-radius:4px;
+        border:1px solid #fff;
+    }
+    .advantage{
+        margin-top:60px;
+        margin-bottom:30px;
+    }
+    .listWrapL{
+        width:65%;
+        border-right: 1px dashed #dedede;
+    }
+    .listWrapR{
+        width:35%;
+
+    }
+    .listWrapL .item{
+        float:left;
+        width:100%;
+    }
+    .listWrapL .itemWrap{
+        width:90%;
+        margin:auto;
+    }
+    .listWrapL .item .pic{
+        width:100%;
+        height:68px;
+    }
+    .listWrapL .efficient .pic{
+        background: url(../../images/task7/rocket.png) no-repeat center bottom;
+    }
+    .listWrapL .standard .pic{
+        background: url(../../images/task7/archive.png) no-repeat center bottom;
+    }
+    .listWrapL .connection .pic{
+        background: url(../../images/task7/Shape.png) no-repeat center bottom;
+    }
+    .listWrapL .item h2{
+        margin-top: 30px;
+        text-align: center;
+        font-size:18px;
+        color:#333333;
+        font-weight:bold;
+    }
+    .listWrapL .item p{
+        text-align: left;
+        margin-top: 30px;
+        font-size:18px;
+        color:#999999;
+        line-height:28px;
+    }
+    .listWrapR .info{
+        width:150px;
+        margin:0 auto;
+        margin-top:36px;
+        margin-bottom:66px;
+    }
+    .listWrapR .info dl{
+        margin-top:32px;
+    }
+    .listWrapR .info dt{
+        font-size:18px;
+        color:#26a26f;
+        text-indent: 18px;
+        background: url("../../images/task7/userGreen.png") no-repeat left center;
+        line-height:26px;
+    }
+    .listWrapR .info dd{
+        font-size: 18px;
+        color: #999999;
+        line-height:26px;
+    }
+    .module .step{
+        margin-bottom:0;
+    }
+    .module .sm-stepWrap{
+        padding-bottom:60px;
+    }
+    .module .step img{
+        margin-top:15px;
+        display: inline-block;
+    }
+    .module .labelCircle{
+        display: inline-block;
+        width:20px;
+        height:20px;
+        margin:10px auto;
+        margin-right:10px;
+        border-radius: 10px;
+        line-height:20px;
+        text-align: center;
+        font-size:14px;
+        color:#29b078;
+        background:#fff;
+        border: 1px solid #ecebeb;
+        vertical-align: middle;
+    }
+    .module .moreHeight{
+        margin-top:20px;
+    }
+    .module .labelText{
+        display: inline-block;
+        width:190px;
+        font-size:14px;
+        line-height:20px;
+        color:#999;
+        vertical-align: middle;
+    }
+    .module .labelTextR{
+        width:190px;
+    }
+    .StudentShow{
+
+    }
+    .StudentShow .item{
+        float: left;
+        width:46%;
+        background: #fff;
+        border-radius: 4px;
+        margin-right: 4%;
+        margin-top: 50px!important;
+    }
+    .StudentShow .item h3{
+        font-size:16px;
+        color:#333;
+        font-weight: 600;
+        text-align: center;
+    }
+    .StudentShow .item P{
+        width:90%;
+        margin:0 auto;
+        margin-top:20px;
+        font-size: 14px;
+        color:#999999;
+        line-height:20px;
+    }
+    .StudentShow .item .pic{
+        margin:20px auto 20px;
+        width:110px;
+        height:110px;
+        border-radius: 55px;
+        overflow: hidden;
+        background: url("../../images/task7/1.png") no-repeat center top;
+        background-size: cover;
+    }
+    .aboutUs .banner{
+        height:150px;
+        background: #f1a750;
+    }
+    .aboutUs .tabBox .tabContent .titleL{
+        padding:90px 0;
+        width:40%;
+    }
+    .aboutUs .tabBox .tabContent .titleR{
+        width:60%;
+    }
+
+
+}
+@media (min-width: 992px)and (max-width: 1119px) {
+    .index .banner{
+        height:400px;
+    }
+    .index .banner .container{
+        padding-top:160px;
+    }
+    .index .banner .container p{
+        font-size:22px;
+        color:#fff;
+        text-align: center;
+        line-height:30px;
+    }
+    .index .banner .container h2{
+        font-size:30px;
+        font-weight:bold;
+        color:#fff;
+        text-align: center;
+        line-height:40px;
+    }
+    .index .banner .container h2 span{
+        font-size:32px;
+    }
+    .index .banner .container ul{
+        width:48px;
+        margin:0 auto;
+        margin-top:50px;
+    }
+    .index .banner .container ul li{
+        float:left;
+        width:10px;
+        height:10px;
+        margin:0 3px;
+        border-radius:5px;
+        border:1px solid #fff;
+    }
+    .advantage{
+        margin-top:80px;
+        margin-bottom:40px;
+    }
+    .listWrapL{
+        width:78%;
+    }
+    .listWrapR{
+        width:22%;
+        border-left: 1px dashed #dedede;
+    }
+    .listWrapL .item{
+        float:left;
+        width:33.33%;
+    }
+    .listWrapL .itemWrap{
+        width:90%;
+        margin:auto;
+    }
+    .listWrapL .item .pic{
+        width:100%;
+        height:68px;
+    }
+    .listWrapL .efficient .pic{
+        background: url(../../images/task7/rocket.png) no-repeat center bottom;
+    }
+    .listWrapL .standard .pic{
+        background: url(../../images/task7/archive.png) no-repeat center bottom;
+    }
+    .listWrapL .connection .pic{
+        background: url(../../images/task7/Shape.png) no-repeat center bottom;
+    }
+    .listWrapL .item h2{
+        margin-top: 30px;
+        text-align: center;
+        font-size:18px;
+        color:#333333;
+        font-weight:bold;
+    }
+    .listWrapL .item p{
+        text-align: left;
+        margin-top: 30px;
+        font-size:18px;
+        color:#999999;
+        line-height:28px;
+    }
+    .listWrapR .info{
+        width:150px;
+        margin:0 auto;
+        margin-top:36px;
+        margin-bottom:66px;
+    }
+    .listWrapR .info dl{
+        margin-top:32px;
+    }
+    .listWrapR .info dt{
+        font-size:18px;
+        color:#26a26f;
+        text-indent: 18px;
+        background: url("../../images/task7/userGreen.png") no-repeat left center;
+        line-height:26px;
+    }
+    .listWrapR .info dd{
+        font-size: 18px;
+        color: #999999;
+        line-height:26px;
+    }
+
+    .module .step{
+        margin-bottom: 80px;
+    }
+    .module .step img{
+        margin-top:15px;
+        display: inline-block;
+    }
+    .module .labelCircle{
+        display: inline-block;
+        width:20px;
+        height:20px;
+        margin:10px auto;
+        margin-right:10px;
+        border-radius: 10px;
+        line-height:20px;
+        text-align: center;
+        font-size:14px;
+        color:#29b078;
+        background:#fff;
+        border: 1px solid #ecebeb;
+        vertical-align: middle;
+    }
+    .module .moreHeight{
+        margin-top:20px;
+    }
+    .module .labelText{
+        display: inline-block;
+        width:100px;
+        font-size:14px;
+        line-height:20px;
+        color:#999;
+        vertical-align: middle;
+    }
+    .module .labelTextR{
+        width:180px;
+    }
+    .StudentShow{
+
+    }
+    .StudentShow .item{
+        float: left;
+        width:22%;
+        background: #fff;
+        border-radius: 4px;
+        margin-right: 4%;
+    }
+    .StudentShow .item h3{
+        font-size:16px;
+        color:#333;
+        font-weight: 600;
+        text-align: center;
+    }
+    .StudentShow .item P{
+        width:90%;
+        margin:0 auto;
+        margin-top:20px;
+        font-size: 14px;
+        color:#999999;
+        line-height:20px;
+    }
+    .StudentShow .item .pic{
+        margin:20px auto 20px;
+        width:110px;
+        height:110px;
+        border-radius: 55px;
+        overflow: hidden;
+        background: url("../../images/task7/1.png") no-repeat center top;
+        background-size: cover;
+    }
+    .aboutUs .banner{
+        height:190px;
+        background: #f1a750;
+    }
+    .aboutUs .tabBox .tabContent .titleL{
+        padding:70px 0;
+        width:30%;
+    }
+}
+@media (min-width: 1200px){
+    .index .banner{
+        height:600px;
+    }
+    .index .banner .container{
+        padding-top:260px;
+    }
+    .index .banner .container p{
+        font-size:40px;
+        color:#fff;
+        text-align: center;
+        line-height:60px;
+    }
+    .index .banner .container h2{
+        font-size:60px;
+        font-weight:bold;
+        color:#fff;
+        text-align: center;
+        line-height:80px;
+    }
+    .index .banner .container h2 span{
+        font-size:62px;
+    }
+    .index .banner .container ul{
+        width:66px;
+        margin:0 auto;
+        margin-top:50px;
+    }
+    .index .banner .container ul li{
+        float:left;
+        width:12px;
+        height:12px;
+        margin:0 5px;
+        border-radius:6px;
+        border:1px solid #fff;
+    }
+    .advantage{
+        margin-top:150px;
+        margin-bottom:60px;
+    }
+    .listWrapL{
+        width:78%;
+    }
+    .listWrapR{
+        width:22%;
+        border-left: 1px dashed #dedede;
+    }
+    .listWrapL .item{
+        float:left;
+        width:33.33%;
+    }
+    .listWrapL .itemWrap{
+        width:90%;
+        margin:auto;
+    }
+    .listWrapL .item .pic{
+        width:100%;
+        height:68px;
+    }
+    .listWrapL .efficient .pic{
+        background: url(../../images/task7/rocket.png) no-repeat center bottom;
+    }
+    .listWrapL .standard .pic{
+        background: url(../../images/task7/archive.png) no-repeat center bottom;
+    }
+    .listWrapL .connection .pic{
+        background: url(../../images/task7/Shape.png) no-repeat center bottom;
+    }
+    .listWrapL .item h2{
+        margin-top: 30px;
+        text-align: center;
+        font-size:18px;
+        color:#333333;
+        font-weight:bold;
+    }
+    .listWrapL .item p{
+        text-align: left;
+        margin-top: 30px;
+        font-size:18px;
+        color:#999999;
+        line-height:28px;
+    }
+    .listWrapR .info{
+        width:150px;
+        margin:0 auto;
+        margin-top:36px;
+        margin-bottom:66px;
+    }
+    .listWrapR .info dl{
+        margin-top:32px;
+    }
+    .listWrapR .info dt{
+        font-size:18px;
+        color:#26a26f;
+        text-indent: 18px;
+        background: url("../../images/task7/userGreen.png") no-repeat left center;
+        line-height:26px;
+    }
+    .listWrapR .info dd{
+        font-size: 18px;
+        color: #999999;
+        line-height:26px;
+    }
+
+    .module .step{
+        margin-bottom: 80px;
+    }
+    .module .step img{
+        margin-top:15px;
+        display: inline-block;
+    }
+    .module .labelCircle{
+        display: inline-block;
+        width:40px;
+        height:40px;
+        margin:10px auto;
+        margin-right:10px;
+        border-radius: 20px;
+        line-height: 40px;
+        text-align: center;
+        font-size:18px;
+        color:#29b078;
+        background:#fff;
+        border: 1px solid #ecebeb;
+        vertical-align: middle;
+    }
+    .module .moreHeight{
+       margin-top:20px;
+    }
+    .module .labelText{
+        display: inline-block;
+        width:110px;
+        font-size:14px;
+        line-height:20px;
+        color:#999;
+        vertical-align: middle;
+    }
+    .module .labelTextR{
+        width:200px;
+    }
+    .StudentShow{
+
+    }
+    .StudentShow .item{
+        float: left;
+        width:22%;
+        background: #fff;
+        border-radius: 4px;
+        margin-right: 4%;
+    }
+    .StudentShow .item h3{
+        font-size:18px;
+        color:#333;
+        font-weight: 600;
+        text-align: center;
+    }
+    .StudentShow .item P{
+        width:90%;
+        margin:0 auto;
+        margin-top:30px;
+        font-size: 16px;
+        color:#999999;
+        line-height:26px;
+    }
+    .StudentShow .item .pic{
+        margin:20px auto 36px;
+        width:110px;
+        height:110px;
+        border-radius: 55px;
+        overflow: hidden;
+        background: url("../../images/task7/1.png") no-repeat center top;
+        background-size: cover;
+    }
+
+}

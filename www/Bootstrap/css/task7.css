@@ -306,6 +306,8 @@ textarea{border:none;outline:none;resize:none;}
     -moz-opacity:0.8;
     opacity:0.8;
 }
+
+
 @media (max-width: 768px){
     html,body{
         font-size:62.5%;
