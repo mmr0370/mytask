@@ -10,7 +10,7 @@ html,body,h1,h2,h3,ul,li,dl,dd,dt,img,a,p,span,div{
     box-sizing: border-box;
 }
 html,body{
-    height:100%;
+  /*  height:100%;*/
     width:100%;
     color: #515151;
     font:62.5% "Microsoft YaHei","微软雅黑",tahoma,"黑体";
@@ -317,6 +317,169 @@ textarea{border:none;outline:none;resize:none;}
     border: 1px solid #cccccc;
     margin:0 8px;
 }
+@media (max-width:767px){
+    .header {
+        background: #1d7ad9;
+        font-size: 12px;
+        color: #fff;
+    }
+    .navRight li {
+        float: right;
+        margin-right:20px;
+    }
+    .navRight li a {
+        display: block;
+        font-size: 12px;
+        color: #333;
+        background: #ffffff;
+        border-radius: 4px;
+        padding:4px 8px;
+        text-decoration: none;
+    }
+    .nav {
+        padding: 18px 0;
+        background: #f9f9f9;
+    }
+    .main .sliderBox .slider {
+        margin-top: 10px;
+        width:100%;
+        padding: 20px 0;
+    }
+    .main .sliderBox .slider li .circle {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 12px;
+        background: #cccccc;
+        position: absolute;
+        margin-left: -10px;
+        left: 50%;
+        top: -10px;
+    }
+    .main .sliderBox .slider li {
+        float: left;
+        width: 25%;
+        height: 10px;
+        position: relative;
+        border-top: 3px solid #cccccc;
+    }
+    .main .sliderBox .slider li.complete {
+        border-top: 3px solid #ff7f02;
+    }
+    .main .sliderBox .slider li p {
+        width: 100%;
+        font-size: 8px;
+        text-align: center;
+        position: absolute;
+        top: 24px;
+    }
+    .main .sliderBox .slider li p span {
+        font-size: 10px;
+        vertical-align: baseline;
+    }
+    .stepBox .tittle {
+        font-size: 16px;
+        color: #333;
+        padding-left: 6px;
+        border-left: 4px solid #1d7ad9;
+        margin-bottom: 14px;
+    }
+    .stepBox .optionBox h3 {
+        font-size: 14px;
+        color: #1d7ad9;
+        padding: 14px;
+        background: #f3f3f3;
+    }
+    .stepBox .optionBox .detailBox .detail{
+        float:left;
+    }
+    .label {
+        display:block;
+        color: #666666;
+        font-size: 12px;
+        font-weight: normal;
+        text-align: left;
+    }
+    .stepBox .optionBox .detailBox .detail {
+        width: 100px;
+        height: 26px;
+        border: 1px solid #e8e8e8;
+        line-height: 26px;
+    }
+    .stepBox .optionBox .detailBox .detail p {
+        display: inline-block;
+        width: 60px;
+        text-align: center;
+        font-size: 10px;
+        color: #999;
+        vertical-align: top;
+    }
+    .stepBox .optionBox .detailBox .detail span {
+        display: inline-block;
+        height: 16px;
+        width: 20px;
+        background: #1d7ad9;
+        margin: 5px 5px 5px 7px;
+        vertical-align: top;
+    }
+    .stepBox .optionBox .detailBox .detail span i {
+        margin-top: 6px;
+        margin-left: 7px;
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+        border-top: 6px solid #fff;
+    }
+    .length input, .width input, .height input {
+        display: inline-block;
+        width:40px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        background: #fff;
+        border: 1px solid #cccccc;
+        margin: 0 4px;
+    }
+    .length, .width, .height {
+        margin-top:10px;
+        display: block;
+        margin-left: 20px;
+    }
+    .footer {
+        padding: 10px 0;
+        background: #f9f9f9;
+    }
+    .footerRWrap{
+        display:block;
+        width:240px;
+        margin:0 auto;
+    }
+    .footerL p{
+        width:100%;
+        text-align: center;
+    }
+    .footerL,.footerM,.footerR{
+        margin-top:20px;
+    }
+    .next {
+        display: block;
+        width: 120px;
+        height: 30px;
+        background: #e15053;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        line-height: 30px;
+        text-decoration: none;
+        margin-top: 50px;
+    }
+}
 @media (min-width: 768px) and (max-width: 991px) {
     .header {
         background: #1d7ad9;
@@ -346,6 +509,21 @@ textarea{border:none;outline:none;resize:none;}
         padding: 20px 0;
     }
 
+    .footer {
+        padding: 10px 0;
+        background: #f9f9f9;
+    }
+    .footerRWrap{
+        display:block;
+        width:240px;
+        margin:0 auto;
+    }
+    .footerL,.footerM,.footerR{
+        margin-top:20px;
+    }
+    .footerL p {
+        text-align: center;
+    }
 }
 @media (min-width: 992px)and (max-width: 1119px) {
     .header {
