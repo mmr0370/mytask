@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  border: none;
+}
+input,
+select,
+textarea {
+  outline: none;
+  border: none;
+  background: none;
+}
+textarea {
+  resize: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background: #eff0f4;
+}
+.container {
+  width: 100%;
+}
+.header {
+  width: 100%;
+  background: #5fc0cd;
+  padding: 14px 0;
+  *zoom: 1;
+}
+.header:before,
+.header:after {
+  display: table;
+  content: "";
+}
+.header:after {
+  clear: both;
+}
+.headerLeft {
+  float: left;
+  display: inline;
+}
+.headerRight {
+  float: right;
+  display: inline;
+}
+.header h1 {
+  float: left;
+  display: inline;
+}
+@media all and (max-width: 767px) {
+  .headerLeft {
+    width: 20%;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .headerRight {
+    width: 20%;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .main {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .header h1 {
+    width: 60%;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .headerImg {
+    display: block;
+    width: 20px;
+    height: 30px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .headerLeft {
+    width: 20%;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .headerRight {
+    width: 20%;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .main {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .header h1 {
+    width: 60%;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .headerImg {
+    display: block;
+    width: 20px;
+    height: 30px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 992px) and (max-width: 1119px) {
+  .header {
+    padding: 20px 0;
+  }
+  .headerLeft {
+    width: 20%;
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .headerRight {
+    width: 20%;
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .main {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .header h1 {
+    width: 60%;
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    padding: 20px 0;
+  }
+  .headerLeft {
+    width: 20%;
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .headerRight {
+    width: 20%;
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .main {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .header h1 {
+    width: 60%;
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+  }
+}
