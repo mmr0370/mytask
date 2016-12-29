@@ -1,0 +1,297 @@
+@charset "utf-8";
+/*
+---------------------------------
+Site: task12
+Author: moran
+Updated: 2016/12/28
+Updated by:moran
+---------------------------------
+*/
+body{
+    background:#29bde0;
+}
+.main{
+    width:90%;
+    margin:0 auto;
+}
+.voteRulerBox{
+   position:relative;
+}
+.voteWrap.clear
+{
+    position:relative;
+    background:#b9e9f5;
+    padding:10px 10px 10px 30px;
+}
+.voteText{
+    font-size: 18px;
+    color:#464646;
+    height:30px;
+    line-height:30px;
+}
+.musicBox{
+
+}
+.playMusic img{
+    display:block;
+    width:30px;
+    height:30px;
+}
+.voteRules{
+    margin-top: 16px;
+    margin-left: 30px;
+    color: #fff;
+    font-size: 14px;
+}
+.musicTriangle{
+    position:absolute;
+    display: block;
+    width:0;
+    height:0;
+    bottom:-12px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 12px solid #b9e9f5;
+}
+.intro{}
+.introForm{padding:0 5%;margin-top:20px;}
+.introForm .cardList{
+    float:left;
+    width:50%;
+}
+.cardBox{
+    position:relative;
+    width:130px;
+    height:150px;
+    background:#f5c97b;
+    border:2px solid #fff;
+    margin:24px auto;
+}
+.cardName{
+    height:126px;
+    line-height:126px;
+    text-align: center;
+    font-size:24px;
+}
+.cardNum{
+    height:20px;
+    line-height:20px;
+    font-size: 16px;
+    color:#fff;
+    text-align: center;
+    background: #83b09a;
+}
+.voteMethod{
+    display: none;
+    position:absolute;
+    width:140px;
+    left:-7px;
+    top:-36px;
+}
+.voteMethod li{
+    float:left;
+    margin-left:5px;
+}
+.voteMethod li img{
+    width:28px;
+    height:28px;
+}
+.content{
+    margin-bottom:100px;
+}
+@media all and (max-width: 767px){
+
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .voteWrap.clear
+    {
+        padding:20px 20px 20px 40px;
+    }
+    .voteText{
+        font-size: 18px;
+        height:30px;
+        line-height:30px;
+    }
+    .playMusic img{
+        width:30px;
+        height:30px;
+    }
+    .voteRules{
+        margin-top: 16px;
+        margin-left: 40px;
+        font-size: 14px;
+    }
+    .musicTriangle{
+        bottom:-12px;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 14px solid #b9e9f5;
+    }
+    .introForm{padding:0 5%;margin-top:20px;}
+    .introForm .cardList{
+        float:left;
+        width:33.33%;
+    }
+    .cardBox{
+        position:relative;
+        width:130px;
+        height:150px;
+        background:#f5c97b;
+        margin:24px auto;
+    }
+    .cardName{
+        height:126px;
+        line-height:126px;
+        font-size:24px;
+    }
+    .cardNum{
+        height:20px;
+        line-height:20px;
+        font-size: 16px;
+    }
+    .voteMethod{
+        width:140px;
+        left:-7px;
+        top:-36px;
+    }
+    .voteMethod li{
+        margin-left:5px;
+    }
+    .voteMethod li img{
+        width:28px;
+        height:28px;
+    }
+    .content{
+        margin-bottom:100px;
+    }
+
+}
+@media (min-width: 992px) and (max-width: 1119px) {
+    .voteWrap.clear
+    {
+        padding:20px 20px 20px 40px;
+    }
+    .voteText{
+        font-size: 18px;
+        height:30px;
+        line-height:30px;
+    }
+    .playMusic img{
+        width:30px;
+        height:30px;
+    }
+    .voteRules{
+        margin-top: 16px;
+        margin-left: 40px;
+        font-size: 14px;
+    }
+    .musicTriangle{
+        bottom:-12px;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 14px solid #b9e9f5;
+    }
+    .introForm{padding:0 5%;margin-top:20px;}
+    .introForm .cardList{
+        width:25%;
+    }
+    .cardBox{
+        position:relative;
+        width:130px;
+        height:150px;
+        border:2px solid #fff;
+        margin:24px auto;
+    }
+    .cardName{
+        height:126px;
+        line-height:126px;
+        font-size:24px;
+    }
+    .cardNum{
+        height:20px;
+        line-height:20px;
+        font-size: 16px;
+
+    }
+    .voteMethod{
+        width:140px;
+        left:-7px;
+        top:-36px;
+    }
+    .voteMethod li{
+        margin-left:5px;
+    }
+    .voteMethod li img{
+        width:28px;
+        height:28px;
+    }
+    .content{
+        margin-bottom:100px;
+    }
+
+}
+@media (min-width: 1200px) {
+
+    .voteWrap.clear
+    {
+        padding:20px 20px 20px 40px;
+    }
+    .voteText{
+        font-size: 18px;
+        height:30px;
+        line-height:30px;
+    }
+    .playMusic img{
+        width:30px;
+        height:30px;
+    }
+    .voteRules{
+        margin-top: 16px;
+        margin-left: 40px;
+        font-size: 14px;
+    }
+    .musicTriangle{
+        bottom:-12px;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 14px solid #b9e9f5;
+    }
+    .introForm{padding:0 5%;margin-top:20px;}
+    .introForm .cardList{
+        width:25%;
+    }
+    .cardBox{
+        width:170px;
+        height:200px;
+        background:#f5c97b;
+        margin:24px auto;
+    }
+    .cardName{
+        height:166px;
+        line-height:166px;
+        font-size:24px;
+    }
+    .cardNum{
+        height:30px;
+        line-height:30px;
+        font-size: 20px;
+    }
+    .voteMethod{
+        width:140px;
+        left:-7px;
+        top:-36px;
+    }
+    .voteMethod li img{
+        width:28px;
+        height:28px;
+    }
+    .content{
+        width:1200px;
+        margin:0 auto;
+        margin-bottom:100px;
+    }
+
+
+}
+
+

@@ -1,0 +1,236 @@
+@charset "utf-8";
+/*
+---------------------------------
+Site: task12
+Author: moran
+Updated: 2016/12/28
+Updated by:moran
+---------------------------------
+*/
+body{
+    background:#fff;
+}
+.content{
+    background:#29bde0;
+    padding-bottom: 20px;
+}
+.victoryBox{
+    padding-bottom: 60px;
+}
+.victory{
+    display:block;
+    width:200px;
+    height:120px;
+    margin:20px auto;
+
+}
+.victoryText{
+    width:80%;
+    font-size:18px;
+    margin:0 auto;
+    text-align:left;
+}
+.detail{
+    width:80%;
+    margin:0 auto;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.identity{
+    display: inline-block;
+    width:33.33%;
+}
+.detailResult,.vocabulary{
+    margin-top:10px;
+}
+.resultBox{
+    margin-bottom:120px;
+}
+.results{
+    padding-top:10px;
+    padding-bottom:20px;
+}
+.resultsWrap{
+    width:80%;
+    margin:0 auto;
+}
+.results h2{
+    font-size:20px;
+    margin-bottom:10px;
+}
+.results h2 span{
+    font-size:14px;
+}
+.results p{
+    font-size: 16px;
+    line-height: 1.4em;
+}
+@media all and (max-width: 767px){
+
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .victoryBox{
+        padding-bottom: 60px;
+    }
+    .victory{
+        display:block;
+        width:340px;
+        height:200px;
+        margin:20px auto;
+
+    }
+    .victoryText{
+        width:80%;
+        font-size:22px;
+        margin:0 auto;
+        text-align:center;
+    }
+    .detail{
+        width:80%;
+        margin:0 auto;
+        font-size:20px;
+        margin-bottom: 20px;
+    }
+    .identity{
+        display: inline-block;
+        width:33.33%;
+    }
+    .detailResult,.vocabulary{
+        margin-top:10px;
+    }
+    .resultBox{
+        margin-bottom:120px;
+    }
+    .results{
+        padding-top:10px;
+        padding-bottom:20px;
+    }
+    .resultsWrap{
+        width:80%;
+        margin:0 auto;
+    }
+    .results h2{
+        font-size:28px;
+        margin-bottom:10px;
+    }
+    .results h2 span{
+        font-size:20px;
+    }
+    .results p{
+        font-size: 22px;
+        line-height: 1.4em;
+    }
+
+}
+@media (min-width: 992px) and (max-width: 1119px) {
+    .victoryBox{
+        padding-bottom: 60px;
+    }
+    .victory{
+        display:block;
+        width:446px;
+        height:260px;
+        margin:30px auto;
+
+    }
+    .victoryText{
+        width:80%;
+        font-size:26px;
+        margin:0 auto;
+        text-align:center;
+    }
+    .detail{
+        width:80%;
+        margin:0 auto;
+        font-size:22px;
+        margin-bottom: 20px;
+    }
+    .identity{
+        display: inline-block;
+        width:33.33%;
+    }
+    .detailResult,.vocabulary{
+        margin-top:10px;
+    }
+    .resultBox{
+        margin-bottom:120px;
+    }
+    .results{
+        padding-top:10px;
+        padding-bottom:20px;
+    }
+    .resultsWrap{
+        width:80%;
+        margin:0 auto;
+    }
+    .results h2{
+        font-size:28px;
+        margin-bottom:10px;
+    }
+    .results h2 span{
+        font-size:20px;
+    }
+    .results p{
+        font-size: 22px;
+        line-height: 1.4em;
+    }
+
+
+}
+@media (min-width: 1200px) {
+    .victoryBox{
+        padding-bottom: 60px;
+    }
+    .victory{
+        display:block;
+        width:446px;
+        height:260px;
+        margin:30px auto;
+
+    }
+    .victoryText{
+        width:80%;
+        font-size:26px;
+        margin:0 auto;
+        text-align:center;
+    }
+    .detail{
+        width:80%;
+        margin:0 auto;
+        font-size:22px;
+        margin-bottom: 20px;
+    }
+    .identity{
+        display: inline-block;
+        width:33.33%;
+    }
+    .detailResult,.vocabulary{
+        margin-top:10px;
+    }
+    .resultBox{
+        margin-bottom:120px;
+    }
+    .results{
+        padding-top:10px;
+        padding-bottom:20px;
+    }
+    .resultsWrap{
+        width:80%;
+        margin:0 auto;
+    }
+    .results h2{
+        font-size:28px;
+        margin-bottom:10px;
+    }
+    .results h2 span{
+        font-size:20px;
+    }
+    .results p{
+        font-size: 22px;
+        line-height: 1.4em;
+    }
+
+
+}
+
+

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>任务六——投票页面</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/task12/common.css" rel="stylesheet" type="text/css">
+    <link href="css/task12/vote.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="headerWrap clear">
+            <div class="headerLeft"><img src="images/task6/headerMore2.png"></div>
+            <div class="headerMiddle">投票</div>
+            <div class="headerRight"><img src="images/task6/headerClosed.png"></div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="voteRulerBox">
+            <div class="voteWrap  clear">
+                <p class="voteText fl">发言讨论结束，大家请投票</p>
+                <div class="musicBox fr">
+                    <audio src="images/task6/song.mp3" controls="controls" preload="" id="music" hidden=""></audio>
+                    <a href="javescript:;" class="playMusic"><img src="images/task6/autoPlay.png"></a>
+                </div>
+                <span class="musicTriangle"></span>
+            </div>
+            <div class="voteRules">点击得票数最多人的头像</div>
+        </div>
+        <div class="intro">
+            <ul class="introForm clear">
+                <li class="cardList">
+                    <div class="cardBox">
+                        <div class="cardName">水民</div>
+                        <div class="cardNum">1号</div>
+                        <ul class="voteMethod clear">
+                            <li><img src="images/task6/kill.png"></li>
+                            <li><img src="images/task6/search.png"></li>
+                            <li><img src="images/task6/location.png"></li>
+                            <li><img src="images/task6/salvation.png"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cardList">
+                    <div class="cardBox">
+                        <div class="cardName">水民</div>
+                        <div class="cardNum">1号</div>
+                        <ul class="voteMethod clear">
+                            <li><img src="images/task6/kill.png"></li>
+                            <li><img src="images/task6/search.png"></li>
+                            <li><img src="images/task6/location.png"></li>
+                            <li><img src="images/task6/salvation.png"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cardList">
+                    <div class="cardBox">
+                        <div class="cardName">水民</div>
+                        <div class="cardNum">1号</div>
+                        <ul class="voteMethod clear">
+                            <li><img src="images/task6/kill.png"></li>
+                            <li><img src="images/task6/search.png"></li>
+                            <li><img src="images/task6/location.png"></li>
+                            <li><img src="images/task6/salvation.png"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cardList">
+                    <div class="cardBox">
+                        <div class="cardName">水民</div>
+                        <div class="cardNum">1号</div>
+                        <ul class="voteMethod clear">
+                            <li><img src="images/task6/kill.png"></li>
+                            <li><img src="images/task6/search.png"></li>
+                            <li><img src="images/task6/location.png"></li>
+                            <li><img src="images/task6/salvation.png"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cardList">
+                    <div class="cardBox">
+                        <div class="cardName">水民</div>
+                        <div class="cardNum">1号</div>
+                        <ul class="voteMethod clear">
+                            <li><img src="images/task6/kill.png"></li>
+                            <li><img src="images/task6/search.png"></li>
+                            <li><img src="images/task6/location.png"></li>
+                            <li><img src="images/task6/salvation.png"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cardList">
+                    <div class="cardBox">
+                        <div class="cardName">水民</div>
+                        <div class="cardNum">1号</div>
+                        <ul class="voteMethod clear">
+                            <li><img src="images/task6/kill.png"></li>
+                            <li><img src="images/task6/search.png"></li>
+                            <li><img src="images/task6/location.png"></li>
+                            <li><img src="images/task6/salvation.png"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cardList">
+                    <div class="cardBox">
+                        <div class="cardName">水民</div>
+                        <div class="cardNum">1号</div>
+                        <ul class="voteMethod clear">
+                            <li><img src="images/task6/kill.png"></li>
+                            <li><img src="images/task6/search.png"></li>
+                            <li><img src="images/task6/location.png"></li>
+                            <li><img src="images/task6/salvation.png"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cardList">
+                    <div class="cardBox">
+                        <div class="cardName">水民</div>
+                        <div class="cardNum">1号</div>
+                        <ul class="voteMethod clear">
+                            <li><img src="images/task6/kill.png"></li>
+                            <li><img src="images/task6/search.png"></li>
+                            <li><img src="images/task6/location.png"></li>
+                            <li><img src="images/task6/salvation.png"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cardList">
+                    <div class="cardBox">
+                        <div class="cardName">水民</div>
+                        <div class="cardNum">1号</div>
+                        <ul class="voteMethod clear">
+                            <li><img src="images/task6/kill.png"></li>
+                            <li><img src="images/task6/search.png"></li>
+                            <li><img src="images/task6/location.png"></li>
+                            <li><img src="images/task6/salvation.png"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cardList">
+                    <div class="cardBox">
+                        <div class="cardName">水民</div>
+                        <div class="cardNum">1号</div>
+                        <ul class="voteMethod clear">
+                            <li><img src="images/task6/kill.png"></li>
+                            <li><img src="images/task6/search.png"></li>
+                            <li><img src="images/task6/location.png"></li>
+                            <li><img src="images/task6/salvation.png"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cardList">
+                    <div class="cardBox">
+                        <div class="cardName">水民</div>
+                        <div class="cardNum">1号</div>
+                        <ul class="voteMethod clear">
+                            <li><img src="images/task6/kill.png"></li>
+                            <li><img src="images/task6/search.png"></li>
+                            <li><img src="images/task6/location.png"></li>
+                            <li><img src="images/task6/salvation.png"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cardList">
+                    <div class="cardBox">
+                        <div class="cardName">水民</div>
+                        <div class="cardNum">1号</div>
+                        <ul class="voteMethod clear">
+                            <li><img src="images/task6/kill.png"></li>
+                            <li><img src="images/task6/search.png"></li>
+                            <li><img src="images/task6/location.png"></li>
+                            <li><img src="images/task6/salvation.png"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cardList">
+                    <div class="cardBox">
+                        <div class="cardName">水民</div>
+                        <div class="cardNum">1号</div>
+                        <ul class="voteMethod clear">
+                            <li><img src="images/task6/kill.png"></li>
+                            <li><img src="images/task6/search.png"></li>
+                            <li><img src="images/task6/location.png"></li>
+                            <li><img src="images/task6/salvation.png"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cardList">
+                    <div class="cardBox">
+                        <div class="cardName">水民</div>
+                        <div class="cardNum">1号</div>
+                        <ul class="voteMethod clear">
+                            <li><img src="images/task6/kill.png"></li>
+                            <li><img src="images/task6/search.png"></li>
+                            <li><img src="images/task6/location.png"></li>
+                            <li><img src="images/task6/salvation.png"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cardList">
+                    <div class="cardBox">
+                        <div class="cardName">水民</div>
+                        <div class="cardNum">1号</div>
+                        <ul class="voteMethod clear">
+                            <li><img src="images/task6/kill.png"></li>
+                            <li><img src="images/task6/search.png"></li>
+                            <li><img src="images/task6/location.png"></li>
+                            <li><img src="images/task6/salvation.png"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cardList">
+                    <div class="cardBox">
+                        <div class="cardName">水民</div>
+                        <div class="cardNum">1号</div>
+                        <ul class="voteMethod clear">
+                            <li><img src="images/task6/kill.png"></li>
+                            <li><img src="images/task6/search.png"></li>
+                            <li><img src="images/task6/location.png"></li>
+                            <li><img src="images/task6/salvation.png"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cardList">
+                    <div class="cardBox">
+                        <div class="cardName">水民</div>
+                        <div class="cardNum">1号</div>
+                        <ul class="voteMethod clear">
+                            <li><img src="images/task6/kill.png"></li>
+                            <li><img src="images/task6/search.png"></li>
+                            <li><img src="images/task6/location.png"></li>
+                            <li><img src="images/task6/salvation.png"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cardList">
+                    <div class="cardBox">
+                        <div class="cardName">水民</div>
+                        <div class="cardNum">1号</div>
+                        <ul class="voteMethod clear">
+                            <li><img src="images/task6/kill.png"></li>
+                            <li><img src="images/task6/search.png"></li>
+                            <li><img src="images/task6/location.png"></li>
+                            <li><img src="images/task6/salvation.png"></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer btw bg29">
+        <a class="voteBtn cw footer-one-btn bgfb" href="task13-3.html">投死</a>
+    </div>
+</div>
+
+</body>
+</html>

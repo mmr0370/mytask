@@ -1,0 +1,291 @@
+@charset "utf-8";
+/*
+---------------------------------
+Site: task12
+Author: moran
+Updated: 2016/12/28
+Updated by:moran
+---------------------------------
+*/
+body{
+    background:#f0f0f0;
+}
+.main{
+    width:90%;
+    margin:0 auto;
+}
+/*last game */
+.lastResults{
+    margin-top:20px;
+    border: 1px solid #cbcbcb;
+    padding:20px 0;
+    background: #fff;
+}
+.lastGame{
+    position:relative;
+    height:20px;
+    line-height:20px;
+    font-size: 18px;
+    color:#9a9a9a;
+    text-align: center;
+}
+.lastGame img{
+    display:block;
+    position:absolute;
+    top:0;
+    right:10px;
+    width:18px;
+    height:20px;
+}
+/*捉鬼游戏*/
+.game{
+    margin-top:20px;
+    border: 1px solid #cbcbcb;
+    background: #fff;
+}
+.game .version{
+    position:relative;
+}
+.game .title{
+    line-height: 26px;
+    font-size:22px;
+    color:#fbb435;
+    font-weight: bold;
+    border-bottom: 1px solid #fbb435;
+    text-align: center;
+    padding:20px 0;
+}
+.game .blueBox{
+    width:80%;
+    margin:0 auto;
+    margin-top:20px;
+    display:block;
+    font-size: 18px;
+    line-height: 20px;
+    padding:20px 0;
+    text-align: center;
+    background: #69d1e9;
+    color:#fff;
+}
+.game p{
+    width:80%;
+    margin:0 auto;
+    margin-top:20px;
+    display:block;
+    font-size: 14px;
+    line-height: 20px;
+    height:20px;
+    text-align: center;
+}
+.gameTriangle{
+    position: absolute;
+    right:3%;
+    top:25px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #fbb435;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+}
+.game .tabBtn{
+    width:80px;
+    margin:20px auto;
+}
+.game .tabBtn li{
+    float:left;
+    margin:0 2px;
+    width:16px;
+    height:16px;
+    border-radius:8px;
+    background: #f0f0f0;
+}
+.game .tabBtn li.active{
+    background: #69d1e9;
+}
+@media all and (max-width: 767px){
+
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    /*上次游戏*/
+    .lastResults{
+        margin-top:20px;
+        padding:30px 0;
+    }
+    .lastGame{
+        position:relative;
+        height:26px;
+        line-height:26px;
+        font-size: 22px;
+        color:#9a9a9a;
+        text-align: center;
+    }
+    .lastGame img{
+        right:20px;
+        width:20px;
+        height:22px;
+    }
+    /*捉鬼游戏*/
+    .game{
+        margin-top:20px;
+    }
+    .game .title{
+        line-height: 26px;
+        font-size:24px;
+        padding:20px 0;
+    }
+    .game .blueBox{
+        width:80%;
+        margin-top:20px;
+        font-size: 22px;
+        line-height: 26px;
+        padding:20px 0;
+    }
+    .game p {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 20px;
+        height: 20px;
+    }
+    .gameTriangle{
+        right:3%;
+        top:22px;
+        border-left: 12px solid #fbb435;
+        border-bottom: 12px solid transparent;
+        border-top: 12px solid transparent;
+    }
+    .game .tabBtn{
+        width:80px;
+        margin:20px auto;
+    }
+    .game .tabBtn li{
+        margin:0 2px;
+        width:16px;
+        height:16px;
+        border-radius:8px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1119px) {
+    .lastResults{
+        margin-top:20px;
+        padding:30px 0;
+    }
+    .lastGame{
+        position:relative;
+        height:28px;
+        line-height:28px;
+        font-size: 24px;
+        color:#9a9a9a;
+        text-align: center;
+    }
+    .lastGame img{
+        right:20px;
+        width:24px;
+        height:28px;
+    }
+    /*捉鬼游戏*/
+    .game{
+        margin-top:20px;
+    }
+    .game .title{
+        line-height: 26px;
+        font-size:24px;
+        padding:20px 0;
+    }
+    .game .blueBox{
+        width:80%;
+        margin-top:20px;
+        font-size: 22px;
+        line-height: 26px;
+        padding:20px 0;
+    }
+    .game p {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 20px;
+        height: 20px;
+    }
+    .gameTriangle{
+        right:3%;
+        top:23px;
+        border-left: 12px solid #fbb435;
+        border-bottom: 12px solid transparent;
+        border-top: 12px solid transparent;
+    }
+    .game .tabBtn{
+        width:80px;
+        margin:20px auto;
+    }
+    .game .tabBtn li{
+        margin:0 2px;
+        width:16px;
+        height:16px;
+        border-radius:8px;
+    }
+
+}
+@media (min-width: 1200px) {
+    .main{
+        width:1200px;
+    }
+    .lastResults{
+        margin-top:20px;
+        padding:30px 0;
+    }
+    .lastGame{
+        position:relative;
+        height:28px;
+        line-height:28px;
+        font-size: 24px;
+        color:#9a9a9a;
+        text-align: center;
+    }
+    .lastGame img{
+        right:20px;
+        width:24px;
+        height:28px;
+    }
+    /*捉鬼游戏*/
+    .game{
+        margin-top:30px;
+    }
+    .game .title{
+        line-height:30px;
+        font-size:26px;
+        padding:24px 0;
+    }
+    .game .blueBox{
+        width:80%;
+        margin-top:30px;
+        font-size: 26px;
+        line-height:30px;
+        padding:30px 0;
+    }
+    .game p {
+        margin-top: 30px;
+        font-size: 20px;
+        line-height: 24px;
+        height: 24px;
+    }
+    .gameTriangle{
+        right:3%;
+        top:32px;
+        border-left: 12px solid #fbb435;
+        border-bottom: 12px solid transparent;
+        border-top: 12px solid transparent;
+    }
+    .game .tabBtn{
+        width:80px;
+        margin:20px auto;
+    }
+    .game .tabBtn li{
+        margin:0 2px;
+        width:16px;
+        height:16px;
+        border-radius:8px;
+    }
+
+
+
+}
+
+
