@@ -1,0 +1,542 @@
+@import "z";
+.reset();
+@w:100%;
+@r1:15px;
+@r2:10px;
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+body{
+  background: #fff;
+}
+.container{
+  width:@w;
+}
+.main(@width:100%){
+  width:@width;
+  margin:0 auto;
+}
+.headerList(@width:30%,@font:20px,@c:#fff,@height:30px){
+  width:@width;
+  font-size:@font;
+  height:@height;
+  line-height:@height;
+  color:@c;
+  text-align: center;
+}
+.header(@pad:16px){
+  width:@w;
+  background: #5fc0cd;
+  padding:@pad 0;
+  &Left{
+    float:left;
+  }
+  &Right{
+    float:right;
+  }
+  }
+.headerWrap(@w:100%){
+  .clearfix();
+  width:100%;
+}
+.headerTab(@w:60%,@f:20px,@h:40px){
+  float:right;
+  width:@w;
+  height:@h;
+  line-height:@h;
+  color:#fff;
+  text-align: center;
+}
+.findBtn(@w:50px,@h:40px){
+  display: inline-block;
+  width:@w;
+  height:@h;
+  line-height:@h;
+  color:#fff;
+  text-align: center;
+  background:#55a8b3;
+  border-radius:10px;
+}
+.findBtn:nth-child(1){
+  margin-right:-4px;
+}
+.findBtn:nth-child(2){
+  margin-left:-4px;
+}
+a.findBtn.active{
+  background:#fff;
+  color:#55a8b3;
+}
+a.findBtn:hover{
+  background:#fff;
+  color:#55a8b3;
+}
+.locationPic(@w:40px,@h:40px){
+  width:@w;
+  height:@h;
+  vertical-align: bottom;
+}
+.content(@w:100%,@bottom:80px){
+  width:@w;
+  padding-bottom:@bottom;
+  margin:0 auto;
+}
+.choice(@pad:16px,@w:100%,@f:14px){
+  width:@w;
+  padding:@pad 0;
+  border-bottom: 1px solid #e1e5e7;
+  font-size:@f;
+}
+.choiceTab{
+  .clearfix();
+  display: inline-block;
+  width:33%;
+  text-align: center;
+  border-right: 1px solid #e1e5e7;
+  vertical-align: top;
+}
+
+span.choiceTab.borderNone {
+  border-right:0;
+}
+.triangle{
+  float:right;
+  margin-top:6px;
+  margin-right:10px;
+  .triangle-b(@w:5px,@color:#ccc);
+  vertical-align: top;
+}
+.conList(@pad:10px){
+  padding:@pad;
+  border-bottom:1px solid #e1e5e7;
+}
+.top(@h:20px,@f:16px){
+  height:@h;
+  line-height:@h;
+  font-size: @f;
+}
+.calendar(@w:20px,@h:20px){
+  width:@w;
+  height:@h;
+  display:inline-block;
+  background:url("../../images/task5/calendar.png") no-repeat center top;
+  background-size: contain;
+  vertical-align: top;
+  margin-right:8px;
+}
+.middle(@mar:10px,@f:18px,@h:20px){
+  .clearfix();
+  margin:@mar 0 @mar 2.8*@mar;
+  height:@h;
+  line-height:@h;
+  font-size: @f;
+}
+.dateRange(@f:14px){
+  font-size: @f;
+  float:left;
+  font-family:"Adobe 黑体 Std";
+}
+.charge(@f:14px){
+  font-family:"Adobe 黑体 Std";
+  font-size: @f;
+  float:right;
+  color:#e63b0e;
+}
+.more(@w:20px,@h:20px,@left:10px){
+  width:@w;
+  height:@h;
+  margin-left:@left;
+  vertical-align: top;
+}
+.bottom(@h:20px,@f:16px){
+  height:@h;
+  line-height:@h;
+  font-size: @f;
+}
+.location(@w:20px,@h:20px){
+  width:@w;
+  height:@h;
+  display:inline-block;
+  background:url("../../images/task5/ShapeGray.png") no-repeat center top;
+  background-size: contain;
+  vertical-align: top;
+  margin-right:8px;
+}
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: #f8fafb;
+  border-top:1px solid #f8fafb;
+}
+
+.footerWrap{
+  .clearfix();
+  width:90%;
+  margin:10px auto;
+}
+.btn{
+  float:left;
+  display:block;
+  width:30%;
+  a{
+    display:block;
+  }
+}
+.homePic(@w:52px,@h:80px){
+  display: block;
+  width:@w;
+  height:@h;
+  margin:0 auto;
+}
+.writePic(@w:80px,@h:80px){
+  display: block;
+  width:@w;
+  height:@h;
+  margin:0 auto;
+}
+.userPic(@w:44px,@h:80px){
+  display: block;
+  width:@w;
+  height:@h;
+  margin:0 auto;
+}
+
+
+@media all and (max-width: 767px) {
+  .header{
+    .header(@pad:16px);
+  }
+  .headerWrap{
+    .headerWrap(@w:100%);
+  };
+  .headerLeft{
+    .headerList(@width:20%,@font:20px,@c:#fff);
+  }
+  .headerRight{
+    .headerLeft();
+    .locationPic{
+      .locationPic(@w:30px,@h:30px);
+    }
+  }
+  .headerTab{
+    .headerTab(@w:60%,@f:20px,@h:36px);
+    .findBtn{
+      .findBtn(@w:70px,@h:36px);
+    }
+
+  }
+  .main{
+    .main(@width:90%);
+  };
+  .header{
+    h1{
+      .headerList(@width:60%,@font:20px,@c:#fff);
+    }
+
+  }
+
+  .content{
+    .content(@w:100%,@bottom:120px);
+    .choice{
+      .choice(@pad:16px,@w:100%,@f:14px);
+    }
+    .choiceTab{
+      .choiceTab();
+    }
+    .conList{
+      .conList(@pad:10px);
+      .top{
+        .top(@h:20px,@f:16px);
+      }
+      .calendar{
+        .calendar(@w:20px,@h:20px);
+      }
+      .middle{
+        .middle(@mar:10px,@f:14px,@h:20px);
+      }
+      .dateRange{
+        .dateRange(@f:14px);
+      }
+      .charge{
+        .charge(@f:14px);
+      }
+      .more{
+        .more(@w:12px,@h:20px,@left:10px);
+      }
+      .bottom{
+        .bottom(@h:20px,@f:16px);
+      }
+      .location{
+        .location(@w:16px,@h:20px);
+      }
+    }
+  }
+  .footer{
+    .homePic{
+      .homePic(@w:32px,@h:50px);
+    }
+    .writePic{
+      .writePic(@w:50px,@h:50px);
+    }
+    .userPic{
+      .userPic(@w:28px,@h:50px);
+    }
+  }
+
+}
+@media (min-width:768px)and (max-width:992px) {
+  .header{
+    .header(@pad:20px);
+  }
+  .headerWrap{
+    .headerWrap(@w:100%);
+  };
+  .headerLeft{
+    .headerList(@width:20%,@font:20px,@c:#fff);
+  }
+  .headerRight{
+    .headerLeft();
+    .locationPic{
+      .locationPic(@w:50px,@h:50px);
+    }
+  }
+  .headerTab{
+    .headerTab(@w:60%,@f:36px,@h:60px);
+    .findBtn{
+      .findBtn(@w:140px,@h:60px);
+    }
+
+  }
+  .main{
+    .main(@width:90%);
+  };
+  .header{
+    h1{
+      .headerList(@width:60%,@font:20px,@c:#fff);
+    }
+
+  }
+
+  .content{
+    .content(@w:100%,@bottom:120px);
+    .choice{
+      .choice(@pad:16px,@w:100%,@f:20px);
+    }
+    .choiceTab{
+      .choiceTab();
+    }
+    .conList{
+      .conList(@pad:20px);
+      .top{
+        .top(@h:20px,@f:20px);
+      }
+      .calendar{
+        .calendar(@w:24px,@h:28px);
+      }
+      .middle{
+        .middle(@mar:10px,@f:20px,@h:28px);
+      }
+      .dateRange{
+        .dateRange(@f:20px);
+      }
+      .charge{
+        .charge(@f:20px);
+      }
+      .more{
+        .more(@w:14px,@h:28px,@left:10px);
+      }
+      .bottom{
+        .bottom(@h:20px,@f:20px);
+      }
+      .location{
+        .location(@w:20px,@h:28px);
+      }
+    }
+  }
+  .footer{
+    .homePic{
+      .homePic(@w:32px,@h:50px);
+    }
+    .writePic{
+      .writePic(@w:50px,@h:50px);
+    }
+    .userPic{
+      .userPic(@w:28px,@h:50px);
+    }
+  }
+
+}
+
+@media (min-width: 992px)and (max-width: 1119px) {
+  .header{
+    .header(@pad:20px);
+  }
+  .headerWrap{
+    .headerWrap(@w:100%);
+  };
+  .headerLeft{
+    .headerList(@width:20%,@font:20px,@c:#fff);
+  }
+  .headerRight{
+    .headerLeft();
+    .locationPic{
+      .locationPic(@w:50px,@h:50px);
+    }
+  }
+  .headerTab{
+    .headerTab(@w:60%,@f:36px,@h:60px);
+    .findBtn{
+      .findBtn(@w:140px,@h:60px);
+    }
+
+  }
+  .main{
+    .main(@width:90%);
+  };
+  .header{
+    h1{
+      .headerList(@width:60%,@font:20px,@c:#fff);
+    }
+
+  }
+
+  .content{
+    .content(@w:100%,@bottom:120px);
+    .choice{
+      .choice(@pad:16px,@w:100%,@f:20px);
+    }
+    .choiceTab{
+      .choiceTab();
+    }
+    .conList{
+      .conList(@pad:20px);
+      .top{
+        .top(@h:20px,@f:20px);
+      }
+      .calendar{
+        .calendar(@w:24px,@h:28px);
+      }
+      .middle{
+        .middle(@mar:10px,@f:20px,@h:28px);
+      }
+      .dateRange{
+        .dateRange(@f:20px);
+      }
+      .charge{
+        .charge(@f:20px);
+      }
+      .more{
+        .more(@w:14px,@h:28px,@left:10px);
+      }
+      .bottom{
+        .bottom(@h:20px,@f:20px);
+      }
+      .location{
+        .location(@w:20px,@h:28px);
+      }
+    }
+  }
+  .footer{
+    .homePic{
+      .homePic(@w:32px,@h:50px);
+    }
+    .writePic{
+      .writePic(@w:50px,@h:50px);
+    }
+    .userPic{
+      .userPic(@w:28px,@h:50px);
+    }
+  }
+
+}
+@media (min-width: 1200px){
+  .header{
+    .header(@pad:20px);
+  }
+  .headerWrap{
+    .headerWrap(@w:100%);
+  };
+  .headerLeft{
+    .headerList(@width:20%,@font:20px,@c:#fff);
+  }
+  .headerRight{
+    .headerLeft();
+    .locationPic{
+      .locationPic(@w:50px,@h:50px);
+    }
+  }
+  .headerTab{
+    .headerTab(@w:60%,@f:36px,@h:60px);
+    .findBtn{
+      .findBtn(@w:140px,@h:60px);
+    }
+
+  }
+  .main{
+    .main(@width:90%);
+  };
+  .header{
+    h1{
+      .headerList(@width:60%,@font:20px,@c:#fff);
+    }
+
+  }
+
+  .content{
+    .content(@w:1200px,@bottom:160px);
+    .choice{
+      .choice(@pad:30px,@w:100%,@f:28px);
+    }
+    .choiceTab{
+      .choiceTab();
+
+    }
+    .triangle{
+      margin-top:14px;
+    }
+    .conList{
+      .conList(@pad:20px);
+      .top{
+        .top(@h:30px,@f:26px);
+      }
+      .calendar{
+        .calendar(@w:24px,@h:28px);
+      }
+      .middle{
+        .middle(@mar:10px,@f:20px,@h:28px);
+      }
+      .dateRange{
+        .dateRange(@f:20px);
+      }
+      .charge{
+        .charge(@f:20px);
+      }
+      .more{
+        .more(@w:14px,@h:28px,@left:10px);
+      }
+      .bottom{
+        .bottom(@h:20px,@f:20px);
+      }
+      .location{
+        .location(@w:20px,@h:28px);
+      }
+    }
+  }
+  .footer{
+    .homePic{
+      .homePic(@w:66px,@h:100px);
+    }
+    .writePic{
+      .writePic(@w:100px,@h:100px);
+    }
+    .userPic{
+      .userPic(@w:56px,@h:100px);
+    }
+  }
+
+
+}

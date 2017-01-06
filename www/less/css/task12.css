@@ -34,37 +34,13 @@ body {
 .container {
   width: 100%;
 }
-.header {
-  width: 100%;
-  background: #5fc0cd;
-  padding: 14px 0;
-  *zoom: 1;
-}
-.header:before,
-.header:after {
-  display: table;
-  content: "";
-}
-.header:after {
-  clear: both;
-}
-.headerLeft {
-  display: inline;
+.imgBox {
   float: left;
-}
-.headerRight {
-  display: inline;
-  float: right;
-}
-.header h1 {
-  display: inline;
-  float: left;
-}
-.content {
-  margin-bottom: 80px;
+  width: 30%;
 }
 .con {
-  border: 1px solid #e1e5e7;
+  border-top: 1px solid #e1e5e7;
+  border-bottom: 1px solid #e1e5e7;
 }
 .border-right {
   border-right: 1px solid  #e1e5e7;
@@ -78,7 +54,7 @@ body {
 .botWrap {
   *zoom: 1;
   width: 90%;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 .botWrap:before,
 .botWrap:after {
@@ -89,6 +65,35 @@ body {
   clear: both;
 }
 @media all and (max-width: 767px) {
+  .header {
+    width: 100%;
+    background: #5fc0cd;
+    padding: 16px 0;
+    *zoom: 1;
+  }
+  .header:before,
+  .header:after {
+    display: table;
+    content: "";
+  }
+  .header:after {
+    clear: both;
+  }
+  .headerLeft {
+    display: inline;
+    float: left;
+  }
+  .headerRight {
+    display: inline;
+    float: right;
+  }
+  .header h1 {
+    display: inline;
+    float: left;
+  }
+  .headerWrap {
+    width: 100%;
+  }
   .headerLeft {
     width: 20%;
     font-size: 20px;
@@ -127,6 +132,7 @@ body {
     width: 100%;
     height: 150px;
     background: url(../../images/task5/banner1.png) no-repeat center top;
+    background-size: cover;
     padding-top: 30px;
   }
   .banner .info {
@@ -142,11 +148,7 @@ body {
   .banner .info:after {
     clear: both;
   }
-  .banner .imgBox {
-    float: left;
-    width: 30%;
-  }
-  .banner .imgBox span {
+  .imgBox .headPicBox {
     display: block;
     width: 80px;
     height: 80px;
@@ -154,25 +156,12 @@ body {
     border-radius: 40px;
     overflow: hidden;
   }
-  .banner .imgBox .img {
+  .imgBox .headPic {
     display: block;
     width: 60px;
     height: 80px;
     margin: 0 auto;
     margin-top: 18px;
-  }
-  .banner .info {
-    *zoom: 1;
-    width: 90%;
-    margin: 0 auto;
-  }
-  .banner .info:before,
-  .banner .info:after {
-    display: table;
-    content: "";
-  }
-  .banner .info:after {
-    clear: both;
   }
   .introduce {
     float: left;
@@ -203,6 +192,11 @@ body {
     vertical-align: middle;
     background-size: contain;
   }
+  .content {
+    width: 100%;
+    padding-bottom: 120px;
+    margin: 0 auto;
+  }
   .content .title {
     margin: 20px 0;
     margin-left: 20px;
@@ -224,6 +218,7 @@ body {
   .content .conTitle span {
     display: inline-block;
     padding: 0 10px;
+    vertical-align: top;
   }
   .content .conTitleImg {
     margin-right: 10px;
@@ -243,6 +238,7 @@ body {
     color: #999;
     border-right: 1px solid  #e1e5e7;
     vertical-align: middle;
+    text-align: center;
   }
   .content .conList em {
     width: 74%;
@@ -278,6 +274,35 @@ body {
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
+  .header {
+    width: 100%;
+    background: #5fc0cd;
+    padding: 20px 0;
+    *zoom: 1;
+  }
+  .header:before,
+  .header:after {
+    display: table;
+    content: "";
+  }
+  .header:after {
+    clear: both;
+  }
+  .headerLeft {
+    display: inline;
+    float: left;
+  }
+  .headerRight {
+    display: inline;
+    float: right;
+  }
+  .header h1 {
+    display: inline;
+    float: left;
+  }
+  .headerWrap {
+    width: 100%;
+  }
   .headerLeft {
     width: 20%;
     font-size: 20px;
@@ -314,13 +339,15 @@ body {
   }
   .banner {
     width: 100%;
-    height: 150px;
+    height: 180px;
     background: url(../../images/task5/banner1.png) no-repeat center top;
-    padding-top: 30px;
+    background-size: cover;
+    padding-top: 100px;
   }
   .banner .info {
-    *zoom: 1;
     width: 90%;
+    *zoom: 1;
+    width: 76%;
     margin: 0 auto;
   }
   .banner .info:before,
@@ -331,58 +358,66 @@ body {
   .banner .info:after {
     clear: both;
   }
-  .banner .imgBox {
-    float: left;
-    width: 30%;
+  .banner .info:before,
+  .banner .info:after {
+    display: table;
+    content: "";
   }
-  .banner .imgBox span {
+  .banner .info:after {
+    clear: both;
+  }
+  .banner .info {
+    *zoom: 1;
+    width: 76%;
+    margin: 0 auto;
+  }
+  .banner .info:before,
+  .banner .info:after {
+    display: table;
+    content: "";
+  }
+  .banner .info:after {
+    clear: both;
+  }
+  .imgBox .headPicBox {
     display: block;
-    width: 80px;
-    height: 80px;
+    width: 130px;
+    height: 130px;
     background: #fff;
-    border-radius: 40px;
+    border-radius: 65px;
     overflow: hidden;
   }
-  .banner .imgBox .img {
+  .imgBox .headPic {
     display: block;
-    width: 60px;
-    height: 80px;
+    width: 100px;
+    height: 130px;
     margin: 0 auto;
-    margin-top: 18px;
-  }
-  .banner .info {
-    *zoom: 1;
-    width: 90%;
-    margin: 0 auto;
-  }
-  .banner .info:before,
-  .banner .info:after {
-    display: table;
-    content: "";
-  }
-  .banner .info:after {
-    clear: both;
+    margin-top: 26px;
   }
   .introduce {
     float: left;
-    margin-top: 15px;
+    margin-top: 30px;
     margin-left: 20px;
   }
   .introduce .introTitle {
     font-family: "Adobe Fan Heiti Std B";
-    font-size: 18px;
+    font-size: 28px;
     color: #fff;
-    line-height: 26px;
+    line-height: 34px;
   }
   .introduce .introTitle span {
     margin-left: 22px;
     font-size: 16px;
   }
+  .introduce .introTitle span {
+    margin-left: 22px;
+    font-size: 22px;
+  }
   .introduce .introCon {
     font-family: "Adobe Fan Heiti Std B";
-    font-size: 14px;
+    font-size: 18px;
     color: #fff;
-    line-height: 22px;
+    line-height: 26px;
   }
   .introduce .introCon span {
     display: inline-block;
@@ -391,6 +426,11 @@ body {
     background: url(../../images/task5/Shape.png) no-repeat center top;
     vertical-align: middle;
     background-size: contain;
+  }
+  .content {
+    width: 100%;
+    padding-bottom: 120px;
+    margin: 0 auto;
   }
   .content .title {
     margin: 20px 0;
@@ -401,27 +441,28 @@ body {
     font-weight: bold;
     height: 30px;
     line-height: 30px;
-    font-size: 18px;
+    font-size: 24px;
   }
   .content .conTitle {
-    height: 24px;
-    line-height: 24px;
-    font-size: 18px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 24px;
     margin: 20px 0;
     margin-left: 20px;
   }
   .content .conTitle span {
     display: inline-block;
     padding: 0 10px;
+    vertical-align: top;
   }
   .content .conTitleImg {
     margin-right: 10px;
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     vertical-align: baseline;
   }
   .content .conList {
-    font-size: 14px;
+    font-size: 22px;
     padding: 20px 0;
     margin-left: 20px;
     border-top: 1px solid #e1e5e7;
@@ -432,6 +473,7 @@ body {
     color: #999;
     border-right: 1px solid  #e1e5e7;
     vertical-align: middle;
+    text-align: center;
   }
   .content .conList em {
     width: 74%;
@@ -444,11 +486,24 @@ body {
   .content .conList b {
     color: #e26163;
   }
+  .bottom .botWrap {
+    *zoom: 1;
+    width: 90%;
+    margin: 20px auto;
+  }
+  .bottom .botWrap:before,
+  .bottom .botWrap:after {
+    display: table;
+    content: "";
+  }
+  .bottom .botWrap:after {
+    clear: both;
+  }
   .bottom .btn {
     display: block;
-    font-size: 26px;
-    height: 50px;
-    line-height: 50px;
+    font-size: 30px;
+    height: 60px;
+    line-height: 60px;
     width: 45%;
     text-align: center;
   }
@@ -468,11 +523,37 @@ body {
 }
 @media (min-width: 992px) and (max-width: 1119px) {
   .header {
+    width: 100%;
+    background: #5fc0cd;
     padding: 20px 0;
+    *zoom: 1;
+  }
+  .header:before,
+  .header:after {
+    display: table;
+    content: "";
+  }
+  .header:after {
+    clear: both;
+  }
+  .headerLeft {
+    display: inline;
+    float: left;
+  }
+  .headerRight {
+    display: inline;
+    float: right;
+  }
+  .header h1 {
+    display: inline;
+    float: left;
+  }
+  .headerWrap {
+    width: 100%;
   }
   .headerLeft {
     width: 20%;
-    font-size: 28px;
+    font-size: 26px;
     height: 30px;
     line-height: 30px;
     color: #ffffff;
@@ -480,7 +561,7 @@ body {
   }
   .headerRight {
     width: 20%;
-    font-size: 28px;
+    font-size: 26px;
     height: 30px;
     line-height: 30px;
     color: #ffffff;
@@ -492,20 +573,237 @@ body {
   }
   .header h1 {
     width: 60%;
-    font-size: 28px;
+    font-size: 26px;
     height: 30px;
     line-height: 30px;
     color: #ffffff;
     text-align: center;
+  }
+  .headerImg {
+    display: block;
+    width: 26px;
+    height: 30px;
+    margin: 0 auto;
+  }
+  .banner {
+    width: 100%;
+    height: 220px;
+    background: url(../../images/task5/banner1.png) no-repeat center top;
+    background-size: cover;
+    padding-top: 100px;
+  }
+  .banner .info {
+    width: 90%;
+    *zoom: 1;
+    width: 76%;
+    margin: 0 auto;
+  }
+  .banner .info:before,
+  .banner .info:after {
+    display: table;
+    content: "";
+  }
+  .banner .info:after {
+    clear: both;
+  }
+  .banner .info:before,
+  .banner .info:after {
+    display: table;
+    content: "";
+  }
+  .banner .info:after {
+    clear: both;
+  }
+  .banner .info {
+    *zoom: 1;
+    width: 76%;
+    margin: 0 auto;
+  }
+  .banner .info:before,
+  .banner .info:after {
+    display: table;
+    content: "";
+  }
+  .banner .info:after {
+    clear: both;
+  }
+  .imgBox .headPicBox {
+    display: block;
+    width: 130px;
+    height: 130px;
+    background: #fff;
+    border-radius: 65px;
+    overflow: hidden;
+  }
+  .imgBox .headPic {
+    display: block;
+    width: 100px;
+    height: 130px;
+    margin: 0 auto;
+    margin-top: 26px;
+  }
+  .introduce {
+    float: left;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .introduce .introTitle {
+    font-family: "Adobe Fan Heiti Std B";
+    font-size: 28px;
+    color: #fff;
+    line-height: 34px;
+  }
+  .introduce .introTitle span {
+    margin-left: 22px;
+    font-size: 16px;
+  }
+  .introduce .introTitle span {
+    margin-left: 22px;
+    font-size: 22px;
+  }
+  .introduce .introCon {
+    font-family: "Adobe Fan Heiti Std B";
+    font-size: 18px;
+    color: #fff;
+    line-height: 26px;
+  }
+  .introduce .introCon span {
+    display: inline-block;
+    width: 16px;
+    height: 14px;
+    background: url(../../images/task5/Shape.png) no-repeat center top;
+    vertical-align: middle;
+    background-size: contain;
+  }
+  .content {
+    width: 100%;
+    padding-bottom: 120px;
+    margin: 0 auto;
+  }
+  .content .title {
+    margin: 20px 0;
+    margin-left: 20px;
+    padding-left: 10px;
+    border-left: 2px solid #5fc0cd;
+    color: #333;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    font-size: 24px;
+    margin-left: 50px;
+  }
+  .content .conTitle {
+    height: 30px;
+    line-height: 30px;
+    font-size: 24px;
+    margin: 20px 0;
+    margin-left: 20px;
+    margin-left: 50px;
+  }
+  .content .conTitle span {
+    display: inline-block;
+    padding: 0 10px;
+    vertical-align: top;
+  }
+  .content .conTitleImg {
+    margin-right: 10px;
+    width: 22px;
+    height: 22px;
+    vertical-align: baseline;
+  }
+  .content .conList {
+    font-size: 22px;
+    padding: 20px 0;
+    margin-left: 20px;
+    border-top: 1px solid #e1e5e7;
+  }
+  .content .conList span {
+    width: 22%;
+    display: inline-block;
+    color: #999;
+    border-right: 1px solid  #e1e5e7;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .content .conList em {
+    width: 74%;
+    display: inline-block;
+    color: #333333;
+    padding-left: 10px;
+    font-style: normal;
+    vertical-align: middle;
+  }
+  .content .conList b {
+    color: #e26163;
+  }
+  .bottom .botWrap {
+    *zoom: 1;
+    width: 90%;
+    margin: 20px auto;
+  }
+  .bottom .botWrap:before,
+  .bottom .botWrap:after {
+    display: table;
+    content: "";
+  }
+  .bottom .botWrap:after {
+    clear: both;
+  }
+  .bottom .btn {
+    display: block;
+    font-size: 30px;
+    height: 60px;
+    line-height: 60px;
+    width: 45%;
+    text-align: center;
+  }
+  .bottom .btn a {
+    display: block;
+    color: #5fc0cd;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border: 1px solid #5fc0cd;
+    border-radius: 4px;
+  }
+  .bottom .btn a.active {
+    background: #5fc0cd;
+    color: #fff;
   }
 }
 @media (min-width: 1200px) {
   .header {
-    padding: 20px 0;
+    width: 100%;
+    background: #5fc0cd;
+    padding: 30px 0;
+    *zoom: 1;
+  }
+  .header:before,
+  .header:after {
+    display: table;
+    content: "";
+  }
+  .header:after {
+    clear: both;
+  }
+  .headerLeft {
+    display: inline;
+    float: left;
+  }
+  .headerRight {
+    display: inline;
+    float: right;
+  }
+  .header h1 {
+    display: inline;
+    float: left;
+  }
+  .headerWrap {
+    width: 100%;
   }
   .headerLeft {
     width: 20%;
-    font-size: 28px;
+    font-size: 30px;
     height: 30px;
     line-height: 30px;
     color: #ffffff;
@@ -513,22 +811,194 @@ body {
   }
   .headerRight {
     width: 20%;
-    font-size: 28px;
+    font-size: 30px;
     height: 30px;
     line-height: 30px;
     color: #ffffff;
     text-align: center;
   }
   .main {
-    width: 90%;
+    width: 1200px;
     margin: 0 auto;
   }
   .header h1 {
     width: 60%;
-    font-size: 28px;
+    font-size: 26px;
     height: 30px;
     line-height: 30px;
     color: #ffffff;
     text-align: center;
+  }
+  .headerImg {
+    display: block;
+    width: 26px;
+    height: 30px;
+    margin: 0 auto;
+  }
+  .banner {
+    width: 100%;
+    height: 300px;
+    background: url(../../images/task5/banner1.png) no-repeat center top;
+    background-size: cover;
+    padding-top: 100px;
+  }
+  .banner .info {
+    *zoom: 1;
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .banner .info:before,
+  .banner .info:after {
+    display: table;
+    content: "";
+  }
+  .banner .info:after {
+    clear: both;
+  }
+  .imgBox {
+    width: 20%;
+  }
+  .imgBox .headPicBox {
+    display: block;
+    width: 180px;
+    height: 180px;
+    background: #fff;
+    border-radius: 90px;
+    overflow: hidden;
+  }
+  .imgBox .headPic {
+    display: block;
+    width: 160px;
+    height: 180px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .introduce {
+    float: left;
+    margin-top: 60px;
+    margin-left: 20px;
+  }
+  .introduce .introTitle {
+    font-family: "Adobe Fan Heiti Std B";
+    font-size: 30px;
+    color: #fff;
+    line-height: 40px;
+  }
+  .introduce .introTitle span {
+    margin-left: 22px;
+    font-size: 16px;
+  }
+  .introduce .introTitle span {
+    margin-left: 22px;
+    font-size: 26px;
+  }
+  .introduce .introCon {
+    font-family: "Adobe Fan Heiti Std B";
+    font-size: 26px;
+    color: #fff;
+    line-height: 30px;
+  }
+  .introduce .introCon span {
+    display: inline-block;
+    width: 16px;
+    height: 14px;
+    background: url(../../images/task5/Shape.png) no-repeat center top;
+    vertical-align: middle;
+    background-size: contain;
+  }
+  .content {
+    width: 1200px;
+    padding-bottom: 160px;
+    margin: 0 auto;
+  }
+  .content .title {
+    margin: 20px 0;
+    margin-left: 20px;
+    padding-left: 10px;
+    border-left: 2px solid #5fc0cd;
+    color: #333;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .content .conTitle {
+    height: 40px;
+    line-height: 40px;
+    font-size: 36px;
+    margin: 20px 0;
+    margin-left: 20px;
+    margin-left: 50px;
+  }
+  .content .conTitle span {
+    display: inline-block;
+    padding: 0 10px;
+    vertical-align: top;
+  }
+  .content .conTitleImg {
+    margin-right: 10px;
+    width: 36px;
+    height: 40px;
+    vertical-align: baseline;
+  }
+  .content .conList {
+    font-size: 28px;
+    padding: 20px 0;
+    margin-left: 20px;
+    border-top: 1px solid #e1e5e7;
+  }
+  .content .conList span {
+    width: 22%;
+    display: inline-block;
+    color: #999;
+    border-right: 1px solid  #e1e5e7;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .content .conList em {
+    width: 74%;
+    display: inline-block;
+    color: #333333;
+    padding-left: 10px;
+    font-style: normal;
+    vertical-align: middle;
+  }
+  .content .conList b {
+    color: #e26163;
+  }
+  .bottom .botWrap {
+    *zoom: 1;
+    width: 90%;
+    margin: 20px auto;
+  }
+  .bottom .botWrap:before,
+  .bottom .botWrap:after {
+    display: table;
+    content: "";
+  }
+  .bottom .botWrap:after {
+    clear: both;
+  }
+  .bottom .btn {
+    display: block;
+    font-size: 40px;
+    height: 80px;
+    line-height: 80px;
+    width: 45%;
+    text-align: center;
+  }
+  .bottom .btn a {
+    display: block;
+    color: #5fc0cd;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border: 1px solid #5fc0cd;
+    border-radius: 4px;
+  }
+  .bottom .btn a.active {
+    background: #5fc0cd;
+    color: #fff;
   }
 }

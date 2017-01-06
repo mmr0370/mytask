@@ -1,0 +1,852 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  border: none;
+}
+input,
+select,
+textarea {
+  outline: none;
+  border: none;
+  background: none;
+}
+textarea {
+  resize: none;
+}
+a {
+  text-decoration: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+body {
+  background: #fff;
+}
+.container {
+  width: 100%;
+}
+.findBtn:nth-child(1) {
+  margin-right: -4px;
+}
+.findBtn:nth-child(2) {
+  margin-left: -4px;
+}
+a.findBtn.active {
+  background: #fff;
+  color: #55a8b3;
+}
+a.findBtn:hover {
+  background: #fff;
+  color: #55a8b3;
+}
+.choiceTab {
+  *zoom: 1;
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+  border-right: 1px solid #e1e5e7;
+  vertical-align: top;
+}
+.choiceTab:before,
+.choiceTab:after {
+  display: table;
+  content: "";
+}
+.choiceTab:after {
+  clear: both;
+}
+span.choiceTab.borderNone {
+  border-right: 0;
+}
+.triangle {
+  float: right;
+  margin-top: 6px;
+  margin-right: 10px;
+  border-style: solid dashed dashed dashed;
+  border-color: #cccccc transparent transparent transparent;
+  border-width: 5px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  vertical-align: top;
+}
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: #f8fafb;
+  border-top: 1px solid #f8fafb;
+}
+.footerWrap {
+  *zoom: 1;
+  width: 90%;
+  margin: 10px auto;
+}
+.footerWrap:before,
+.footerWrap:after {
+  display: table;
+  content: "";
+}
+.footerWrap:after {
+  clear: both;
+}
+.btn {
+  float: left;
+  display: block;
+  width: 30%;
+}
+.btn a {
+  display: block;
+}
+@media all and (max-width: 767px) {
+  .header {
+    width: 100%;
+    background: #5fc0cd;
+    padding:px 0;
+  }
+  .headerLeft {
+    float: left;
+  }
+  .headerRight {
+    float: right;
+  }
+  .headerWrap {
+    *zoom: 1;
+    width: 100%;
+  }
+  .headerWrap:before,
+  .headerWrap:after {
+    display: table;
+    content: "";
+  }
+  .headerWrap:after {
+    clear: both;
+  }
+  .headerLeft {
+    width: 20%;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .headerRight {
+    width: 20%;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .headerRight .locationPic {
+    width: 30px;
+    height: 30px;
+    vertical-align: bottom;
+  }
+  .headerTab {
+    float: right;
+    width: 60%;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    text-align: center;
+  }
+  .headerTab .findBtn {
+    display: inline-block;
+    width: 70px;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    text-align: center;
+    background: #55a8b3;
+    border-radius: 10px;
+  }
+  .main {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .header h1 {
+    width: 60%;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .content {
+    width: 100%;
+    padding-bottom: 120px;
+    margin: 0 auto;
+  }
+  .content .choice {
+    width: 100%;
+    padding: 16px 0;
+    border-bottom: 1px solid #e1e5e7;
+    font-size: 14px;
+  }
+  .content .choiceTab {
+    *zoom: 1;
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    border-right: 1px solid #e1e5e7;
+    vertical-align: top;
+  }
+  .content .choiceTab:before,
+  .content .choiceTab:after {
+    display: table;
+    content: "";
+  }
+  .content .choiceTab:after {
+    clear: both;
+  }
+  .content .conList {
+    padding: 10px;
+    border-bottom: 1px solid #e1e5e7;
+  }
+  .content .conList .top {
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+  }
+  .content .conList .calendar {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url("../../images/task5/calendar.png") no-repeat center top;
+    background-size: contain;
+    vertical-align: top;
+    margin-right: 8px;
+  }
+  .content .conList .middle {
+    *zoom: 1;
+    margin: 10px 0 10px 28px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .content .conList .middle:before,
+  .content .conList .middle:after {
+    display: table;
+    content: "";
+  }
+  .content .conList .middle:after {
+    clear: both;
+  }
+  .content .conList .dateRange {
+    font-size: 14px;
+    float: left;
+    font-family: "Adobe 黑体 Std";
+  }
+  .content .conList .charge {
+    font-family: "Adobe 黑体 Std";
+    font-size: 14px;
+    float: right;
+    color: #e63b0e;
+  }
+  .content .conList .more {
+    width: 12px;
+    height: 20px;
+    margin-left: 10px;
+    vertical-align: top;
+  }
+  .content .conList .bottom {
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+  }
+  .content .conList .location {
+    width: 16px;
+    height: 20px;
+    display: inline-block;
+    background: url("../../images/task5/ShapeGray.png") no-repeat center top;
+    background-size: contain;
+    vertical-align: top;
+    margin-right: 8px;
+  }
+  .footer .homePic {
+    display: block;
+    width: 32px;
+    height: 50px;
+    margin: 0 auto;
+  }
+  .footer .writePic {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+  }
+  .footer .userPic {
+    display: block;
+    width: 28px;
+    height: 50px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .header {
+    width: 100%;
+    background: #5fc0cd;
+    padding: 20px 0;
+  }
+  .headerLeft {
+    float: left;
+  }
+  .headerRight {
+    float: right;
+  }
+  .headerWrap {
+    *zoom: 1;
+    width: 100%;
+  }
+  .headerWrap:before,
+  .headerWrap:after {
+    display: table;
+    content: "";
+  }
+  .headerWrap:after {
+    clear: both;
+  }
+  .headerLeft {
+    width: 20%;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .headerRight {
+    width: 20%;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .headerRight .locationPic {
+    width: 50px;
+    height: 50px;
+    vertical-align: bottom;
+  }
+  .headerTab {
+    float: right;
+    width: 60%;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+  }
+  .headerTab .findBtn {
+    display: inline-block;
+    width: 140px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+    background: #55a8b3;
+    border-radius: 10px;
+  }
+  .main {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .header h1 {
+    width: 60%;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .content {
+    width: 100%;
+    padding-bottom: 120px;
+    margin: 0 auto;
+  }
+  .content .choice {
+    width: 100%;
+    padding: 16px 0;
+    border-bottom: 1px solid #e1e5e7;
+    font-size: 20px;
+  }
+  .content .choiceTab {
+    *zoom: 1;
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    border-right: 1px solid #e1e5e7;
+    vertical-align: top;
+  }
+  .content .choiceTab:before,
+  .content .choiceTab:after {
+    display: table;
+    content: "";
+  }
+  .content .choiceTab:after {
+    clear: both;
+  }
+  .content .conList {
+    padding: 20px;
+    border-bottom: 1px solid #e1e5e7;
+  }
+  .content .conList .top {
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+  }
+  .content .conList .calendar {
+    width: 24px;
+    height: 28px;
+    display: inline-block;
+    background: url("../../images/task5/calendar.png") no-repeat center top;
+    background-size: contain;
+    vertical-align: top;
+    margin-right: 8px;
+  }
+  .content .conList .middle {
+    *zoom: 1;
+    margin: 10px 0 10px 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 20px;
+  }
+  .content .conList .middle:before,
+  .content .conList .middle:after {
+    display: table;
+    content: "";
+  }
+  .content .conList .middle:after {
+    clear: both;
+  }
+  .content .conList .dateRange {
+    font-size: 20px;
+    float: left;
+    font-family: "Adobe 黑体 Std";
+  }
+  .content .conList .charge {
+    font-family: "Adobe 黑体 Std";
+    font-size: 20px;
+    float: right;
+    color: #e63b0e;
+  }
+  .content .conList .more {
+    width: 14px;
+    height: 28px;
+    margin-left: 10px;
+    vertical-align: top;
+  }
+  .content .conList .bottom {
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+  }
+  .content .conList .location {
+    width: 20px;
+    height: 28px;
+    display: inline-block;
+    background: url("../../images/task5/ShapeGray.png") no-repeat center top;
+    background-size: contain;
+    vertical-align: top;
+    margin-right: 8px;
+  }
+  .footer .homePic {
+    display: block;
+    width: 32px;
+    height: 50px;
+    margin: 0 auto;
+  }
+  .footer .writePic {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+  }
+  .footer .userPic {
+    display: block;
+    width: 28px;
+    height: 50px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 992px) and (max-width: 1119px) {
+  .header {
+    width: 100%;
+    background: #5fc0cd;
+    padding: 20px 0;
+  }
+  .headerLeft {
+    float: left;
+  }
+  .headerRight {
+    float: right;
+  }
+  .headerWrap {
+    *zoom: 1;
+    width: 100%;
+  }
+  .headerWrap:before,
+  .headerWrap:after {
+    display: table;
+    content: "";
+  }
+  .headerWrap:after {
+    clear: both;
+  }
+  .headerLeft {
+    width: 20%;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .headerRight {
+    width: 20%;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .headerRight .locationPic {
+    width: 50px;
+    height: 50px;
+    vertical-align: bottom;
+  }
+  .headerTab {
+    float: right;
+    width: 60%;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+  }
+  .headerTab .findBtn {
+    display: inline-block;
+    width: 140px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+    background: #55a8b3;
+    border-radius: 10px;
+  }
+  .main {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .header h1 {
+    width: 60%;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .content {
+    width: 100%;
+    padding-bottom: 120px;
+    margin: 0 auto;
+  }
+  .content .choice {
+    width: 100%;
+    padding: 16px 0;
+    border-bottom: 1px solid #e1e5e7;
+    font-size: 20px;
+  }
+  .content .choiceTab {
+    *zoom: 1;
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    border-right: 1px solid #e1e5e7;
+    vertical-align: top;
+  }
+  .content .choiceTab:before,
+  .content .choiceTab:after {
+    display: table;
+    content: "";
+  }
+  .content .choiceTab:after {
+    clear: both;
+  }
+  .content .conList {
+    padding: 20px;
+    border-bottom: 1px solid #e1e5e7;
+  }
+  .content .conList .top {
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+  }
+  .content .conList .calendar {
+    width: 24px;
+    height: 28px;
+    display: inline-block;
+    background: url("../../images/task5/calendar.png") no-repeat center top;
+    background-size: contain;
+    vertical-align: top;
+    margin-right: 8px;
+  }
+  .content .conList .middle {
+    *zoom: 1;
+    margin: 10px 0 10px 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 20px;
+  }
+  .content .conList .middle:before,
+  .content .conList .middle:after {
+    display: table;
+    content: "";
+  }
+  .content .conList .middle:after {
+    clear: both;
+  }
+  .content .conList .dateRange {
+    font-size: 20px;
+    float: left;
+    font-family: "Adobe 黑体 Std";
+  }
+  .content .conList .charge {
+    font-family: "Adobe 黑体 Std";
+    font-size: 20px;
+    float: right;
+    color: #e63b0e;
+  }
+  .content .conList .more {
+    width: 14px;
+    height: 28px;
+    margin-left: 10px;
+    vertical-align: top;
+  }
+  .content .conList .bottom {
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+  }
+  .content .conList .location {
+    width: 20px;
+    height: 28px;
+    display: inline-block;
+    background: url("../../images/task5/ShapeGray.png") no-repeat center top;
+    background-size: contain;
+    vertical-align: top;
+    margin-right: 8px;
+  }
+  .footer .homePic {
+    display: block;
+    width: 32px;
+    height: 50px;
+    margin: 0 auto;
+  }
+  .footer .writePic {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+  }
+  .footer .userPic {
+    display: block;
+    width: 28px;
+    height: 50px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    width: 100%;
+    background: #5fc0cd;
+    padding: 20px 0;
+  }
+  .headerLeft {
+    float: left;
+  }
+  .headerRight {
+    float: right;
+  }
+  .headerWrap {
+    *zoom: 1;
+    width: 100%;
+  }
+  .headerWrap:before,
+  .headerWrap:after {
+    display: table;
+    content: "";
+  }
+  .headerWrap:after {
+    clear: both;
+  }
+  .headerLeft {
+    width: 20%;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .headerRight {
+    width: 20%;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .headerRight .locationPic {
+    width: 50px;
+    height: 50px;
+    vertical-align: bottom;
+  }
+  .headerTab {
+    float: right;
+    width: 60%;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+  }
+  .headerTab .findBtn {
+    display: inline-block;
+    width: 140px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+    background: #55a8b3;
+    border-radius: 10px;
+  }
+  .main {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .header h1 {
+    width: 60%;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .content {
+    width: 1200px;
+    padding-bottom: 160px;
+    margin: 0 auto;
+  }
+  .content .choice {
+    width: 100%;
+    padding: 30px 0;
+    border-bottom: 1px solid #e1e5e7;
+    font-size: 28px;
+  }
+  .content .choiceTab {
+    *zoom: 1;
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    border-right: 1px solid #e1e5e7;
+    vertical-align: top;
+  }
+  .content .choiceTab:before,
+  .content .choiceTab:after {
+    display: table;
+    content: "";
+  }
+  .content .choiceTab:after {
+    clear: both;
+  }
+  .content .triangle {
+    margin-top: 14px;
+  }
+  .content .conList {
+    padding: 20px;
+    border-bottom: 1px solid #e1e5e7;
+  }
+  .content .conList .top {
+    height: 30px;
+    line-height: 30px;
+    font-size: 26px;
+  }
+  .content .conList .calendar {
+    width: 24px;
+    height: 28px;
+    display: inline-block;
+    background: url("../../images/task5/calendar.png") no-repeat center top;
+    background-size: contain;
+    vertical-align: top;
+    margin-right: 8px;
+  }
+  .content .conList .middle {
+    *zoom: 1;
+    margin: 10px 0 10px 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 20px;
+  }
+  .content .conList .middle:before,
+  .content .conList .middle:after {
+    display: table;
+    content: "";
+  }
+  .content .conList .middle:after {
+    clear: both;
+  }
+  .content .conList .dateRange {
+    font-size: 20px;
+    float: left;
+    font-family: "Adobe 黑体 Std";
+  }
+  .content .conList .charge {
+    font-family: "Adobe 黑体 Std";
+    font-size: 20px;
+    float: right;
+    color: #e63b0e;
+  }
+  .content .conList .more {
+    width: 14px;
+    height: 28px;
+    margin-left: 10px;
+    vertical-align: top;
+  }
+  .content .conList .bottom {
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+  }
+  .content .conList .location {
+    width: 20px;
+    height: 28px;
+    display: inline-block;
+    background: url("../../images/task5/ShapeGray.png") no-repeat center top;
+    background-size: contain;
+    vertical-align: top;
+    margin-right: 8px;
+  }
+  .footer .homePic {
+    display: block;
+    width: 66px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  .footer .writePic {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  .footer .userPic {
+    display: block;
+    width: 56px;
+    height: 100px;
+    margin: 0 auto;
+  }
+}
