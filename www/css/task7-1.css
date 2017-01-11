@@ -15,13 +15,13 @@
     right: 0;
 }
 .banner .info h3{
-    font-size:40px;
+    font-size:3.2em;
     color:#ffffff;
     font-weight: bold;
     margin-bottom:12px;
 }
 .banner .info p {
-    font-size: 16px;
+    font-size:1.4em;;
     color: #ffffff;
     text-align: right;
 }
@@ -48,7 +48,7 @@
     line-height:60px;
 }
 .tabNav a{
-    font-size:16px;
+    font-size:1.4em;;
     color:#333;
 }
 .tabNav a.on{
@@ -59,7 +59,7 @@
     height:60px;
     line-height:60px;
     text-align: center;
-    font-size: 16px;
+    font-size:1.4em;;
     color:#333;
     font-weight: bold;
     border-bottom: 1px solid #999999;
@@ -77,7 +77,7 @@
     display: block;
     margin-left: 110px;
     background: url(../images/task7/circle.png) no-repeat left center;
-    font-size: 14px;
+    font-size:1.2em;;
     color:#29b078;
     text-align: left;
     text-indent: 20px;
@@ -119,4 +119,29 @@
     text-indent: 2em;
     color:#999999;
     font-size:14px;
+}
+@media all and (max-width: 767px){
+    html{
+        font-size:37.5% ;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    html{
+        font-size: 50% ;
+    }
+
+}
+@media (min-width: 992px) and (max-width: 1119px) {
+
+    html{
+        font-size: 58% ;
+    }
+
+
+}
+@media (min-width: 1200px) {
+    html{
+        font-size: 62.5% ;
+    }
+
 }

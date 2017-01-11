@@ -366,7 +366,10 @@ margin-top:50px;
 .navPath {
     border-bottom: none;
 }
-
+.aboutUs .banner{
+    width:100%;
+    height:250px;
+}
 .aboutUs .banner .container{
     height:100%;
 }

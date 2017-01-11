@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,6 +38,7 @@
    var oLi=oUl.getElementsByTagName("li");
    var colorArray=["#1854ec","#22ec18","#ff0000"];
    var NumArray=[];
+   var timer = null;
 
 
    function colorChange(){
@@ -80,11 +82,16 @@
 
    changeBtn.onclick=function changeBtn(){
        this.style.background="#2570bc";
-       colorChange();
+       /*colorChange();*/
+       clearInterval(timer);
+       timer=setInterval(colorChange,1000);
+
    };
+
    resetBtn.onclick=function changeBtn(){
       this.style.background="#2570bc";
        window.location.reload();
+       clearInterval(timer);
    };
       </script>
 

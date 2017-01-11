@@ -20,7 +20,7 @@ table {
     border-spacing: 0;
 }
 a{ text-decoration:none; outline:none;}
-em,i,b{ font-style:normal;}
+rem,i,b{ font-style:normal;}
 .fl{ float:left;}
 .fr{ float:right;}
 .clear { zoom:1; }
@@ -48,38 +48,38 @@ textarea{border:none;outline:none;resize:none;}
     left:0;
     z-index:2;
     width:100%;
-    padding:0.8em 0;
+    padding:0.8rem 0;
     background:#29bde0;
     text-align: center;
-    font-size:2.6em;
+    font-size:2.6rem;
     color:#fff;
     border-bottom: 1px solid #f1f1f1;
 }
 .header .headerL img{
-    width:1.2em;
-    height:1em;
+    width:2rem;
+    height:1.6rem;
     vertical-align: top;
 }
 .header .headerR img{
-    width:1.2em;
-    height:1em;
+    width:2rem;
+    height:1.6rem;
     vertical-align: top;
 }
 
 
 
 .content{
-    margin-top: 7em;
-    margin-bottom: 5em;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
 }
 .recommendBox{
 
 }
 .recommendBox a{
     position:relative;
-    padding:1em 0;
+    padding:1rem 0;
     display:block;
-    font-size:3em;
+    font-size:3rem;
     color:#9a9a9a;
     text-decoration: none;
     border:1px solid #c9c9c9;
@@ -87,20 +87,20 @@ textarea{border:none;outline:none;resize:none;}
 }
 .recommendBox a img{
     position:absolute;
-    top:0.8em;
+    top:1.4rem;
     right:2%;
-    width:1em;
-    height:1.6em;
+    width:1rem;
+    height:1.6rem;
 }
 .versionBox{
-    margin-top:2em;
+    margin-top:2rem;
 }
 .versionWrap{
     background:#fff;
     border:1px solid #c9c9c9;
 }
 .versionWrap h2{
-    padding:0.6em 0;
+    padding:0.6rem 0;
     border-bottom: 1px solid #fde1ae;
     color:#fbb435;
 }
@@ -111,9 +111,9 @@ textarea{border:none;outline:none;resize:none;}
     position:absolute;
     right:3%;
     top:50%;
-    margin-top:-4em;
-    width:1.6em;
-    height:3.2em;
+    margin-top:-4rem;
+    width:1.6rem;
+    height:3.2rem;
 }
 .versionDetail{
     width:76%;
@@ -121,27 +121,27 @@ textarea{border:none;outline:none;resize:none;}
 }
 .versionDetail a{
     display:block;
-    margin-top:1em;
-    font-size:3em;
-    padding:1.4em 0;
+    margin-top:1rem;
+    font-size:3rem;
+    padding:1.4rem 0;
     color:#fff;
     text-decoration: none;
     background: #69d1e9;
 }
 .versionDetail p{
-    font-size:2.2em;
-    margin-top:1.2em;
+    font-size:2.2rem;
+    margin-top:1.2rem;
 }
 .versionBtn{
-    width:7.2em;
-    margin:1.2em auto;
+    width:7.2rem;
+    margin:1.2rem auto;
 }
 .versionBtn li{
     float:left;
-    width:1em;
-    height:1em;
-    border-radius: 0.5em;
-    margin:0 0.4em;
+    width:1rem;
+    height:1rem;
+    border-radius: 0.5rem;
+    margin:0 0.4rem;
     background:#f0f0f0;
 }
 .versionBtn li.active{
@@ -151,63 +151,66 @@ textarea{border:none;outline:none;resize:none;}
 .tips{
     width:100%;
     background: #b9e9f5;
-    font-size:2em;
-    line-height:1.4em;
+    font-size:2rem;
+    line-height:1.4rem;
     color:#464646;
-    padding:0.6em 0;
+    padding:1rem 0;
     position:relative;
-    margin-bottom:4.6em;
+    margin-bottom:4.6rem;
+}
+.tipsL{
+    padding:0.6em 0;
 }
 .tipsR{
-    line-height:2.4em;
+    line-height:2.4rem;
 }
 .tipsR img{
-    width:2em;
-    height:2em;
+    width:3rem;
+    height:3rem;
     vertical-align: middle;
 }
 .tipsB{
     position:absolute;
     left:8%;
-    bottom:-2.8em;
+    bottom:-2.8rem;
 }
 .tipsB p{
     color:#fff;
-    margin-top:0.8em;
+    margin-top:0.8rem;
 }
 .blueTrilateral{
     width:0;
     height:0;
-    border-left: 0.4em solid transparent;
-    border-right: 0.4em solid transparent;
-    border-top: 0.8em solid #b9e9f5;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    border-top: 0.8rem solid #b9e9f5;
 }
 .playerList .row{
-    margin-top:1em;
+    margin-top:1rem;
 }
 .playerList .character{
-    width:6.4em;
-    height:6.4em;
+    width:10rem;
+    height:10rem;
     border:2px solid #fff;
     margin:auto;
 }
 .playerList .character h2{
     width:100%;
-    height:3em;
-    font-size:2.8em;
+    height:3rem;
+    font-size:2.8rem;
     text-align: center;
     background:#f5c97b;
-    line-height: 3em;
+    line-height: 3rem;
 }
 .playerList .character h2.mark{
    background:#f4a00b;
 }
 .playerList .character p{
     width:100%;
-    height:1.7em;
+    height:1.7rem;
     text-align: center;
     background:#83b09a;
-    line-height: 1.7em;
+    line-height: 1.7rem;
     color:#fff;
 }
 .resultBox{
@@ -221,17 +224,17 @@ textarea{border:none;outline:none;resize:none;}
     margin:0 auto;
 }
 .resultBox p{
-    margin-top:1.4em;
-    font-size:4em;
+    margin-top:1.4rem;
+    font-size:3rem;
     color:#ffc865;
 }
 .resultBox .info{
-    margin-top:2.6em;
+    margin-top:2.6rem;
     color:#fff;
 }
 .resultBox .resultTitle,.resultBox .resultList,.resultBox .resultWord{
-    font-size:3em;
-    line-height:1.4em;
+    font-size:2.2rem;
+    line-height:2rem;
 }
 .gameDetail{
     width:100%;
@@ -242,18 +245,19 @@ textarea{border:none;outline:none;resize:none;}
     width:80%;
     margin:0 auto;
 }
-.dayDetail{
-    font-size:3em;
-    line-height:1.8em;
-    color:#a6a6a6;
-    padding:0.8em 0;
+.dayDetail {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: #a6a6a6;
+    padding:1rem 0;
 }
 .dayDetail .date{
-    font-size:1.2em;
+    font-size:2.8rem;
     color:#333;
+    line-height:2.6rem;
 }
 .dayDetail .time{
-    font-size:0.8em;
+    font-size:0.8rem;
 }
 .footer{
     position:fixed;
@@ -263,18 +267,18 @@ textarea{border:none;outline:none;resize:none;}
     width:100%;
     background:#29bde0;
     text-align: center;
-    padding:0.6em 0;
+    padding:0.6rem 0;
     border-top: 1px solid #e2eaec;
 }
 .footer .footerL img,.footer .footerR img{
-    width:2.4em;
-    height:4em;
+    width:2.4rem;
+    height:4rem;
     vertical-align: middle;
 }
 
 .footer .footerM img{
-    width:5em;
-    height:4em;
+    width:5rem;
+    height:4rem;
     vertical-align: middle;
 }
 .footerYellowBtn{
@@ -282,16 +286,16 @@ textarea{border:none;outline:none;resize:none;}
     width:80%;
     background: #fbb435;
     text-align:center;
-    font-size:2.6em;
+    font-size:2.6rem;
     margin:0 auto;
-    padding:0.6em;
+    padding:0.6rem;
     color:#fff;
 }
 .footerBtn{
     display:block;
     width:100%;
     color:#fff;
-    padding:1em 0;
+    padding:1rem 0;
     border-radius:6px;
 }
 .footerRedBtn{
@@ -308,27 +312,107 @@ textarea{border:none;outline:none;resize:none;}
 }
 
 
-@media (max-width: 768px){
-    html,body{
-        font-size:62.5%;
+@media all and (max-width: 767px){
+    html{
+        font-size:37.5% ;
     }
-}
-@media (min-width: 769px){
-    html,body{
-        font-size:70%;
+    .playerList .character{
+        width:7.8rem;
+        height:7.8rem;
+        margin-top:20px;
     }
-    .content{
-        margin-top:8em;
+    .playerList .character h2{
+        width:100%;
+        height:5.8rem;
+        font-size:2rem;
+        line-height:5.8rem;
     }
-}
+    .playerList .character h2.mark{
+        background:#f4a00b;
+    }
+    .playerList .character p{
+        height:1.7rem;
+        font-size:2rem;
+        line-height:1.7rem;
+    }
 
-@media (max-width: 480px){
-    html,body{
-        font-size:58%;
-    }
 }
-@media (max-width: 380px){
-    html,body{
-        font-size:54%;
+@media (min-width: 768px) and (max-width: 992px) {
+    html{
+        font-size: 50% ;
     }
+    .playerList .character{
+        width:10rem;
+        height:10rem;
+        margin-top:20px;
+    }
+    .playerList .character h2{
+        width:100%;
+        height:8rem;
+        font-size:2rem;
+        line-height:8rem;
+    }
+    .playerList .character h2.mark{
+        background:#f4a00b;
+    }
+    .playerList .character p{
+        height:1.7rem;
+        font-size:2rem;
+        line-height:1.7rem;
+    }
+
+
+}
+@media (min-width: 992px) and (max-width: 1119px) {
+
+    html{
+        font-size: 58% ;
+    }
+    .playerList .character{
+        width:14rem;
+        height:14rem;
+        margin-top:20px;
+    }
+    .playerList .character h2{
+        width:100%;
+        height:11.7rem;
+        font-size:2.4rem;
+        text-align: center;
+        background:#f5c97b;
+        line-height: 11.7rem;
+    }
+    .playerList .character h2.mark{
+        background:#f4a00b;
+    }
+    .playerList .character p{
+        height:2rem;
+        font-size:2.4rem;
+        line-height: 2rem;
+    }
+
+
+}
+@media (min-width: 1200px) {
+    html{
+        font-size: 62.5% ;
+    }
+    .playerList .character{
+        width:16rem;
+        height:16rem;
+        margin-top:20px;
+    }
+    .playerList .character h2{
+        height:13rem;
+        font-size:2.8rem;
+        line-height: 13rem;
+    }
+    .playerList .character h2.mark{
+        background:#f4a00b;
+    }
+    .playerList .character p{
+        height:2.7rem;
+        font-size:2.8rem;
+        line-height: 2.7rem;
+    }
+
 }

@@ -1,0 +1,696 @@
+@charset "utf-8";
+/*
+---------------------------------
+Site: task14
+Author: moran
+Updated: 2016/1/3
+Updated by:moran
+---------------------------------
+*/
+body.index{
+    background:#fafafa;
+}
+.header{
+    padding:10px 0;
+}
+.headerList{
+    margin-right:20px;
+}
+.headerList li{
+    float: right;
+}
+.navBar li{
+    float:right;
+}
+.nav{
+    padding:1px 0;
+}
+.nav .logo{
+
+}
+.nav .logo img{
+    margin-top:20px;
+    width:116px;
+    height:60px;
+}
+.navBar a{
+    display: block;
+    padding:40px 30px;
+}
+.navBar a.on{
+    padding:38px 30px;
+    border-bottom: 4px solid #fff;
+}
+.navBar a:hover{
+    padding:38px 30px;
+    border-bottom: 4px solid #fff;
+}
+.index .banner{
+    padding-top: 15%;
+    width:100%;
+    background: url(../../images/task7/banner1.png) no-repeat center top;
+}
+.index .banner .container{
+
+}
+.banner .prev,.banner .next{
+    position:absolute;
+    top:50%;
+    margin-top:-74px;
+}
+.banner .prev{
+    left:10px;
+}
+.banner .next{
+    right:10px;
+}
+.banner-prev,.banner-next{
+    display: block;
+    width:32px;
+    height:54px;
+}
+.switch-btn{
+    width:60px;
+    margin:0 auto;
+    padding-top:80px;
+}
+.switch-btn li{
+    float:left;
+    width:12px;
+    height:12px;
+    border-radius: 6px;
+    margin:0 4px;
+}
+.advantage{
+    margin-top: 160px;
+}
+.adv-item{
+    margin-top:20px;
+}
+.advantage h2{
+    margin-top:30px;
+}
+.advantage p{
+    margin-top:30px;
+    line-height: 1.4em;
+}
+.efficient{
+    display:block;
+    width:54px;
+    height:64px;
+}
+.standard{
+    display:block;
+    width:74px;
+    height:64px;
+}
+.connection{
+    display:block;
+    width:66px;
+    height:64px;
+}
+.efficient img{
+    width:100%;
+    height:100%;
+}
+.advantage .info{
+    margin-top:64px;
+}
+.advantage .info dl{
+    margin-left: 10px;
+    margin-bottom: 34px;
+    line-height:1.8em;
+}
+
+.module{
+    margin-top:120px;
+}
+.module h2{
+
+}
+.module .step{
+    margin-top:70px;
+    margin-bottom:20px;
+}
+.labelCircle{
+    display: inline-block;
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    border-radius:20px;
+    border:1px solid #dedede;
+    background: #fff;
+    text-align: center;
+    margin-right:10px;
+}
+.labelText{
+    display: inline-block;
+    width:110px;
+}
+.module .labelTextR {
+    width: 200px;
+}
+.StudentShow{
+    margin-top:50px;
+}
+.StudentShow .item{
+    border-radius: 6px;
+    box-shadow: 0 0 4px #dedede;
+    padding:20px;
+    margin-top:20px;
+}
+.StudentShow .item .pic{
+    width:100px;
+    height:100px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin:0 auto;
+    margin-bottom:40px;
+}
+.StudentShow .item .pic img{
+    width:100%;
+    height:100%;
+}
+.StudentShow .item p{
+    margin-top:26px;
+    line-height:1.4em;
+}
+.companyList{
+    margin-top:60px;
+}
+.companyList .list{
+    padding:20px 0;
+    box-shadow: 4px 6px 8px #ccc;
+}
+.companyList .list img{
+    display: block;
+    margin:0 auto;
+}
+.blogRoll{
+    margin-top:70px;
+    padding:30px 0;
+}
+.blogRoll-con{
+    margin-top:60px;
+}
+
+.blogRoll-con a{
+    display: block;
+    background: url(../../images/task7/circleSmall.png) no-repeat left center;
+    text-indent: 10px;
+    color:#999;
+}
+.footer{
+    padding-top: 40px;
+}
+.footerL p {
+    margin-top: 60px;
+}
+.footer p span {
+    margin: 0 4px;
+}
+.footerM p {
+    margin-top: 21px;
+}
+.footer .exp {
+    border-top: 1px solid #32c086;
+    height: 20px;
+    line-height: 20px;
+}
+/*Cooperation*/
+.Cooperation{
+    background:#fafafa;
+}
+.content{
+    margin-bottom:100px;
+}
+.navPath{
+    height:80px;
+    line-height:80px;
+    border-bottom: 1px solid #d0d6d9;
+}
+.navPath a{
+    color:#333333;
+}
+.navPath a.on{
+    color:#29b078;
+}
+.Cooperation .tabDirection,.Cooperation .navPath{
+    padding:20px;
+    font-size: 14px;
+    border-bottom: 1px solid #edf1f2;
+}
+.Cooperation .tabDirection p{
+    display: inline-block;
+    color: #999999;
+    vertical-align: top;
+}
+.Cooperation .tabDirection ul{
+    display: inline-block;
+    color: #333333;
+    vertical-align: top;
+}
+.Cooperation .tabDirection li{
+    float:left;
+    width:70px;
+}
+.Cooperation .tabDirection li a{
+    color:#333;
+    padding:0 4px;
+}
+.Cooperation .tabDirection li a.on{
+    background:#29b078;
+    color:#fff;
+}
+.Cooperation .tabContentItem{
+    margin-top:50px;
+}
+.Cooperation .tabContentItem .wrap{
+    background:#fff;
+    border: 1px solid #eeeded;
+}
+.Cooperation .tabContentTitle{
+    font-size: 16px;
+    color:#333;
+    padding:30px 0;
+    border-bottom: 1px solid #edf1f2;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.Cooperation .tabTop{
+    margin-top:50px;
+}
+.Cooperation .tabTop .pic{
+    width:34%;
+    margin-right:2%;
+    overflow: hidden;
+}
+.Cooperation .tabTop .pic img{
+    width:140px;
+    height:140px;
+}
+.Cooperation .tabTop .info{
+    width:63%;
+}
+.Cooperation .tabTop .info h3{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+    margin-top:16px;
+}
+.Cooperation .tabTop .info p{
+    color: #333333;
+    font-size: 14px;
+    margin-top:16px;
+}
+.Cooperation .tabBottom .level{
+    width:100%;
+    border-top: 1px solid #edf1f2;
+    font-size: 12px;
+    color:#999;
+}
+.Cooperation .tabBottom .level span{
+    margin:0 2px;
+    vertical-align: top;
+}
+.Cooperation .tabBottom .levelL{
+    width:50%;
+    padding:16px 8px;
+    border-right: 1px solid #edf1f2;
+}
+.Cooperation .tabBottom .level .text{
+    font-size: 12px;
+    color:#333;
+    margin:0;
+    margin-left:8px;
+}
+.Cooperation .tabBottom .level .text .red{
+    display: inline;
+    margin:0;
+    color:#f01400;
+}
+.Cooperation .tabBottom .levelR{
+    width:50%;
+    padding:16px 8px;
+}
+.Cooperation .tabBottom .Salary{
+    width:100%;
+    border-top: 1px solid #edf1f2;
+    font-size: 12px;
+    color:#999;
+}
+.Cooperation .tabBottom .SalaryL{
+    width:40%;
+    text-align: center;
+    border-right: 1px solid #edf1f2;
+    height:96px;
+    line-height:96px;
+}
+.Cooperation .tabBottom .SalaryR{
+    padding-left: 20px;
+    padding-right:14px;
+    margin:0;
+    width:60%;
+}
+.Cooperation .tabBottom .SalaryR p{
+    height:32px;
+    line-height:32px;
+    color:#333;
+}
+.Cooperation .tabBottom .peopleNum{
+    border-top: 1px solid #edf1f2;
+    font-size:14px;
+    color:#333;
+    padding:16px 12px;
+}
+.Cooperation .tabBottom .peopleNum span{
+    color:#f01400;
+}
+.Cooperation .tabBottom .tips{
+    border-top: 1px solid #edf1f2;
+    font-size: 12px;
+    color:#999;
+    padding:16px 12px;
+}
+/*about*/
+.aboutUs{
+    background: #fafafa;
+}
+.navPath {
+    border-bottom: none;
+}
+.aboutUs .banner{
+    width:100%;
+    height:240px;
+    background:#f1a750;
+}
+.aboutUs .banner .container{
+    height:100%;
+}
+.aboutUs .banner .bannerImg{
+    width:100%;
+    height:100%;
+    background:  url(../../images/task7/bannerIndex.png) no-repeat center top;
+    background-size: contain;
+}
+.aboutUs .tabBox{
+
+}
+.aboutUs .tabBox .tabNav{
+
+}
+.aboutUs .tabBox .tabNav .wrap{
+    background:#fff;
+    border: 1px solid #ededed;
+}
+.aboutUs .tabBox .tabNav h2{
+    text-align: center;
+    font-size: 16px;
+    font-weight:bold;
+    color:#333;
+    height:60px;
+    line-height:60px;
+    border-bottom: 1px solid #ededed;
+}
+.aboutUs .tabBox .tabNav ul{
+    width:100px;
+    margin:auto;
+    margin-top:20px;
+}
+.aboutUs .tabBox .tabNav ul li{}
+.aboutUs .tabBox .tabNav ul li a{
+    display:block;
+    color:#29b078;
+    line-height:50px;
+}
+.aboutUs .tabBox .tabNav ul li a span.circle{
+    display:inline-block ;
+    width:10px;
+    height:10px;
+    border-radius:5px;
+    border: 1px solid #f9a372;
+    margin-right:10px;
+    background:#fff;
+}
+.aboutUs .tabBox .tabNav ul li a.on{
+    color:#f9a372;
+}
+.aboutUs .tabBox .tabNav ul li a.on span.circle{
+    display:inline-block ;
+    width:10px;
+    height:10px;
+    border-radius:5px;
+    border: 1px solid #f9a372;
+    margin-right:10px;
+    background:#f9a372;
+}
+.aboutUs .tabBox .tabContent{
+
+}
+.aboutUs .tabBox .tabContent .wrap{
+    background:#fff;
+    border: 1px solid #ededed;
+    padding:0 5% 100px;
+}
+.aboutUs .tabBox .tabContent .wrap p{
+    color:#999;
+    font-size:14px;
+    margin-top:20px;
+    text-indent:28px;
+    line-height:30px;
+}
+.aboutUs .tabBox .tabContent .titleL{
+    padding:45px 0;
+    width:30%;
+}
+.aboutUs .tabBox .tabContent .titleL img{
+    display:block;
+    width:138px;
+    margin:auto;
+
+}
+.aboutUs .tabBox .tabContent .titleR{
+    width:70%;
+}
+.aboutUs .tabBox .tabContent .titleR p{
+    text-indent: 0;
+}
+@media all and (max-width: 767px){
+    .index .banner{
+        height:150px;
+        padding-top: 18%
+    }
+    .nav .logo{
+        padding:10px 20px;
+    }
+    .nav .logo img{
+        width:40px;
+        height:24px;
+    }
+    .navBar li {
+        float:none;
+    }
+    .navBar a{
+        display: block;
+        width:100%;
+        padding:10px 0;
+    }
+    .navBar a:hover,.navBar a.on{
+        border-bottom: 2px solid #fff;
+    }
+    .navBar a:hover{
+        border-bottom: 1px solid #fff;
+    }
+    .nav .logo .nav-more{
+        width:28px;
+        height:24px;
+    }
+    .banner-prev,.banner-next{
+        width:16px;
+        height:28px;
+    }
+    .banner .prev, .banner .next {
+        margin-top: -64px;
+    }
+    .advantage {
+        margin-top:40px;
+    }
+    .advantage .popularity{
+        border:none;
+    }
+    .advantage .info {
+        width:150px;
+        margin:0 auto;
+        margin-top: 30px;
+
+    }
+    .module{
+        margin-top:40px;
+    }
+    .labelCircle {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 15px;
+    }
+    .labelText {
+        width: 160px;
+    }
+    .module .labelTextR {
+        width: 160px;
+    }
+    .module .step {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .step-list{
+        margin-top:30px;
+    }
+    .blogRoll-con {
+        margin-top: 40px;
+    }
+    .col-xs-hide{
+       display:none;
+    }
+    .footerL,.footerM,.footerR{
+        text-align: center;
+        margin-top:20px;
+    }
+    .Cooperation .navPath{
+        height:50px;
+        line-height:50px;
+    }
+    .Cooperation .tabDirection{
+        padding:10px;
+    }
+    .Cooperation .tabContentTitle {
+        padding: 20px 0;
+    }
+    .Cooperation .tabContentItem {
+        margin-top: 30px;
+    }
+    .Cooperation .tabTop {
+        margin-top: 30px;
+    }
+    .aboutUs .banner{
+        height:64px;
+    }
+    .aboutUs .tabBox .tabContent .titleL {
+        padding:10px 0;
+        width: 100%;
+    }
+    .aboutUs .tabBox .tabContent .titleR {
+        width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .index .banner{
+        height:350px;
+    }
+    .nav .logo{
+        padding:12px 0;
+    }
+    .nav .logo img{
+        width:60px;
+        height:32px;
+    }
+    .navBar a{
+        padding:20px 16px;
+    }
+    .navBar a:hover,.navBar a.on{
+        padding:18px 30px;
+        border-bottom:2px solid #fff;
+    }
+    .banner-prev,.banner-next{
+        width:20px;
+        height:34px;
+    }
+    .advantage {
+        margin-top:80px;
+    }
+    .module{
+        margin-top:80px;
+    }
+    .labelCircle {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 15px;
+    }
+    .labelText {
+        width: 180px;
+    }
+    .module .labelTextR {
+        width: 180px;
+    }
+    .module .step {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .step-list{
+        margin-top:30px;
+    }
+    .blogRoll-con {
+        margin-top: 40px;
+    }
+    .aboutUs .banner{
+        height:150px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1119px) {
+    .index .banner{
+        height:400px;
+    }
+    .nav .logo img{
+        margin-top:20px;
+        width:60px;
+        height:32px;
+    }
+    .navBar a{
+        padding:20px 16px;
+    }
+    .navBar a:hover,.navBar a.on{
+        padding:18px 30px;
+        border-bottom: 2px solid #fff;
+    }
+    .banner-prev,.banner-next{
+        width:20px;
+        height:34px;
+    }
+    .advantage {
+        margin-top:80px;
+    }
+    .module{
+        margin-top:80px;
+    }
+    .labelCircle {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 15px;
+    }
+    .labelText {
+        width:90px;
+    }
+    .module .labelTextR {
+        width: 170px;
+    }
+    .aboutUs .banner{
+        height:196px;
+    }
+}
+@media (min-width: 1200px) {
+    .index .banner{
+        height:481px;
+    }
+}
+
+
+
+
+
+
+

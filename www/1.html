@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>test</title>
+</head>
+<body>
+<div oncontextmenu="myFunction()" contextmenu="mymenu">
+    <p>在文本框内右击鼠标查看上下文菜单！</p>
+    <menu type="context" id="mymenu">
+        <menuitem label="Refresh" onclick="window.location.reload();" icon="ico_reload.png"></menuitem>
+        <menu label="Share on...">
+            <menuitem label="Twitter" icon="ico_twitter.png" onclick="window.open('//twitter.com/intent/tweet?text=' + window.location.href);"></menuitem>
+            <menuitem label="Facebook" icon="ico_facebook.png" onclick="window.open('//facebook.com/sharer/sharer.php?u=' + window.location.href);"></menuitem>
+        </menu>
+        <menuitem label="向该网页发送邮件" onclick="window.location='mailto:?body='+window.location.href;"></menuitem>
+    </menu>
+</div>
+<script>
+    function myFunction() {
+        alert("你在 div 元素中点击鼠标了右键。");
+    }
+</script>
+<p><strong>注意：</strong> 只有 Firefox 中支持  contextmenu <strong>属性</strong> !</p>
+</body>
+</html>

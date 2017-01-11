@@ -1,0 +1,170 @@
+@charset "utf-8";
+/*
+---------------------------------
+Site: task14
+Author: moran
+Updated: 2016/12/30
+Updated by:moran
+---------------------------------
+*/
+/*字体颜色*/
+.fc29{
+    color:#29b078;
+}
+.fcff{
+    color:#fff;
+}
+.fc33{
+    color:#333;
+}
+.fc99{
+    color:#999;
+}
+.fcff6{
+    color:#ff650e;
+}
+.fcf0{
+    color:#f01400;
+}
+/*背景颜色*/
+.bgff{
+    background-color: #fff;
+}
+.bg29{
+    background-color: #29b078;
+}
+.bgf1{
+    background-color: #f1a750;
+}
+.bg08{
+    background-color: #080103;
+}
+.bgfa{
+    background-color: #fafafa;
+}
+/*字体大小*/
+.fz12{
+    font-size: 0.8rem;
+}
+.fz14{
+    font-size:1rem;
+}
+.fz16{
+    font-size: 1.2rem;
+}
+.fz18{
+    font-size: 1.4em;
+}
+
+/*border*/
+.bt3f{
+    border:3px solid #fff;
+}
+.b1ed{
+    border:1px solid #ededed;
+}
+.b1ff{
+    border:1px solid #fff;
+}
+.bb1e6{
+    border-bottom: 1px solid #e6e6e6;
+}
+.bt1ed{
+    border-top:1px solid #edf1f2;
+}
+.bb1ed{
+    border-bottom:1px solid #edf1f2;
+}
+.b1ed{
+    border:1px solid #edf1f2;
+}
+.bs1led{
+    border-left: 1px dashed #dedede;
+}
+/*对齐方式*/
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+/*布局居中*/
+.ly-center{
+    margin:0 auto;
+}
+.ly-top{
+    vertical-align: top;
+}
+/*font-style*/
+.fwb{
+    font-weight: bold;
+}
+/*shadow*/
+.sh-004-cc{
+    box-shadow: 0 0 4px #ccc;
+}
+.sh-468-cc{
+    box-shadow: 4px 6px 8px #ccc;
+}
+/*line-height*/
+.lh2{
+    line-height: 2em;
+}
+@media all and (max-width: 767px){
+    html{
+        font-size:37.5% ;
+    }
+    .special-text1{
+        font-size:2.6rem;
+    }
+    .special-text2{
+        font-size: 1.8rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    html{
+        font-size: 50% ;
+    }
+    .special-text1{
+        font-size:3rem;
+    }
+    .special-text2{
+        font-size: 2rem;
+    }
+
+}
+@media (min-width: 992px) and (max-width: 1119px) {
+
+    html{
+        font-size: 58% ;
+    }
+    .special-text1{
+        font-size:3.4rem;
+    }
+    .special-text2{
+        font-size: 2.4rem;
+    }
+
+}
+@media (min-width: 1200px) {
+    html{
+        font-size: 62.5% ;
+    }
+    .special-text1{
+        font-size:4rem;
+    }
+    .special-text2{
+        font-size: 2.6rem;
+    }
+
+}
+
+
+
+
+
+
+

@@ -11,8 +11,8 @@ html,body,h1,h2,h3,ul,li,dl,dd,dt,img,a,p,span,div{
 html,body{
     height:100%;
     width:100%;
-    color: #515151;
-    font-family:"Microsoft YaHei","微软雅黑",tahoma,"黑体";
+    color: #999;
+    font:14px "Microsoft YaHei","微软雅黑",tahoma,"黑体";
 }
 table {
     border-collapse: collapse;

@@ -17,7 +17,7 @@
 .headerTop .tel{
     height:25px;
     line-height:25px;
-    font-size:14px;
+    font-size:1.2em;
     color:#29b078;
 }
 .headerTop .contactUS{
@@ -36,13 +36,13 @@
     margin-left:8px;
 }
 .headerTop .contactUS li.list1 {
-    background-position: -10px -14px;
+    background-position: -10px -1.2em;
 }
 .headerTop .contactUS li.list2 {
     background-position: -10px -66px;
 }
 .headerTop .contactUS li.list3 {
-    background-position: -10px -114px;
+    background-position: -10px -11.2em;
 }
 .header{
     width:100%;
@@ -95,7 +95,7 @@
 }
 .footer .footerL p{
     margin-top:60px;
-    font-size:14px;
+    font-size:1.2em;
     color:#fff;
 }
 .footer .footerL p span{
@@ -124,7 +124,7 @@
 }
 .footer .footerM p{
     margin-top:22px;
-    font-size:14px;
+    font-size:1.2em;
     color:#fff;
 }
 .footer .footerM p span{
@@ -133,9 +133,34 @@
 .footerBottom{
     margin-top:20px;
     text-align:center;
-    font-size:14px;
+    font-size:1.2em;
     color:#fff;
     height:28px;
     line-height:28px;
     border-top: 1px solid #f0f0f0;
+}
+@media all and (max-width: 767px){
+    html{
+        font-size:37.5% ;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    html{
+        font-size: 50% ;
+    }
+ 
+}
+@media (min-width: 992px) and (max-width: 1119px) {
+
+    html{
+        font-size: 58% ;
+    }
+   
+
+}
+@media (min-width: 1200px) {
+    html{
+        font-size: 62.5% ;
+    }
+   
 }
