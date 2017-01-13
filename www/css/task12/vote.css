@@ -67,11 +67,19 @@ body{
     border:2px solid #fff;
     margin:24px auto;
 }
-.cardName{
+.cardName1{
+    position:relative;
     height:126px;
     line-height:126px;
+    text-align:center;
+    background:url(../../images/task6/ptt.png) no-repeat center top;
+    background-size: cover;
+}
+.cardName{
     text-align: center;
     font-size:24px;
+    background:#fbb435;
+    color:#fff;
 }
 .cardNum{
     height:20px;
@@ -79,7 +87,7 @@ body{
     font-size: 16px;
     color:#fff;
     text-align: center;
-    background: #83b09a;
+    background: #3ba3c3;
 }
 .voteMethod{
     display: none;
@@ -167,8 +175,7 @@ body{
 
 }
 @media (min-width: 992px) and (max-width: 1119px) {
-    .voteWrap.clear
-    {
+    .voteWrap.clear{
         padding:20px 20px 20px 40px;
     }
     .voteText{
@@ -202,6 +209,12 @@ body{
         border:2px solid #fff;
         margin:24px auto;
     }
+    .cardName1{
+        height:126px;
+        line-height:126px;
+        background:url(../../images/task6/ptt.png) no-repeat center top;
+        background-size: cover;
+    }
     .cardName{
         height:126px;
         line-height:126px;
@@ -231,7 +244,6 @@ body{
 
 }
 @media (min-width: 1200px) {
-
     .voteWrap.clear
     {
         padding:20px 20px 20px 40px;
@@ -265,6 +277,13 @@ body{
         height:200px;
         background:#f5c97b;
         margin:24px auto;
+    }
+    .cardName1{
+        height:166px;
+        line-height:166px;
+        font-size:24px;
+        background:url(../../images/task6/ptt.png) no-repeat center top;
+        background-size: cover;
     }
     .cardName{
         height:166px;
