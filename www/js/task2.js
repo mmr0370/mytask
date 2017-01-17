@@ -298,7 +298,22 @@ $(".introForm .cardName1").hover(function() {
 });
 /*法官查看页面结束*/
 /*法官台本*/
+$(".discuss").click(function(){
+   $(this).css({"background":"#7eb8f3"});
+   $(this).addClass("clicked");
+   alert("请玩家一次发言");
+   $(this).find(".blueTriangle").addClass("change");
+});
 
+
+    $(".vote").click(function(){
+        if($('.discuss').hasClass('clicked')){
+        window.open("task13-2.html");
+        }else{
+            alert("请按顺序执行任务");
+        }
+    });
+    /*投票页面*/
 
 
 });

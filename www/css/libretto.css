@@ -1,0 +1,79 @@
+body{
+    background:#eee;
+}
+.day-time{
+    margin-top:20px;
+    background:#fff;
+    border:1px solid #ccc;
+    padding:10px 0;
+    width:100%;
+    text-align:center;
+    font-size:20px;
+    color:#3cc3ef;
+}
+.libretto{
+    margin-top:20px;
+    position:relative;
+    background:#fff;
+    width:100%;
+    padding:30px;
+
+}
+.libretto .triangle{
+    position:absolute;
+    top:-20px;
+    left:50%;
+    margin-left:-10px;
+    width:0;
+    height:0;
+    border-bottom:20px solid #fff;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+}
+.libretto .day{
+   /* margin-top:50px;*/
+}
+.libretto .img{
+    width:20%;
+}
+.libretto .img img{
+    display:block;
+    width: 2.8rem;
+    height: 2.6rem;
+    margin:0 auto;
+}
+.libretto .info{
+    position:relative;
+    width:70%;
+    height:2.6rem;
+    line-height:2.6rem;
+    background:#3ba3c3;
+    text-align:center;
+    color:#fff;
+}
+.blueTriangle{
+    position:absolute;
+    top:50%;
+    left:-12px;
+    margin-top:-6px;
+    width:0;
+    height:0;
+    border-right:12px solid #3ba3c3;
+    border-top:6px solid transparent;
+    border-bottom:6px solid transparent;
+}
+.blueTriangle.change{
+    border-right:12px solid #7eb8f3;
+}
+.night{
+    margin-top:30px;
+}
+@media all and (max-width: 767px){
+
+}
+@media (min-width: 768px) and (max-width: 992px) {
+}
+@media (min-width: 992px) and (max-width: 1119px) {
+}
+@media (min-width: 1200px){}
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>登录注册页面</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.animate-colors.js"></script>
+    <script type="text/javascript" src="js/task5.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        body{width:100%;height:100%;background:url(images/js5/bg.jpg) no-repeat center top}
+        .content{width:300px;background:#ced7c9;margin:100px auto;}
+        /*form{font-size:0}*/
+        .login,.register{float:left;display:block;color:#00acf7;background:#fff;font-size:16px;width:80px;height:30px;line-height:30px;text-align:center;}
+        .login.active,.register.active{background:#00acf7;color:#fff;}
+        .tabBtn{width:160px;margin:0 auto;}
+        .userBox{padding:10px;}
+        .userBox .wrap{background:#fff;border-radius:3px;margin:16px auto 0;width:240px;padding:4px 0;}
+        .userBox .username,.userBox .password{display:inline-block;padding-left:4px;width:160px;height:30px;line-height:30px;background:#fff;color:#666;}
+        .usernameImg,.passwordImg{display:inline-block;border-right:1px solid #eee;vertical-align:top;width:30px;height:20px;margin-top:4px;}
+        .passwordImg{background:url(images/js5/password.png) no-repeat center center;}
+        .usernameImg{background:url(images/js5/username.png) no-repeat center center;}
+        .login-submit,.registerBox-submit{
+            display:block;
+            width:240px;
+            height:30px;
+            line-height:30px;
+            text-align:center;
+            color:#fff;
+            background:#00acf7;
+            border-radius:4px;
+            margin:20px auto;
+        }
+        .registerBox{display:none;}
+        .registerBox .message,.registerBox .code{
+            display:inline-block;
+            width:120px;
+            font-size:14px;
+            color:#666;
+
+        }
+        .registerBox .message{
+            text-align:center;
+            padding:4px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <form action="post">
+           <div class="tabBtn clear">
+               <a class="login btn active" href="javescript:;">登录</a>
+               <a class="register btn" href="javescript:;">注册</a>
+           </div>
+            <div class="tabCon">
+                <div class="loginBox userBox">
+                    <div class="wrap"><span class="usernameImg"></span><input class="username" type="text" placeholder="请输入用户名"></div>
+                    <div class="wrap"><span class="passwordImg"></span><input class="password" type="password" placeholder="请输入密码"></div>
+                    <a class="login-submit" href="javescript:;">登录</a>
+                </div>
+                <div class=" registerBox userBox">
+                    <div class="wrap"><span class="usernameImg"></span><input class="username" type="text" placeholder="请输入注册手机号"></div>
+                    <div class="wrap"><span class="passwordImg"></span><input class="password" type="password" placeholder="请输入密码"></div>
+                    <div class="wrap"><span class="message">发送短信验证码</span><input class="code" type="text" placeholder="请输入短信验证码"></div>
+                    <a class="registerBox-submit" href="javescript:;">注册</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
