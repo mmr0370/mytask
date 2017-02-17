@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/* 代码整理：懒人之家 lanrenzhijia.com */
+/* 代码整理：懒人之家 lanrenzhijia.com */
+.clear {
+	clear: both;
+}
+.push {
+	height: 30px;
+}
+/* 代码整理：懒人之家 lanrenzhijia.com */
+/* ORDER PAGE CORRECTLY */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	overflow-y: scroll;
+	position: relative;
+}
+body {
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	width: 100%;
+	height: 100%;
+	background: #3EA9DF;
+}
+/* END */
+
+#wrap {
+	width: 720px;
+	margin: 0 auto;
+} /*  Center everything  */
+#header {
+	background: url(../images/blast.jpg) left top no-repeat;
+	height: 131px;
+	position: relative;
+}
+#header p {
+	position: absolute;
+	bottom: 0px;
+	padding-left: 190px;
+	color: #3D3D3D;
+}
+#header p a {
+	color: #626262;
+	padding: 5px;
+	text-decoration: none;
+}
+#header p a:hover {
+	color: #7B7D7D;
+	text-decoration: none;
+}
+#blaster {
+	overflow: hidden; /*  So we can hide the slide we don't want  */
+	width: 720px; /*  Need to set a width of what area can be shown  */
+	padding-bottom: 30px;
+	padding-top: 35px;
+	position: relative; /*  The absolude positioned slides will be to this   */
+	height: 220px;
+	background: white;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px; /*  When a browser FINALY support it  */
+}
+.slide {
+	width: 715px;
+	overflow: hidden;
+	display: inline-block; /*  We can set a width and they will be inline  */
+	position: absolute;
+}/*  The size of each of our sides  */
+.tweetText {
+	background:none repeat scroll 0 0 #B9CBD5;
+	display:block;
+	font-family:helvetica;
+	font-size:22px;
+	margin:0 auto;
+	padding:30px 0;
+	text-align:center;
+	text-decoration:none;
+	width:680px;
+	color: #626262;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+.tweetText:hover {
+	background: #BCD5E4;
+	color: #727374;
+}
+.form {
+	margin-left:30px;
+	margin-top:30px;
+	font-size: 17px;
+	color: #595D5F;
+}
+.label {
+	display: inline-block;
+	width: 130px;
+}
+.input {
+	color: #8D9499;
+	border: none;
+	background: none;
+	border-bottom: 1px solid #BDD0DA;
+	font-size: 17px;
+}
+.input:hover, .input:focus {
+	border-bottom: 1px solid #6D7980;
+	color: #676C6F;
+}
+.error {
+	color:red;
+	font-size:15px;
+	padding-top:10px;
+	display: none;/*  Make sure we have no errors showing  */
+}
+.errorP {
+	text-align: center;
+	padding-right: 30px;
+}
+.next {
+	background:url("../images/next.jpg") no-repeat scroll left top transparent;
+	border:medium none;
+	cursor:pointer;
+	height:37px;
+	margin-top:-60px;
+	position:absolute;
+	right:30px;
+	width:121px;
+}
+.next:hover, .next:focus {
+	background:url("../images/next_over.jpg") no-repeat scroll left top transparent;
+}
+/*  SLIDE 2  */
+.loading {
+	padding-left:339px;
+	padding-top:50px;
+}
+#slide2 {
+	left: 715px;
+}
+/*  SLIDE 3  */
+
+#slide3 {
+	left: 715px;
+}
+.done {
+	margin-top: 50px;
+}
+/* 代码整理：懒人之家 lanrenzhijia.com */

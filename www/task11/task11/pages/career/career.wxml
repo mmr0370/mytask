@@ -1,0 +1,57 @@
+<!--index.wxml-->
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">css</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">js</view>
+  <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">pm</view>
+</view>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+
+  <!-- 我是哈哈 -->
+  <swiper-item>
+    <view class="career-list">
+        <view class="list clear"><view class="name">职业门槛：</view><view class="date">一星</view></view>
+        <view class="list clear"><view class="name">难易程度：</view><view class="date">三星</view></view>
+        <view class="list clear"><view class="name">成长周期：</view><view class="date">2年</view></view>
+       <view class="list clear"><view class="name">求贤企业：</view><view class="date">25689家</view></view>
+        <view class="list clear"><view class="name">入学基础：</view><view class="date">无门槛</view></view>
+        <view class="list clear"><view class="name">薪资待遇：</view><view class="date">0-1年 5-10k 1-3年 10-15K</view></view>
+    </view>
+  </swiper-item>
+
+  <!-- 我是呵呵 -->
+  <swiper-item>
+    <view class="career-list">
+        <view class="list clear"><view class="name">职业门槛：</view><view class="date">一星</view></view>
+        <view class="list clear"><view class="name">难易程度：</view><view class="date">三星</view></view>
+        <view class="list clear"><view class="name">成长周期：</view><view class="date">2年</view></view>
+        <view class="list clear"><view class="name">求贤企业：</view><view class="date">25689家</view></view>
+        <view class="list clear"><view class="name">入学基础：</view><view class="date">无门槛</view></view>
+        <view class="list clear"><view class="name">薪资待遇：</view><view class="date">0-1年 5-10k 1-3年 10-15K</view></view>
+    </view>
+  </swiper-item>
+
+  <!-- 我是嘿嘿 -->
+  <swiper-item>
+     <view class="career-list">
+        <view class="list clear"><view class="name">职业门槛：</view><view class="date">一星</view></view>
+        <view class="list clear"><view class="name">难易程度：</view><view class="date">三星</view></view>
+        <view class="list clear"><view class="name">成长周期：</view><view class="date">2年</view></view>
+       <view class="list clear"><view class="name">求贤企业：</view><view class="date">25689家</view></view>
+        <view class="list clear"><view class="name">入学基础：</view><view class="date">无门槛</view></view>
+        <view class="list clear"><view class="name">薪资待遇：</view><view class="date">0-1年 5-10k 1-3年 10-15K</view></view>
+    </view>
+  </swiper-item>
+</swiper>
+
+
+
+
+
+
+
+
+
+
+
+
+

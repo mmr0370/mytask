@@ -1,0 +1,14 @@
+/**index.wxss**/
+.title{
+  align-items: center;
+}
+.section{
+ text-align: left;
+}
+.view-nav{
+ margin-top:40px;
+ width:80%;
+}
+.view-button{
+  width:100%;
+}

@@ -1,0 +1,71 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="title">看看你适合什么职位？</view>
+  <view>
+      <form >
+        <!--input.wxml-->
+       <view class="section">
+         <picker id="0" bindchange="bindPickerChange" value="{{edu}}" range="{{edu}}">
+           <view class="picker">
+             学历：{{edu[index]}}
+           </view>
+         </picker>
+       </view>
+        <view class="section">
+            <picker id="1" bindchange="bindPickerChange" value="{{sex}}" range="{{sex}}">
+                <view class="picker">
+                   性别：{{sex[index]}}
+                </view>
+            </picker>
+        </view>
+        <view class="section">
+            <picker id="2" bindchange="bindPickerChange" value="{{age}}" range="{{age}}">
+                <view class="picker">
+                   年龄：{{age[index]}}
+                </view>
+            </picker>
+        </view>
+         <view class="section">
+             <picker id="3" bindchange="bindPickerChange" value="{{base}}" range="{{base}}">
+                <view class="picker">
+                   基础：{{base[index]}}
+                </view>
+             </picker>
+         </view>
+         <view class="section">
+              <picker id="4" bindchange="bindPickerChange" value="{{major}}" range="{{major}}">
+                 <view class="picker">
+                    专业：{{major[index]}}
+                  </view>
+              </picker>
+         </view>
+         <view class="section">
+              <picker id="5" bindchange="bindPickerChange" value="{{logic}}" range="{{logic}}">
+                  <view class="picker">
+                     逻辑：{{logic[index]}}
+                  </view>
+              </picker>
+          </view>
+<!--
+       <view class="section">
+         <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+           <view class="picker">
+             时间: {{time}}
+           </view>
+         </picker>
+       </view>
+
+       <view class="section">
+         <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+           <view class="picker">
+             当前选择: {{date}}
+           </view>
+         </picker>
+       </view>
+       -->
+      </form>
+  </view>
+ <navigator class="view-nav" url="../career/career" hover-class="navigator-hover">
+        <button class="view-button" type="primary">选好了，点击查看</button>
+      </navigator>
+</view>
