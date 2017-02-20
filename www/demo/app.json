@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "page/method/method",
+
+    "page/theme/theme",
+    "page/private/private",
+    "page/visa/visa",
+    "page/more/more",
+    "page/theme/detail/detail"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "演示",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "enablePullDownRefresh":"true"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#e9e9eb",
+    "list": [{
+      "pagePath": "page/method/method",
+      "iconPath": "image/footernav-ghome.png",
+      "selectedIconPath": "image/footernav-ghome-slected.png",
+      "text": "一号玩法"
+    }, {
+      "pagePath": "page/theme/theme",
+      "iconPath": "image/footernav-gcar.png",
+      "selectedIconPath": "image/footernav-gcar-selected.png",
+      "text": "包车主题游"
+    }, {
+      "pagePath": "page/visa/visa",
+      "iconPath": "image/footernav-gvisa.png",
+      "selectedIconPath": "image/footernav-gvisa-selected.png",
+      "text": "签证"
+    }, {
+      "pagePath": "page/private/private",
+      "iconPath": "image/footernav-gcustom.png",
+      "selectedIconPath": "image/footernav-gcustom-selected.png",
+      "text": "私家定制"
+    }, {
+      "pagePath": "page/more/more",
+      "iconPath": "image/footernav-gmore.png",
+      "selectedIconPath": "image/footernav-gmore-slected.png",
+      "text": "更多"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}
