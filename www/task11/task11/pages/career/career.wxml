@@ -6,7 +6,7 @@
 </view>
 <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
 
-  <!-- 我是哈哈 -->
+  <!-- 1-->
   <swiper-item>
     <view class="career-list">
         <view class="list clear"><view class="name">职业门槛：</view><view class="date">一星</view></view>
@@ -18,7 +18,7 @@
     </view>
   </swiper-item>
 
-  <!-- 我是呵呵 -->
+  <!-- 2 -->
   <swiper-item>
     <view class="career-list">
         <view class="list clear"><view class="name">职业门槛：</view><view class="date">一星</view></view>
@@ -30,7 +30,7 @@
     </view>
   </swiper-item>
 
-  <!-- 我是嘿嘿 -->
+  <!-- 3 -->
   <swiper-item>
      <view class="career-list">
         <view class="list clear"><view class="name">职业门槛：</view><view class="date">一星</view></view>
