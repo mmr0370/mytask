@@ -1,0 +1,15 @@
+<!--page/method/detail.wxml-->
+<!--index.wxml-->
+<view class="container">
+    <view class='detail'>
+        <view class="banner">
+            <image class="detail-img" src='{{ hotgoods[index].pic_url }}'/>
+            <view class="detail-name">{{ hotgoods[index].name }}</view>
+            <view class="detail-price">{{ hotgoods[index].price }}</view>
+        </view>
+        <view class="content">
+            <text class="detail-title">{{ hotgoods[index].title }}</text>
+            <text class="detail-con">{{ hotgoods[index].detail }}</text>
+        </view>
+    </view>
+</view>

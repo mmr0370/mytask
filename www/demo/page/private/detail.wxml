@@ -1,0 +1,24 @@
+<!--page/method/detail.wxml-->
+<!--index.wxml-->
+<view class="container">
+    <view class='detail'>
+        <view class="banner">
+           <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">      
+                <block wx:for="{{image_url}}">      
+                    <swiper-item>      
+                    <image src="{{item}}" class="slide-image" mode="aspectFill"/>      
+                    </swiper-item>  
+                </block>      
+         </swiper>     
+           <view class="pro-info">
+                <view class="detail-title">{{ hotgoods[index].title }}</view>
+                <view class="detail-name">{{ hotgoods[index].name }}</view>
+                <view class="detail-price">{{ hotgoods[index].price }}</view>
+           </view>
+        </view>
+        <view class="content">
+            <text class="detail-title">{{ hotgoods[index].title }}</text>
+            <text class="detail-con">{{ hotgoods[index].detail }}</text>
+        </view>
+    </view>
+</view>

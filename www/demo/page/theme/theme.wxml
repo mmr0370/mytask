@@ -1,16 +1,15 @@
 <!--index.wxml-->
-<view class="container">
+<view class="container"> 
 <view class='method'>
-  <view class='gooditem' wx:for="{{hotgoods}}" wx:for-index="idx" wx:for-item="good" wx:key="good.viewid">
-    <navigator url="detail/detail?index={{good.viewid}}" hover-class="navigator-hover">
-    <view class='imgview'>
-      <image class='productimg' src='{{good.pic_url}}'/>
-    </view>
-   <view class="goodinfo clear">
-     <view class="good-name fl">{{good.name}}</view>
-     <view class="good-price fr">{{good.price}}</view>
-   </view>
-    </navigator>
+  <view class='gooditem' wx:for="{{hotgoods}}" wx:for-index="idx" wx:for-item="good" id="{{good.viewid}}" bindtap="listClick">
+    
+      <view class='imgview'>
+        <image class='productimg' src='{{good.pic_url}}'/>
+      </view>
+      <view class="goodinfo clear">
+        <view class="good-name fl">{{good.name}}</view>
+        <view class="good-price fr">{{good.price}}</view>
+      </view>
   </view>
 </view>
 </view>

@@ -14,20 +14,22 @@
 .gooditem{
   width:100%;
   position:relative;
-  height:180px;
+  height:300rpx;
 }
 .productimg{
   width:100%;
-  height:180px;
+  height:300rpx;
 }
 .goodinfo{
-  width:100%;
+ width:96%;
   position:absolute;
+  top:234rpx;
   z-index:3;
   background: rgba(0,0, 0, 0.4);
   color:#fff;
   font-size:14px;
   padding:10rpx 2%;
+  margin:0 auto;
 }
 .good-name{
   width:76%;

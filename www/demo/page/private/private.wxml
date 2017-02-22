@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container"> 
+<view class='method'>
+  <view class='gooditem' wx:for="{{hotgoods}}" wx:for-index="idx" wx:for-item="good" id="{{good.viewid}}" bindtap="listClick">
+      <view class='imgview'>
+        <image class='productimg' src='{{good.pic_url}}'/>
+      </view>
+      <view class="goodinfo">
+        <view class="good-name">{{good.title}}</view>
+        <view class="good-price">{{good.name}}</view>
+      </view>
+  </view>
+</view>
+</view>

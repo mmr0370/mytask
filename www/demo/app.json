@@ -6,12 +6,14 @@
     "page/private/private",
     "page/visa/visa",
     "page/more/more",
-    "page/theme/detail/detail"
+    "page/method/detail",
+    "page/theme/detail",
+    "page/private/detail"
   ],
   "window": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "演示",
-    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarTextStyle": "light",
+    "navigationBarTitleText": "一号旅行",
+    "navigationBarBackgroundColor": "#15e7ef",
     "backgroundColor": "#F8F8F8",
     "enablePullDownRefresh":"true"
   },
