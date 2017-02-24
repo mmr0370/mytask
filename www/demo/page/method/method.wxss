@@ -1,13 +1,4 @@
 /**index.wxss**/
-.fl{ float:left;}
-.fr{ float:right;}
-.clear { zoom:1; }
-.clear:after { content:''; display:block; clear:both; }
-
-.container{
-  width:100%;
-  padding:0 4% 40px;
-}
 .method{
   width:100%;
 }

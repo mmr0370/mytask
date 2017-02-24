@@ -12,42 +12,41 @@ $(document).ready(function(){
         $(".tabCon .userBox").eq(index).show();
     });
     /*注册界面ajax数据保存*/
-    $(".registerBox-submit").click(function(){
+    $(".login-submit").click(function(){
      //“登录”按钮单击事件
             //获取用户名称
-            var telNum = $(".telNum").val();
+            //var telNum = $(".telNum").val();
             var username = $(".username").val();
             //获取输入密码
             var passWord = $(".password").val();
-            var verifyCode=$(".code").val();
+            //var verifyCode=$(".code").val();
            // alert(typeof (telNum));
             //开始发送数据
-        if(telNum==""||telNum==null||telNum==undefined){
-                alert(1);
-        }else{
-            alert(2)
+        console.log(username,passWord)
+        if(username==""||username==null||username==undefined){
+            alert("用户名不能为空");
+        }else if(passWord==""||passWord==null||passWord==undefined){
+            alert("密码不能为空");
         }
-         /* $.ajax({ //请求登录处理页
-                url: "http://120.92.4.210:10010/a/user", //登录处理页
+          $.ajax({ //请求登录处理页
+                url: "http://dev.admin.carrots.ptteng.com/a/login", //登录处理页
                 Type: "POST",
                 //传送请求数据
                 data: {
-                    mobile: telNum,
-                    nick: username,
-                   password:passWord,
-                    verity:verifyCode
+                    name: username,
+                    pwd:  passWord
                 },
-              dateType:"string",
-              /!*  success: function (strValue) { //登录成功后返回的数据
+              dateType:"Object",
+              success: function () { //登录成功后返回的数据
                     //根据返回值进行状态显示
-                    if (strValue == "True") {//注意是True,不是true
-                        $(".clsShow").html("操作提示，登录成功！" + strValue);
+                    if (ajax.status == 200) {//注意是True,不是true
+                        $(".clsShow").html("操作提示，登录成功！");
                     }
                     else {
-                        $("#divError").show().html("用户名或密码错误！" + strValue);
+                        $("#divError").show().html("用户名或密码错误！");
                     }
-                }*!/
-            })*/
+                }
+             })
 
     })
 

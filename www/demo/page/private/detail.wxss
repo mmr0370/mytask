@@ -35,3 +35,38 @@
     margin-top:20rpx;
     line-height:1.4em;
 }
+.swiper-tab{  
+    width: 100%;
+    margin:0 auto;  
+    text-align: center;  
+    line-height: 80rpx;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    }  
+.swiper-tab-list{  
+    font-size: 32rpx;  
+    width: 20%;  
+    color: #777777;  
+}  
+.on{ color: #da7c0c;  
+    border-bottom: 5rpx solid #da7c0c;}  
+  
+.swiper-box{ 
+    margin-top:30rpx;
+    font-size:32rpx;
+    line-height: 40rpx;
+    display: block; 
+    padding:0 20rpx;
+    
+}
+.slide-image{width:100%;}
+.career-list .name{
+    float:left;
+    width:30%;
+}
+.career-list .date{
+    float:left;
+    width:70%;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>用户名</label>
+<span>username 值</span>
+<a href="#" onclick="ajaxread('3.xml', ''); return false;">查看</a>
+<script>
+function ajaxread(file, postData) {
+    var req = createXMLHTTPObject();
+    if(!req) return;
+    req.onreadystatechange = function() {
+        if (req.readyState != 4) return;
+        if (req.status != 200 && req.status != 304) {
+        alert('HTTP error ' + req.status);
+        return;
+        }
+
+        updateobj('span', req.responseXML.getElementsByTagName('username')[0].firstChild.nodeValue);
+    }
+
+    req.open('GET', file, true);
+    req.setRequestHeader('User-Agent','XMLHTTP/1.0');
+        if (req.readyState == 4) return;
+        req.send(postData);
+    }
+    function updateobj(obj, data) {
+        document.getElementsByTagName(obj)[0].firstChild.nodeValue = data;
+    }
+    var XMLHttpFactories = [
+        function() {return new XMLHttpRequest()},
+        function () {return new ActiveXObject("Msxml2.XMLHTTP")},
+        function () {return new ActiveXObject("Msxml3.XMLHTTP")},
+        function () {return new ActiveXObject("Microsoft.XMLHTTP")},
+    ];
+    function createXMLHTTPObject() {
+        var xmlhttp = false;
+        for(var i=0; i<XMLHttpFactories.length; i++) {
+        try {
+        xmlhttp = XMLHttpFactories[i]();
+        }
+        catch(e) {
+        continue;
+        }
+        break;
+    }
+    return xmlhttp;
+}
+</script>
+</body>
+</html>

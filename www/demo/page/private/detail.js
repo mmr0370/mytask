@@ -1,6 +1,9 @@
 // page/method/detail.js
 Page({
   data:{
+    winWidth: 0,  
+    winHeight: 0,  
+    currentTab: 0, 
     indicatorDots: true,  
     autoplay:true,  
     interval:2000,  
@@ -11,6 +14,19 @@ Page({
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
+    var that = this;  
+     wx.getSystemInfo( {  
+  
+      success: function( res ) {  
+        that.setData( {  
+          winWidth: res.windowWidth,  
+          winHeight: res.windowHeight  
+          
+        });  
+         console.log(res.windowWidth, res.windowHeight,wx.getStorageSync('sub'))
+      }  
+ 
+    });  
  try {
   var index = wx.getStorageSync('index'),
       hotgoods = wx.getStorageSync('hotgoods'),
@@ -29,6 +45,9 @@ Page({
       console.log(image_url)
        console.log(this.data.hotgoods[index].banner_pic1)
   }
+ 
+
+
 } catch (e) {
   // Do something when catch error
 }
@@ -44,5 +63,27 @@ Page({
   },
   onUnload:function(){
     // 页面关闭
-  }
+  },
+  swichNav: function(e) {  
+   /** 
+   * 点击tab切换 
+   */ 
+    var that = this;  
+  
+    if( this.data.currentTab === e.target.dataset.current ) {  
+      return false;  
+    } else {  
+      that.setData( {  
+        currentTab: e.target.dataset.current  
+      })  
+      console.log(e.target.dataset.current  )
+    }
+    },  
+    bindChange: function( e ) {  
+  
+    var that = this;  
+    that.setData( { currentTab: e.detail.current });  
+  
+  },   
+ 
 })

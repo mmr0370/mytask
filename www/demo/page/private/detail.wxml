@@ -17,8 +17,28 @@
            </view>
         </view>
         <view class="content">
-            <text class="detail-title">{{ hotgoods[index].title }}</text>
-            <text class="detail-con">{{ hotgoods[index].detail }}</text>
+           <view class="swiper-tab">
+                <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">行程特色</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">行程介绍</view>
+  <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">注意事项</view>
+</view>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+
+  <!-- 1-->
+  <swiper-item>
+  <view>{{ hotgoods[index].detail1}}</view>
+  </swiper-item>
+
+  <!-- 2 -->
+  <swiper-item>
+    <view>{{ hotgoods[index].detail2}}</view>
+  </swiper-item>
+
+  <!-- 3 -->
+  <swiper-item>
+     <view>{{ hotgoods[index].detail3}}</view>
+  </swiper-item>
+    </swiper>
         </view>
     </view>
 </view>

@@ -1,18 +1,9 @@
 /**index.wxss**/
-.fl{ float:left;}
-.fr{ float:right;}
-.clear { zoom:1; }
-.clear:after { content:''; display:block; clear:both; }
-
-.container{
-  width:100%;
-  padding:0 4% 40px;
-}
 .method{
   width:100%;
 }
 .gooditem{
-  margin-top:50rpx;
+  margin-bottom:20rpx;
   width:100%;
   position:relative;
   height:300rpx;
