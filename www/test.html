@@ -1,37 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script>
+        $(function () {
+            var Countries = function () { }
+
+            Countries.prototype = {
+                _items: [],
+                _getData: function (success) {
+                    var items = [
+                        { id: 0, name: '中国' },
+                        { id: 1, name: '日本' },
+                        { id: 2, name: '美国' }
+                    ];
+                    $.extend(this._items, items);
+                    success(items);
+                },
+                //Events
+                on_selected: $.Callbacks(),
+                on_inserted: $.Callbacks(),
+                //Methods
+                select: function () {
+                    var self = this;
+                    this._getData(function (items) {
+                        self.on_selected.fire({
+                            sender: self,
+                            items: items
+                        });
+                    });
+                },
+                insert: function (item) {
+                    var self = this;
+                    this._items.push(item);
+                    self.on_inserted.fire({ sender: self, item: item });
+                }
+            }
+
+            //=======================================================================
+            // 以下为界面代码，当要调整界面，改这里就行啦~~~
+            var countries = new Countries();
+            countries.on_selected.add(function (args) {
+                $(args.items).each(function () {
+                    $('#countries').append($('<option>').attr('value', this.id).text(this.name));
+                });
+            });
+
+            countries.on_inserted.add(function (args) {
+                $('#countries').append($('<option selected="selected">').attr('value', args.item.id).text(args.item.name));
+            });
+
+            var id = 10;
+            $('#btnAdd').click(function () {
+                countries.insert({ id: ++id, name: $('#countryName').val() });
+            });
+
+            countries.select();
+            //=======================================================================
+        });
+
+    </script>
 </head>
 <body>
-<!-- JiaThis Button BEGIN -->
-<div id="ckepop">
-    <span class="jiathis_txt">分享到：</span>
-    <a class="jiathis_button_weixin">微信</a>
-    <a href="http://www.jiathis.com/share"  class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
-    <a class="jiathis_counter_style"></a>
+<select id="countries"></select>
+<div>
+    <input id="countryName" /><button id="btnAdd">添加</button>
 </div>
-    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1" charset="utf-8"></script>
-</div>
-<!-- JiaThis Button END -->
-<span style="font-size:24px;"><!-- Baidu Button BEGIN -->
-<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
-<a class="bds_qzone"></a>
-<a class="bds_tsina"></a>
-<a class="bds_tqq"></a>
-<a class="bds_renren"></a>
-<a class="bds_t163"></a>
-<span class="bds_more">更多</span>
-<a class="shareCount"></a>
-</div>
-<script type="text/javascript" id="bdshare_js" data="type=tools&uid=6478904" ></script>
-<script type="text/javascript" id="bdshell_js"></script>
-<script type="text/javascript">
-document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
-</script>
-    <!-- Baidu Button END -->
-</span>
-
 </body>
 </html>
