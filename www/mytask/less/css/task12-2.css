@@ -111,7 +111,7 @@ span.choiceTab.borderNone {
   .header {
     width: 100%;
     background: #5fc0cd;
-    padding:px 0;
+    padding: 16px 0;
   }
   .headerLeft {
     float: left;
