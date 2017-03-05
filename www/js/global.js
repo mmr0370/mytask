@@ -1,4 +1,4 @@
-;(function($) {
+(function($) {
 
 //这是万恶的全局变量
 var Global = {
