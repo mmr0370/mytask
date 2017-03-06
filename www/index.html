@@ -1,68 +1,236 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1" />	
-	<title>关于 莫然</title>
-
-	<link rel="stylesheet" href="./style.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="./works.css" type="text/css" media="all" />
-	<link rel="shortcut icon" href="./images/mmr-ico.png"/>
+<title>莫然的个人网站</title>
+<!--mobile apps-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript">
+	addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+	function hideURLbar(){ window.scrollTo(0,1); }
+</script>
+<!--mobile apps-->
+<!--Custom Theme files-->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="css/swipebox.css">
+<!--//Custom Theme files-->
+<!--js-->
+<script src="js/jquery-1.11.1.min.js"></script> 
+<!-- //js -->
+<!--//web-fonts-->
+<!--start-smooth-scrolling-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smooth-scrolling-->
 </head>
-<body class="loading-process">
-<div class="loading">
-	<div class="loading-circle"></div>
-	<div class="loading-avatar"><img src="images/avatar.jpg" alt="" width="100" height="100"></div>
-	<div class="loading-info">正在努力加载中...</div>
-</div>
-<div class="section-header">
-	<div class="section">
-		<nav class="nav" role="navigation">
-			<ul>
-				<li class="nav-about fade fade1"><a href="#about">关于我</a></li>
-				<li class="nav-works fade fade4"><a href="#works">我的作品</a></li>
-				<li class="fade back-home"><a href="#top">首页</a></li>
-				<li class="nav-skill fade fade2"><a href="#skill">我的技能</a></li>
-				<li class="nav-contact fade fade3"><a href="#contact">联系我</a></li>
-			</ul>
-		</nav>
-	</div>
-	<div class="nav-bg"></div>
-</div>
-<div class="home-bg">
-	<img src="images/home-bg.jpg" alt="" width="1000" height="667">
-</div>
-<div class="section-wrap section-fristpage">
-	<div class="section">
-		<div class="section-content">
-			<p class="fade fade1">我是莫然</p>
-			<p class="fade fade2">一个半路出家的前端工程师</p>
-			<p class="fade fade2">坐标：上海</p>
-			<p class="fade fade3">想了解更多，往下滚动哦</p>
-		</div>
-		<a href="#" class="scroll-tip fade fade4">向下滚动</a>
-	</div>
-</div>
-<div id="about" class="section-wrap section-about" style="background: #c1f410;">
-	<div class="section">
-		<div class="about-content clearfix section-content">
-			<div class="left">
-				<h1>关于本人</h1>
-				<p class="fade fade1">2011 年在学校接触C++</p>
-				<p class="fade fade2">2015 年决定转行IT，先后学习了C语言和前端相关知识（html、css、js等）</p>
-				<p class="fade fade3">2016 年初，利用自己所学的编程知识顺利在上海找到第一份前端开发的工作<a href="http:www.1hlx.cn" target="_blank">一号旅行</a>)</p>
+<body>
+	<!--top-nav-->
+	<div class="top-nav wow">
+		<div class="container">
+			<div class="navbar-header logo">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					Menu
+				</button>
 			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="menu">
+					<ul class="nav navbar">
+						<li><a href="#about" class="scroll">关于我</a></li>
+						<li><a href="#work" class="scroll">工作经历</a></li>
+						<li><a href="#education" class="scroll">教育经历</a></li>
+						<li><a href="#skills" class="scroll">专业技能</a></li>
+						<li><a href="#projects" class="scroll">我的作品</a></li>
+						<li><a href="#contact" class="scroll">联系我</a></li>
+					</ul>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<!--//top-nav-->
+	<!--banner-->
+	<div id="home" class="banner">
+		<div class="banner-info">
+			<div class="container">
+				<div class="col-md-4 header-left">
+					<img src="images/img1.jpg" alt=""/>
+				</div>
+				<div class="col-md-8 header-right">
+					<h1>基本资料</h1>
+					<ul class="address">
+						<li>
+							<ul class="address-text">
+								<li><b>姓名：</b></li>
+								<li>莫然</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>性别：</b></li>
+								<li>女</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>学历：</b></li>
+								<li>本科</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>出生日期：</b></li>
+								<li>1988-04-25</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>电话号码：</b></li>
+								<li>15601632383</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>目前住址：</b></li>
+								<li>上海市闵行区</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>邮箱：</b></li>
+								<li><a href="mailto:moran678@163.com">moran678@163.com</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>github </b></li>
+								<li><a href="https://github.com/mmr0370">https://github.com/mmr0370</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
 	</div>
-</div>
-</div>
-<div id="works" class="section-wrap section-works">
-	<div class="section">
-		<div class="works-content section-content">
-			<h1>个人作品</h1>
-			<p>这些作品是本人在网上找的项目需求，利用休息时间自己做的。</p>
-			<div class="main">
+	<!--//banner-->
+	<!--about-->
+	<div id="about" class="about">
+		<div class="container">
+			<h3 class="title">关于我</h3>
+			<div class="col-md-12 about-left">
+				<p>莫然</p>
+				<p>2010年进入大学，同年接触到计算机基础知识</p>
+				<p>2011年接触C语言</p>
+				<p>2014年大学毕业，从事化学分析方面的工作</p>
+				<p>2015年初，重新学习C语言，同年学习了html，css,javescript等前端相关知识</p>
+				<p>2016年，来到上海，并利用所学编程知识找到一份前端开发的工作</p>
+				<p>2017年......</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//about-->
+	<!--work-experience-->
+	<div id="work" class="work">
+		<div class="container">
+			<h3 class="title">工作经历</h3>
+			<div class="work-info"> 
+				<div class="col-md-6 work-left"> 
+					<h4>2016.3- 至今 </h4>
+				</div>
+				<div class="col-md-6 work-right"> 
+					<h5><span class="glyphicon glyphicon-briefcase"></span>一号旅行网络科技股份有限公司 (上海)</h5>
+					<p>部门：开发部</p>
+					<p>职位：前端开发工程师</p>
+					<p>职责：主要负责公司网站的开发维护工作。</p>
+					<p>业绩：在本人任职期间，公司网站订单转化率提高50%以上。</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="work-info">
+				  <div class="col-md-6 work-left">
+					  <h4>2014.9 - 2016.3 </h4>
+				  </div>
+				  <div class="col-md-6 work-right">
+					  <h5><span class="glyphicon glyphicon-briefcase"></span>郑州富昱程农业生物科技有限公司 (郑州)</h5>
+					  <p>部门：检测试验部</p>
+					  <p>职位：化学分析师</p>
+					  <p>职责：负责公司生产产品成分分析，及实习生的培训工作。</p>
+					  <p>本人在工作期间多次获公司嘉奖，并利用休息时间自学C语言，及前端相关知识（html、css、js等），拥有扎实的编程基础，并于2016年初利用所学的编程知识，在上海顺利找到第一份前端开发的工作。</p>
+				  </div>
+				  <div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--//work-experience-->
+	<!--education-->
+	<div id="education" class="education">
+		<div class="container">
+			<h3 class="title">教育经历</h3>
+			<div class="work-info"> 
+				<div class="col-md-6 work-left"> 
+					<h4>2010-2014</h4>
+				</div>
+				<div class="col-md-6 work-right"> 
+					<h5><span class="glyphicon glyphicon-education"> </span> 河南科技大学</h5>
+					<p>专业：化学工程与工艺</p>
+					<p>学历：本科</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			
+		</div>
+	</div>
+	<!--//education-->
+	<!--skills-->
+	<div id="skills" class="skills">
+		<div class="container">
+			<h3 class="title">专业技能</h3>
+			<div class="skill-con">
+				<ul class="skill-list">
+					<li>1.熟悉w3c标准，能够写出符合w3c标准，兼容主流浏览器并易于维护的代码。</li>
+					<li>2.熟练掌握 HTML/HTML5、CSS/CSS3、JavaScript、Ajax等前端常用技术。</li>
+					<li>3.熟悉主流的jquery、bootscript等前端框架，并对React.js、AngularJS及Node.js有一定了解；</li>
+					<li>4.熟悉微信小程序，拥有相关项目经验。</li>
+					<li>5.熟练使用photoshop等切图工具。</li>
+					<li>6.熟练使用软件版本管理工具git。</li>
+					<li>7. 对常见的浏览器兼容问题有清晰的理解，并有可靠的解决方案。</li>
+					<li>8.对于前端数据与表现分离，以及原型链有自己的理解。</li>
+					<li>9.熟悉C语言。</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+	<!--//education-->
+	<!--portfolio-->
+	<div id="projects" class="portfolio">
+		<div class="container">
+			<h3 class="title wow zoomInLeft animated" data-wow-delay=".5s">我的项目</h3>
+			<div class="projects-item">
+				<h2>公司网站</h2>
 				<div class="task-btn">
-					<h2>CSS任务</h2>
+					<a href="http:www.1hlx.cn">一号旅行</a>
+					<a href="http:www.m.1hlx.cn">一号旅行移动端</a>
+					<a href=http://www.vvvisa.com">出国通</a>
+					<a href="http://tongye.uuvisa.com/">出国通移动端</a>
+				</div>
+
+			</div>
+			<div class="projects-item">
+				<h2>个人项目</h2>
+				<div class="task-btn">
+					<h3>CSS任务</h3>
 					<a href="mytask/task1.html">任务1</a>
 					<a href="mytask/task3.html">任务3</a>
 					<a href="mytask/task4.html">任务4</a>
@@ -78,54 +246,49 @@
 					<a href="mytask/task14-1.html">任务14</a>
 				</div>
 				<div class="task-btn">
-					<h2>JS任务</h2>
+					<h3>JS任务</h3>
 					<a href="task1.html">九宫格</a>
 					<a href="task6-1.html">杀人游戏</a>
 				</div>
 			</div>
-		</div>
-	</div>
-</div>
-<div id="skill" class="section-wrap section-skill">
-	<div class="section">
-		<div class="skill-content section-content">
-			<h1>技能水平</h1>
-			<ul>
-				<li class="fade fade1">熟悉w3c标准，能够写出符合w3c标准，兼容主流浏览器并易于维护的代码。</li>
-				<li class="fade fade2">熟练掌握 HTML/HTML5、CSS/CSS3、JavaScript、Ajax等前端常用技术。</li>
-				<li class="fade fade3">对 HTML5 和 CSS3 有一定了解。</li>
-				<li class="fade fade4">熟悉主流的jquery、bootscript等前端框架，并对React.js、AngularJS及Node.js有一定了解；</li>
-				<li class="fade fade4">熟悉微信小程序，拥有相关项目经验。</li>
-				<li class="fade fade3">熟练使用photoshop等切图工具。</li>
-				<li class="fade fade1">熟练使用软件版本管理工具git。</li>
-				<li class="fade fade1">对常见的浏览器兼容问题有清晰的理解，并有可靠的解决方案。</li>
-				<li class="fade fade4">对于前端数据与表现分离，以及原型链有自己的理解。</li>
-			</ul>
-		</div>
-	</div>
-</div>
-<div id="contact" class="section-wrap section-contact">
-	<div class="section">
-		<div class="contact-content clearfix section-content">
-			<div class="left">
-				<div class="contact-ways fade fade1">
-					<ul>
-						<li>邮箱：moran678@163.com</li>
-						<li>Q Q ：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2015405927&amp;site=qq&amp;menu=yes">2015405927</a></li>
-						<li>Github：<a target="_blank" href="https://github.com/mmr0370">https://github.com/mmr0370</a></li>
-					</ul>
-				</div>
 
+		</div>
+	</div>
+	<!--//portfolio-->
+	<!--contact -->
+	<div class="welcome contact" id="contact">
+		<div class="container">
+			<h3 class="title">联系我</h3>
+			<div class="skill-con">
+				<ul class="skill-list">
+					<li>邮箱：moran678@163.com</li>
+					<li>Q Q ：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2015405927&amp;site=qq&amp;menu=yes">2015405927</a></li>
+					<li>Github：<a target="_blank" href="https://github.com/mmr0370">https://github.com/mmr0370</a></li>
+					<li>电话：15601632383</li>
+				</ul>
 			</div>
 		</div>
 	</div>
-</div>
-
-<div class="overlay"></div>
-<div class="state-indicator"></div>
-
-<script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
-<script src="js/global.js"></script>
-
+	<!--//contact -->
+	<!--smooth-scrolling-of-move-up-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<!--//smooth-scrolling-of-move-up-->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
