@@ -81,6 +81,9 @@ body{
     background:#fbb435;
     color:#fff;
 }
+.cardName[name='die']{
+   background:#1d3b3d;
+}
 .cardNum{
     height:20px;
     line-height:20px;
@@ -88,6 +91,20 @@ body{
     color:#fff;
     text-align: center;
     background: #3ba3c3;
+}
+.cardBox[title="checked"] .cardName1{
+    background:url(../../images/task6/ptt2.png) no-repeat center top;
+    background-size: cover;
+}
+.cardBox[title="checked"] .cardNum{
+    background: #5fc2ca;
+}
+.cardBox[name="die"] .cardName1{
+    background:url(../../images/task6/ptt3.png) no-repeat center top;
+    background-size: cover;
+}
+.cardBox[name="die"] .cardNum{
+    background: #1d3b3e;
 }
 .voteMethod{
     display: none;

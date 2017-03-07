@@ -81,10 +81,6 @@ $(document).ready(function(){
     });
     /*设置玩家配比*/
     $(".setBtn").click(function(){
-       /* var ListKiller="<li class='killer'>杀手</li>";
-        var ListDoctor="<li class='doctor'>杀手</li>";
-        var ListPolice="<li class='police'>警察</li>";
-        var ListCivilian="<li class='civilian'>平民</li>";*/
         var nslider=$("#sliderBlock").val();
         var nkillerNum=Math.round(nslider/5);
         var listArr=[];
@@ -100,11 +96,6 @@ $(document).ready(function(){
             console.log(NumArray[i]);
         }
         console.log("数组"+listArr);
-       /* for(i=0;i<NumArray.length;i++){
-            listArr.splice(NumArray[i],1,"杀手");
-        }*/
-        //var Arr=["ListKiller","ListDoctor","ListCivilian"];
-
         for(i=0;i<nslider;i++){
             $(".playerAllocation .List").append("<li class='civilian'></li>");
             $(".playerAllocation .List li").eq(i).text(listArr[i]);
@@ -113,19 +104,6 @@ $(document).ready(function(){
             }
         }
 
-
-        /*for(i=0;i<NumArray.length;i++){
-            $(".playerAllocation .List li").eq(NumArray[i]).attr("class","killer");
-            $(".playerAllocation .List li").eq(NumArray[i]).text("杀手");
-        }
-*/
-
-        /*for(var i=0;i<$(".playerAllocation li").length;i++){
-            var player;
-            player=$(".playerAllocation li").eq(i).text();
-            playArray[i]=player;
-        }
-        var arrNew=playArray.split(",");*/
         //数组转化成字符串并存储与本地
         localStorage.player =listArr;
         localStorage.killer=NumArray;
@@ -272,25 +250,14 @@ $(document).ready(function(){
             +"</li>"
 
 for(i=0;i<playArrayNum;i++){
-    $(".introForm").append(cardList);
+    $("#diaryCon").append(cardList);
     arrIndex[i]=i+1;
-    $(".cardNum").eq(i).text(arrIndex[i]+"号");
+    $("#diaryCon .cardNum").eq(i).text(arrIndex[i]+"号");
 }
 
-$(".introForm .cardName1").hover(function() {
-    //$(".introForm .cardList").find(".ardName1").text(1);
-    //$(this).animate({width: '0', left: '50%'});
-    //$(this).animate({width: '100%', left: '0'});
-    //$(this).animate({ background:'#f00' })
-    //$(this).animate({ color:'#fff' })
+$("#diaryCon  .cardName1").hover(function() {
     var index=$(".introForm .cardName1").index(this);
     $(this).text(playA[index]);
-   /*$(this).css({
-       "background":"#fbb435",
-       "font-size":"18px",
-       "text-align":"center",
-       "color":"#fff"
-   });*/
    $(this).attr("class","cardName");
 },function(){
     $(this).attr("class","cardName1");
@@ -314,6 +281,55 @@ $(".discuss").click(function(){
         }
     });
     /*投票页面*/
+    for(i=0;i<playArrayNum;i++){
+        $("#vote").append(cardList);
+        arrIndex[i]=i+1;
+     $("#vote .cardNum").eq(i).text(arrIndex[i]+"号");
+    }
+    //投票给选手
+    $("#vote .cardBox").click(function(){
+        var $this=$(this);
+        if($this.attr("title")==="checked"){
+           $(this).removeAttr("title");
+        }else{
+            $("#vote .cardBox").removeAttr("title");
+            $this.attr("title","checked");
+            var dieNum=$("#vote .cardBox").index(this);
+            localStorage.dieNum=dieNum;
+        }
 
+        console.log("个数"+$("[title=checked]").length);
+        console.log("位置"+dieNum);
+    });
 
+    //投死
+
+    $("#cardDie").click(function(){
+        if($("[title=checked]").length===0){
+            alert("请投票");
+        }else{
+                $("#vote [title='checked']").attr("name","die");
+                $("#vote [title='checked']").removeAttr("title");
+            var dieNum=localStorage.dieNum;
+                console.log("位置"+dieNum);
+                window.open("libretto.html");
+        }
+    });
+    //法官日志
+    for(i=0;i<playArrayNum;i++){
+        var dieNum=localStorage.dieNum;
+        $("#judgeLog").append(cardList);
+        arrIndex[i]=i+1;
+        $("#judgeLog .cardNum").eq(i).text(arrIndex[i]+"号");
+        console.log("杀手位置"+dieNum);
+        $("#judgeLog .cardName").eq(dieNum).attr("name","die");
+    }
+    $("#judgeLog .cardName1").hover(function() {
+        var index=$(".introForm .cardName1").index(this);
+        $(this).text(playA[index]);
+        $(this).attr("class","cardName");
+    },function(){
+        $(this).attr("class","cardName1");
+        $(this).text("");
+    });
 });
